@@ -123,6 +123,7 @@ h2.eyebrow { margin-top: 0; }
     color: #64748b;
     line-height: 1.4;
 }
+.cert-ledger-head span:last-child { text-align: right; }
 .cert-ledger-doc { text-align: right; }
 .cert-ledger-doclink {
     font-size: 0.8125rem;
