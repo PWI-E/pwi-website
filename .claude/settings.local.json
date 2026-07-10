@@ -762,7 +762,9 @@
       "Bash(git add *)",
       "Bash(git commit -m 'Initial commit: PWI website snapshot \\(2026-07-10\\) *)",
       "Bash(git count-objects *)",
-      "Bash(git commit -m 'Enlarge mobile nav links to 16px with 44px tap targets *)"
+      "Bash(git commit -m 'Enlarge mobile nav links to 16px with 44px tap targets *)",
+      "Bash(awk '/mnvc-cat/{found=1} found{print NR\": \"$0} /mnvc-cat-panel/{c++; if\\(c>=2\\) exit}' index.html)",
+      "Bash(git commit -m 'Mobile nav: grouped-flat Products \\(categories always expanded\\) *)"
     ]
   }
 }

@@ -1138,6 +1138,22 @@ details.group[open] > summary .mega-chevron {
     margin: 0 0 0.35rem 0.75rem;
     padding: 0.2rem 0 0.45rem;
   }
+  .mnvc-cat > summary.mnvc-row--cat {
+    pointer-events: none;
+    min-height: 0;
+    padding: 0.8rem 0.1rem 0.1rem;
+  }
+  .mnvc-cat > summary.mnvc-row--cat .mnvc-chevron,
+  .mnvc-cat > summary.mnvc-row--cat .mnvc-row-icon {
+    display: none;
+  }
+  .mnvc-cat > summary.mnvc-row--cat .mnvc-row-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #60a5fa;
+  }
   .mnvc-link {
     display: flex;
     align-items: flex-start;
