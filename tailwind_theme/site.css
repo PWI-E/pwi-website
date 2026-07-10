@@ -1158,7 +1158,7 @@ details.group[open] > summary .mega-chevron {
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #60a5fa;
+    color: rgba(148, 163, 184, 0.75);
   }
 
   /* Product category accordions: compact look, larger invisible tap area */
@@ -1190,7 +1190,7 @@ details.group[open] > summary .mega-chevron {
   .mnvc-cat[data-cat="reading"][open] > summary.mnvc-row--cat .mnvc-row-label,
   .mnvc-cat[data-cat="fluorescent"][open] > summary.mnvc-row--cat .mnvc-row-label,
   .mnvc-cat[data-cat="coils"][open] > summary.mnvc-row--cat .mnvc-row-label {
-    color: #93c5fd;
+    color: #cbd5e1;
   }
   @media (hover: hover) and (pointer: fine) {
     .mnvc-cat[data-cat="cabin"] > summary.mnvc-row--cat:hover .mnvc-row-label,
@@ -1198,7 +1198,7 @@ details.group[open] > summary .mega-chevron {
     .mnvc-cat[data-cat="reading"] > summary.mnvc-row--cat:hover .mnvc-row-label,
     .mnvc-cat[data-cat="fluorescent"] > summary.mnvc-row--cat:hover .mnvc-row-label,
     .mnvc-cat[data-cat="coils"] > summary.mnvc-row--cat:hover .mnvc-row-label {
-      color: #93c5fd;
+      color: #cbd5e1;
     }
   }
   .mnvc-link {
