@@ -422,7 +422,7 @@ summary {
         .kb-toggle[aria-pressed="false"] .kb-icon-play { display: none; }
         .kb-toggle[aria-pressed="false"] .kb-icon-pause { display: block; }
         .kb-toggle:focus-visible {
-            outline: 2px solid rgba(124,157,247,0.75);
+            outline: 2px solid rgba(147,197,253,0.75);
             outline-offset: 2px;
         }
         @media (min-width: 1024px) {

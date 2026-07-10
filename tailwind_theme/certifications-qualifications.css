@@ -16,7 +16,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.16em;
-    color: #7c9df7;
+    color: #93c5fd;
     margin: 0 0 0.8rem;
 }
 .cert-reg-title {
@@ -27,7 +27,7 @@
     color: #ffffff;
     margin: 0 0 1rem;
 }
-.cert-reg-title span { color: #7c9df7; }
+.cert-reg-title span { color: #93c5fd; }
 .cert-reg-deck {
     font-size: 1rem;
     line-height: 1.6;
@@ -61,14 +61,14 @@
     align-items: center;
     height: 2rem;
     border-radius: 9999px;
-    border: 1px solid #c7d2fe;
+    border: 1px solid #bfdbfe;
     padding: 0 1rem;
     font-size: 0.625rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.09em;
     white-space: nowrap;
-    background: #eef2ff;
+    background: #eff6ff;
     color: #1B3A8A;
 }
 @media (max-width: 480px) {
@@ -80,9 +80,9 @@
     }
 }
 .cert-chip--dark {
-    border-color: rgba(124, 157, 247, 0.4);
-    background: rgba(124, 157, 247, 0.1);
-    color: #b8caf9;
+    border-color: rgba(147, 197, 253, 0.4);
+    background: rgba(147, 197, 253, 0.1);
+    color: #93c5fd;
 }
 
 /* ── Ledger ── */
@@ -154,7 +154,7 @@ h2.eyebrow { margin-top: 0; }
     font-size: 0.8125rem;
     font-weight: 600;
     color: #334155;
-    border-bottom: 1px solid #c7d2fe;
+    border-bottom: 1px solid #bfdbfe;
     padding-bottom: 1px;
     transition: color 0.15s;
     white-space: nowrap;
@@ -215,18 +215,18 @@ h2.eyebrow { margin-top: 0; }
     font-weight: 700;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: #7c9df7;
+    color: #93c5fd;
     margin-bottom: 0.25rem;
 }
 .cert-codesbar-inner dd { margin: 0; color: #e2e8f0; }
 .cert-codesbar-inner dd a {
     color: #e2e8f0;
     text-decoration: none;
-    border-bottom: 1px solid rgba(124, 157, 247, 0.45);
+    border-bottom: 1px solid rgba(147, 197, 253, 0.45);
     transition: color 0.15s;
 }
-.cert-codesbar-inner dd a:hover { color: #7c9df7; }
-.cert-codesbar-pdf { font-size: 0.62rem; color: #7c9df7; }
+.cert-codesbar-inner dd a:hover { color: #93c5fd; }
+.cert-codesbar-pdf { font-size: 0.62rem; color: #93c5fd; }
 .cert-codesbar-naics { grid-column: 1 / -1; }
 .cert-codesbar-pills {
     display: flex;

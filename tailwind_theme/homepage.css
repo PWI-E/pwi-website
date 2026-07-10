@@ -772,7 +772,7 @@ cursor: pointer;
 .hero-suggest-item:last-child { border-bottom: none; }
 .hero-suggest-item:hover,
 .hero-suggest-item.is-selected { background: rgba(30,78,216,0.28); }
-.hero-suggest-item svg { flex-shrink: 0; color: #7C9DF7; }
+.hero-suggest-item svg { flex-shrink: 0; color: #93c5fd; }
 .hero-suggest-item mark {
 background: none;
 color: #93c5fd;
@@ -785,7 +785,7 @@ font-size: 0.72rem;
 font-weight: 600;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #7C9DF7;
+color: #93c5fd;
 text-decoration: none;
 background: rgba(255,255,255,0.04);
 cursor: pointer;
@@ -834,7 +834,7 @@ transition: background 200ms ease;
 }
 .hp-dot:hover::after { background: rgba(226,232,240,0.7); }
 .hp-dot.is-active::after { background: #93c5fd; }
-.hp-dot:focus-visible { outline: 2px solid rgba(124,157,247,0.75); outline-offset: 2px; border-radius: 4px; }
+.hp-dot:focus-visible { outline: 2px solid rgba(147,197,253,0.75); outline-offset: 2px; border-radius: 4px; }
 @media (prefers-reduced-motion: reduce) {
 .hp-slide-nav { display: none; }
 }
@@ -908,7 +908,7 @@ line-height: 1.35;
 main a:focus-visible,
 main button:focus-visible,
 main input:focus-visible:not(.hero-search-input) {
-outline: 2px solid #7c9df7;
+outline: 2px solid #93c5fd;
 outline-offset: 2px;
 border-radius: 4px;
 }
@@ -919,7 +919,7 @@ outline: none;
 .hero-home .hero-ctas .hero-cta:focus-visible,
 .pwi-nl-btn:focus-visible { border-radius: 9999px; }
 .cap-tile:focus-visible {
-outline: 3px solid #7c9df7;
+outline: 3px solid #93c5fd;
 outline-offset: 3px;
 }
 .pwi-nl-note { color: #9fb0c8; }
@@ -980,7 +980,7 @@ border-color: rgba(147,197,253,0.45);
 color: #fff;
 }
 .hp-slideshow-toggle:focus-visible {
-outline: 2px solid rgba(124,157,247,0.75);
+outline: 2px solid rgba(147,197,253,0.75);
 outline-offset: 2px;
 }
 .hp-slideshow-toggle svg {
@@ -1131,7 +1131,7 @@ padding-right: 1.25rem;
   --hp-accent: #1e4ed8;
   --hp-accent-hover: #1b46c4;
   --hp-glass-bg: rgba(13, 30, 64, 0.58);
-  --hp-glass-border: rgba(124, 157, 247, 0.38);
+  --hp-glass-border: rgba(147, 197, 253, 0.38);
   --hp-glass-text: #d6e4ff;
   --hp-search-bg: rgba(30, 78, 216, 0.16);
   --hp-search-border: rgba(99, 152, 255, 0.42);

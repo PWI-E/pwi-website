@@ -59,7 +59,7 @@ body {
     border-color: var(--brand-hover);
 }
 .btn-secondary {
-    background: #EEF2FF;
+    background: #eff6ff;
     border-color: #1E4ED8;
     color: #1E4ED8;
 }
@@ -344,7 +344,7 @@ summary::marker {
     box-sizing: border-box;
 }
 .contact-icon-wrap {
-    background: #eef2ff;
+    background: #eff6ff;
 }
 @media (min-width: 640px) {
     .contact-hero-inner {

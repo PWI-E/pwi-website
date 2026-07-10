@@ -128,7 +128,7 @@ a.rounded-full.border-white\/15.hover\:border-white\/40:hover {
   text-decoration: none;
   box-sizing: border-box;
   color: #1e4ed8;
-  background: #eef2ff;
+  background: #eff6ff;
   border: 1px solid #1e4ed8;
   transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
 }

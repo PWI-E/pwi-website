@@ -193,8 +193,8 @@ details > summary::marker {
 .dark-section .text-ink { color: #e2e8f0 !important; }
 .dark-section .text-muted { color: #94a3b8 !important; }
 .dark-section .rowlink { color: #cbd5e1 !important; }
-.dark-section .rowlink:hover { color: #7C9DF7 !important; }
-.dark-section .rowlike:hover { background: rgba(124,157,247,0.1) !important; }
+.dark-section .rowlink:hover { color: #93c5fd !important; }
+.dark-section .rowlike:hover { background: rgba(147,197,253,0.1) !important; }
 footer { border-top: none !important; box-shadow: none !important; }
 .hub-page-rail,
 .king-air-page-rail,

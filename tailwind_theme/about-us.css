@@ -191,9 +191,10 @@ summary::marker { content: ""; }
     white-space: nowrap;
 }
 .about-stat-band {
+    position: relative;
+    margin-top: -1px;
+    margin-bottom: -1px;
     background: #0a1830;
-    border-top: 1px solid rgba(148, 163, 184, 0.08);
-    border-bottom: 1px solid rgba(148, 163, 184, 0.08);
 }
 .about-stat-strip {
     display: flex;
@@ -219,13 +220,7 @@ summary::marker { content: ""; }
     padding: 0.3rem 1.15rem;
 }
 .about-stat-strip > div:not(:first-child)::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 22%;
-    bottom: 22%;
-    width: 1px;
-    background: rgba(148, 163, 184, 0.28);
+    display: none;
 }
 .stat-icon {
     display: none;
@@ -260,11 +255,7 @@ summary::marker { content: ""; }
     max-width: 48rem;
 }
 .history-rule {
-    display: block;
-    width: 42px;
-    height: 2px;
-    background: var(--brand);
-    margin-top: 1.1rem;
+    display: none;
 }
 .history-list {
     max-width: 44rem;
@@ -274,10 +265,6 @@ summary::marker { content: ""; }
     gap: clamp(0.9rem, 4vw, 1.25rem);
     align-items: flex-start;
     padding: 1.1rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-.hist-row:last-child {
-    border-bottom: none;
 }
 .hist-year {
     flex: 0 0 auto;
@@ -342,6 +329,7 @@ summary::marker { content: ""; }
 }
 .quality-pol-panel {
     position: relative;
+    margin-top: -1px;
     background: #0a1830;
     color: #cbd5e1;
 }
@@ -483,7 +471,6 @@ summary::marker { content: ""; }
 }
 .about-cta {
     background: linear-gradient(180deg, #0d1e40 0%, #091830 100%);
-    border-top: 1px solid rgba(255,255,255,0.06);
 }
 .about-cta-eyebrow {
     color: var(--pwi-sky);
@@ -522,8 +509,8 @@ summary::marker { content: ""; }
         align-items: flex-start;
     }
     .about-hero-inner .about-display {
-        font-size: 2.35rem !important;
-        line-height: 1.02 !important;
+        font-size: 2.12rem !important;
+        line-height: 1.04 !important;
     }
     .about-hero-inner .about-lede {
         margin-top: 1rem !important;
@@ -537,6 +524,10 @@ summary::marker { content: ""; }
     background: transparent !important;
     border-top: none !important;
     border-bottom: none !important;
+    box-shadow: none !important;
+}
+main + .pwi-site-bottom {
+    margin-top: -1px;
 }
 @media (min-width: 768px) {
     .pwi-site-bottom .pwi-footer-grid {
