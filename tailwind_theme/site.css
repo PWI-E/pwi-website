@@ -1131,6 +1131,9 @@ details.group[open] > summary .mega-chevron {
     display: flex;
     text-decoration: none;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(226, 232, 240, 0.9);
   }
   @media (hover: hover) and (pointer: fine) {
     a.mnvc-row--cat.mnvc-row--link:hover {
@@ -2889,7 +2892,7 @@ p { text-wrap: pretty; }
 .pwi-footer-nl-field{display:flex;align-items:center;gap:.5rem;border-bottom:1px solid rgba(148,163,184,.35);padding-bottom:.45rem;margin-bottom:.65rem}
 .pwi-footer-nl-input{flex:1;min-width:0;background:transparent;border:0;border-radius:0;color:#f1f5f9;font-size:.8125rem;padding:.35rem 0;font-family:inherit;outline:none}
 .pwi-footer-nl-input::placeholder{color:#64748b}
-.pwi-footer-nl-submit{display:inline-flex;align-items:center;justify-content:center;background:transparent;border:0;color:#93c5fd;cursor:pointer;padding:.25rem;transition:color 150ms ease}
+.pwi-footer-nl-submit{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin:-.35rem -.35rem -.35rem 0;background:transparent;border:0;color:#93c5fd;cursor:pointer;padding:.25rem;transition:color 150ms ease}
 .pwi-footer-nl-submit:hover{color:#fff}
 .pwi-footer-nl-note{margin:0 0 .85rem;font-size:.6875rem;line-height:1.45;color:#64748b}
 .pwi-footer-social-icons--col{margin-top:auto}

@@ -1244,9 +1244,9 @@ padding-right: 1.25rem;
 }
 .hero-search-submit {
   right: 4px !important;
-  min-width: 36px !important;
-  width: 36px !important;
-  height: 36px !important;
+  min-width: 44px !important;
+  width: 44px !important;
+  height: 44px !important;
   padding: 0 !important;
   background: var(--hp-accent) !important;
   border: 1px solid var(--hp-accent) !important;
