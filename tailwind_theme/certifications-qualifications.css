@@ -20,10 +20,10 @@
     margin: 0 0 0.8rem;
 }
 .cert-reg-title {
-    font-size: clamp(2.55rem, 10.5vw, 3.75rem);
+    font-size: clamp(2.35rem, 7vw, 3.75rem);
     font-weight: 300;
     line-height: 0.93;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
     color: #ffffff;
     margin: 0 0 1rem;
 }
@@ -37,6 +37,22 @@
 }
 @media (max-width: 900px) {
     .cert-reg-hero-inner { padding: 0 1.5rem; }
+}
+@media (max-width: 480px) {
+    .cert-reg-hero {
+        padding: 2.4rem 0 1.75rem;
+    }
+    .cert-reg-title {
+        font-size: clamp(2.05rem, 10vw, 2.35rem);
+        line-height: 0.98;
+    }
+    .cert-reg-deck {
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+    .cert-reg-hero .mt-5 {
+        margin-top: 1rem !important;
+    }
 }
 
 /* ── Credential chips (dark variant for hero) ── */
@@ -54,6 +70,14 @@
     white-space: nowrap;
     background: #eef2ff;
     color: #1B3A8A;
+}
+@media (max-width: 480px) {
+    .cert-chip {
+        height: 1.9rem;
+        padding: 0 0.8rem;
+        font-size: 0.58rem;
+        letter-spacing: 0.08em;
+    }
 }
 .cert-chip--dark {
     border-color: rgba(124, 157, 247, 0.4);
@@ -125,6 +149,7 @@ h2.eyebrow { margin-top: 0; }
 }
 .cert-ledger-head span:last-child { text-align: right; }
 .cert-ledger-doc { text-align: right; }
+.cert-ledger-doc:empty { display: none; }
 .cert-ledger-doclink {
     font-size: 0.8125rem;
     font-weight: 600;
@@ -148,7 +173,7 @@ h2.eyebrow { margin-top: 0; }
     white-space: nowrap;
 }
 @media (max-width: 760px) {
-    .cert-ledger { padding: 2.5rem 0 2rem; }
+    .cert-ledger { padding: 2rem 0 1.8rem; }
     .cert-ledger-inner { padding: 0 1.5rem; }
     .cert-ledger-head { display: none; }
     .cert-ledger-row {
@@ -162,6 +187,12 @@ h2.eyebrow { margin-top: 0; }
     .cert-ledger-name { grid-area: name; }
     .cert-ledger-auth { grid-area: auth; }
     .cert-ledger-doc { grid-area: doc; }
+    .cert-ledger-row:has(.cert-ledger-doc:empty) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "name"
+            "auth";
+    }
 }
 
 /* ── Codes bar ── */

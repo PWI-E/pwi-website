@@ -1,10 +1,10 @@
 {
-  "auditedAt": "2026-07-09T16:22:24.246Z",
+  "auditedAt": "2026-07-10T19:16:05.255Z",
   "viewport": "390x844",
-  "pagesChecked": 76,
-  "pagesWithIssues": 62,
-  "failCount": 0,
-  "warnCount": 84,
+  "pagesChecked": 79,
+  "pagesWithIssues": 65,
+  "failCount": 11,
+  "warnCount": 98,
   "thresholds": {
     "failBelowPx": 12,
     "warnBelowPx": 14,
@@ -230,6 +230,13 @@
           "tag": "span",
           "selector": "span.cert-ledger-auth",
           "text": "Quality Management System"
+        },
+        {
+          "level": "warn",
+          "px": 13.8,
+          "tag": "span",
+          "selector": "span.cert-ledger-auth",
+          "text": "International Traffic in Arms Regulations"
         }
       ]
     },
@@ -494,6 +501,81 @@
       ]
     },
     {
+      "page": "form-email-mockups.html",
+      "issues": [
+        {
+          "level": "fail",
+          "px": 11,
+          "tag": "span",
+          "selector": "span",
+          "text": "Quote"
+        },
+        {
+          "level": "fail",
+          "px": 11,
+          "tag": "p",
+          "selector": "p",
+          "text": "Aircraft Model"
+        },
+        {
+          "level": "fail",
+          "px": 11,
+          "tag": "p",
+          "selector": "p",
+          "text": "Aircraft S/N"
+        },
+        {
+          "level": "fail",
+          "px": 11,
+          "tag": "p",
+          "selector": "p",
+          "text": "Product"
+        },
+        {
+          "level": "fail",
+          "px": 11,
+          "tag": "p",
+          "selector": "p",
+          "text": "Heard About"
+        },
+        {
+          "level": "warn",
+          "px": 12,
+          "tag": "p",
+          "selector": "p.col-label",
+          "text": "→ Sales (internal)"
+        },
+        {
+          "level": "warn",
+          "px": 12,
+          "tag": "p",
+          "selector": "p",
+          "text": "Reply to this email to respond directly to the customer. Submission logg"
+        },
+        {
+          "level": "warn",
+          "px": 12,
+          "tag": "p",
+          "selector": "p.col-label",
+          "text": "→ Customer"
+        },
+        {
+          "level": "warn",
+          "px": 13,
+          "tag": "p",
+          "selector": "p.page-sub",
+          "text": "Reference only, not a live page. Each card below is the exact HTML the A"
+        },
+        {
+          "level": "warn",
+          "px": 13,
+          "tag": "p",
+          "selector": "p",
+          "text": "francis@pwi-e.com · 3165551234"
+        }
+      ]
+    },
+    {
       "page": "index.html",
       "issues": [
         {
@@ -749,6 +831,114 @@
           "tag": "a",
           "selector": "a.inline-flex.items-center",
           "text": "← LED Wingtip Light Assemblies"
+        }
+      ]
+    },
+    {
+      "page": "newsletter-popup-mockups.html",
+      "issues": [
+        {
+          "level": "fail",
+          "px": 11,
+          "tag": "button",
+          "selector": "button.btn-primary",
+          "text": "Continue"
+        },
+        {
+          "level": "fail",
+          "px": 11.5,
+          "tag": "a",
+          "selector": "a",
+          "text": "Privacy Statement"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "p",
+          "selector": "p.mock-note",
+          "text": "Matches homepage newsletter band. Center modal with pill email field."
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "p",
+          "selector": "p.mock-note",
+          "text": "Same position/size language as the cookie banner. Less intrusive; doesn’"
+        },
+        {
+          "level": "warn",
+          "px": 13,
+          "tag": "button",
+          "selector": "button.btn-ghost",
+          "text": "No thanks"
+        },
+        {
+          "level": "warn",
+          "px": 13.4,
+          "tag": "p",
+          "selector": "p.lede",
+          "text": "Certification updates, new products, and aviation lighting news — delive"
+        }
+      ]
+    },
+    {
+      "page": "newsletter-popup-size-mockups.html",
+      "issues": [
+        {
+          "level": "fail",
+          "px": 11,
+          "tag": "button",
+          "selector": "button.nl-submit",
+          "text": "Continue"
+        },
+        {
+          "level": "fail",
+          "px": 11.2,
+          "tag": "p",
+          "selector": "p.stage-ruler",
+          "text": "↔ 500px"
+        },
+        {
+          "level": "fail",
+          "px": 11.5,
+          "tag": "a",
+          "selector": "a",
+          "text": "Privacy Statement"
+        },
+        {
+          "level": "fail",
+          "px": 11.5,
+          "tag": "p",
+          "selector": "p.nl-unsub",
+          "text": "Unsubscribe anytime."
+        },
+        {
+          "level": "warn",
+          "px": 12,
+          "tag": "button",
+          "selector": "button.nl-dismiss",
+          "text": "No thanks"
+        },
+        {
+          "level": "warn",
+          "px": 12.5,
+          "tag": "span",
+          "selector": "span.size-badge",
+          "text": "500px wide · padding 20px 22px 14px"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "p",
+          "selector": "p.nl-lede",
+          "text": "Aircraft LED and fluorescent lighting, coil windings, magnetometers, and"
+        },
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.mock-meta",
+          "text": "Dismiss centered under the email field · legal lines stacked below"
         }
       ]
     },

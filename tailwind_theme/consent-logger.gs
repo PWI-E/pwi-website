@@ -2,48 +2,22 @@
  * Consent Logging — Google Apps Script Web App
  *
  * SETUP:
- * 1. Open a new Google Sheet.
+ * 1. Open the Consent logs Google Sheet.
  * 2. Extensions -> Apps Script.
- * 3. Delete the placeholder code and paste this whole file in.
- * 4. Click Deploy -> New deployment -> type "Web app".
- *    - Execute as: Me
- *    - Who has access: Anyone
- * 5. Click Deploy, authorize when prompted, and copy the Web App URL.
- * 6. Paste that URL into tailwind_theme/privacy-config.js as logEndpoint.
+ * 3. Replace the script with this file.
+ * 4. Deploy -> Manage deployments -> Edit -> New version -> Deploy
+ *    (or New deployment: Web app, Execute as Me, Who has access: Anyone)
+ * 5. Paste the Web App URL into tailwind_theme/privacy-config.js as logEndpoint.
  *
- * Each consent event (Accept / Reject / Save Preferences) appends one row:
- * Timestamp (CT) | Page | IP | Analytics | Marketing
+ * Each consent event appends one row:
+ * Timestamp | Page | Analytics | Marketing
  *
- * Times are stored in US Central (America/Chicago) — CST in winter, CDT in summer.
+ * Run deleteExtraColumnsOnce() once from the Apps Script editor to remove
+ * any leftover columns E/F from an older logger version.
  */
-var CENTRAL_TZ = 'America/Chicago';
-
-function centralTime(isoOrMs) {
-  var d = isoOrMs ? new Date(isoOrMs) : new Date();
-  return Utilities.formatDate(d, CENTRAL_TZ, 'yyyy-MM-dd HH:mm:ss');
-}
-
-function sanitizeIp(ip) {
-  if (!ip || typeof ip !== 'string') return '';
-  ip = ip.trim();
-  if (ip.length > 45) return '';
-  if (/^(\d{1,3}\.){3}\d{1,3}$/.test(ip)) return ip;
-  if (/^[0-9a-fA-F:]+$/.test(ip)) return ip;
-  return '';
-}
-
 function ensureHeaders(sheet) {
   if (sheet.getLastRow() === 0) {
-    sheet.appendRow(['Timestamp (CT)', 'Page', 'IP', 'Analytics', 'Marketing']);
-    return;
-  }
-  var headers = sheet.getRange(1, 1, 1, Math.max(sheet.getLastColumn(), 4)).getValues()[0];
-  if (headers[2] !== 'IP') {
-    sheet.insertColumnAfter(2);
-    sheet.getRange(1, 3).setValue('IP');
-  }
-  if (headers[0] === 'Timestamp') {
-    sheet.getRange(1, 1).setValue('Timestamp (CT)');
+    sheet.appendRow(['Timestamp', 'Page', 'Analytics', 'Marketing']);
   }
 }
 
@@ -54,9 +28,8 @@ function doPost(e) {
   ensureHeaders(sheet);
 
   sheet.appendRow([
-    centralTime(data.timestamp),
+    data.timestamp || new Date().toISOString(),
     data.page || '',
-    sanitizeIp(data.ip),
     !!data.analytics,
     !!data.marketing
   ]);
@@ -68,4 +41,13 @@ function doPost(e) {
 function doOptions() {
   return ContentService.createTextOutput('')
     .setMimeType(ContentService.MimeType.TEXT);
+}
+
+/** Run once from the editor (Run → deleteExtraColumnsOnce) to drop columns E+. */
+function deleteExtraColumnsOnce() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var lastCol = sheet.getLastColumn();
+  if (lastCol > 4) {
+    sheet.deleteColumns(5, lastCol - 4);
+  }
 }

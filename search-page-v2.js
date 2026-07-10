@@ -36,15 +36,41 @@ document.addEventListener("DOMContentLoaded", function () {
       .filter(function (t) { return t.length >= 2; });
     if (!tokens.length) return safe;
     var escaped = tokens.map(function (t) {
-      return t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      var e = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      // Prefer whole-word matches so "Air" does not mark inside "Aircraft"
+      if (/^[a-z0-9]+$/i.test(t)) return "\\b" + e + "\\b";
+      return e;
     });
     var re = new RegExp("(" + escaped.join("|") + ")", "gi");
     return safe.replace(re, "<mark>$1</mark>");
   }
 
-  function getSnippet(text, query, max) {
-    max = max || 170;
+  function prepareSnippetSource(text, title) {
     var clean = String(text == null ? "" : text).replace(/\s+/g, " ").trim();
+    if (!clean) return "";
+
+    // Strip leftover breadcrumb trails from older index builds
+    clean = clean.replace(/\bHome\s*\/(?:\s*[^/\s][^/]*\/?){1,6}/gi, " ");
+    clean = clean.replace(/\bSkip to content\b/gi, " ");
+    clean = clean.replace(/\s+/g, " ").trim();
+
+    var titleNorm = String(title || "").replace(/\s+/g, " ").trim();
+    if (titleNorm && clean.toLowerCase().startsWith(titleNorm.toLowerCase())) {
+      clean = clean.slice(titleNorm.length).replace(/^[\s—\-|:]+/, "").trim();
+    }
+
+    // Prefer body copy after a repeated title + breadcrumb block when present
+    var afterBreadcrumb = clean.match(/\bHome\s*\/[^.]*?\.\s*(.+)$/i);
+    if (afterBreadcrumb && afterBreadcrumb[1] && afterBreadcrumb[1].length > 40) {
+      clean = afterBreadcrumb[1].trim();
+    }
+
+    return clean;
+  }
+
+  function getSnippet(text, query, max, title) {
+    max = max || 170;
+    var clean = prepareSnippetSource(text, title);
     if (!clean) return "No preview available.";
     var tokens = String(query || "")
       .toLowerCase()
@@ -53,13 +79,26 @@ document.addEventListener("DOMContentLoaded", function () {
     var firstHit = -1;
     var lower = clean.toLowerCase();
     for (var ti = 0; ti < tokens.length; ti++) {
-      var idx = lower.indexOf(tokens[ti]);
+      var token = tokens[ti];
+      var idx = -1;
+      if (/^[a-z0-9]+$/i.test(token)) {
+        var wordRe = new RegExp("\\b" + token.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i");
+        var wordMatch = lower.match(wordRe);
+        if (wordMatch) idx = wordMatch.index;
+      } else {
+        idx = lower.indexOf(token);
+      }
       if (idx !== -1 && (firstHit === -1 || idx < firstHit)) firstHit = idx;
     }
     var start = 0;
     if (firstHit >= 0) start = Math.max(0, firstHit - 45);
+    // Prefer starting at a word boundary when we shifted left
+    if (start > 0) {
+      var boundary = clean.lastIndexOf(" ", start);
+      if (boundary > start - 24) start = boundary + 1;
+    }
     var end = Math.min(clean.length, start + max);
-    var snippet = clean.slice(start, end);
+    var snippet = clean.slice(start, end).trim();
     if (start > 0) snippet = "\u2026" + snippet;
     if (end < clean.length) snippet = snippet + "\u2026";
     return snippet;
@@ -1266,7 +1305,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (lastQuery && baseUrl !== "#" && /stc-pma-data\.html/.test(baseUrl)) {
           baseUrl += (baseUrl.indexOf("?") === -1 ? "?" : "&") + "q=" + encodeURIComponent(lastQuery);
         }
-        var snippetText = getSnippet(item && item.content, lastQuery, 170);
+        var snippetText = getSnippet(item && item.content, lastQuery, 170, titleText);
         var title = highlightByQuery(titleText, lastQuery);
         var snippet = highlightByQuery(snippetText, lastQuery);
         return '<a href="' + escapeHtml(baseUrl) + '" class="search-card search-result-card block rounded-xl border border-slate-200 p-6">' +

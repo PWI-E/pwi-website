@@ -1,8 +1,8 @@
 {
-  "auditedAt": "2026-07-09T15:37:44.253Z",
-  "totalPages": 299,
+  "auditedAt": "2026-07-10T19:17:59.375Z",
+  "totalPages": 302,
   "staticIssuePages": 79,
-  "runtimeIssuePages": 30,
+  "runtimeIssuePages": 19,
   "uniqueFailedAssets": [
     {
       "url": "archive/tailwind_theme/tailwind.min.css?v=20260622",
@@ -17,7 +17,7 @@
       "status": 404
     },
     {
-      "url": "archive/tailwind_theme/site-nav.min.js?v=20260622",
+      "url": "archive/tailwind_theme/site-nav.min.js?v=20260710gf1",
       "status": 404
     },
     {
@@ -105,6 +105,10 @@
       "status": 404
     },
     {
+      "url": "archive/images/products/pwi-0067-led-linear-light.webp",
+      "status": 404
+    },
+    {
       "url": "archive/images/products/pwi-product-303r-led-reading-light.webp",
       "status": 404
     },
@@ -114,10 +118,6 @@
     },
     {
       "url": "archive/images/products/pwi-0028-led-wingtip-light-assemblies.webp",
-      "status": 404
-    },
-    {
-      "url": "archive/images/products/pwi-0067-led-linear-light.webp",
       "status": 404
     },
     {
@@ -714,48 +714,6 @@
       ]
     },
     {
-      "page": "citation-led-cabin-light-system.html",
-      "issues": [
-        "1 elements extend past viewport"
-      ]
-    },
-    {
-      "page": "contract-manufacturing.html",
-      "issues": [
-        "1 elements extend past viewport"
-      ]
-    },
-    {
-      "page": "deploy/citation-led-cabin-light-system.html",
-      "issues": [
-        "1 elements extend past viewport"
-      ]
-    },
-    {
-      "page": "deploy/contract-manufacturing.html",
-      "issues": [
-        "1 elements extend past viewport"
-      ]
-    },
-    {
-      "page": "deploy/engineering.html",
-      "issues": [
-        "1 elements extend past viewport"
-      ]
-    },
-    {
-      "page": "deploy/fluxgate-magnetometers.html",
-      "issues": [
-        "2 elements extend past viewport"
-      ]
-    },
-    {
-      "page": "deploy/led-lighting.html",
-      "issues": [
-        "6 elements extend past viewport"
-      ]
-    },
-    {
       "page": "deploy/pgisr-site BACKUP 2026-07-01/index.html",
       "issues": [
         "horizontal overflow +4px",
@@ -782,33 +740,9 @@
       ]
     },
     {
-      "page": "deploy/stc-pma-data.html",
-      "issues": [
-        "3 elements extend past viewport"
-      ]
-    },
-    {
-      "page": "deploy/tape-wound-bobbin-cores-magnetometers.html",
+      "page": "deploy/service-bulletins.html",
       "issues": [
         "1 elements extend past viewport"
-      ]
-    },
-    {
-      "page": "engineering.html",
-      "issues": [
-        "1 elements extend past viewport"
-      ]
-    },
-    {
-      "page": "fluxgate-magnetometers.html",
-      "issues": [
-        "2 elements extend past viewport"
-      ]
-    },
-    {
-      "page": "led-lighting.html",
-      "issues": [
-        "6 elements extend past viewport"
       ]
     },
     {
@@ -823,6 +757,12 @@
       "issues": [
         "horizontal overflow +112px",
         "33 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "newsletter-popup-size-mockups.html",
+      "issues": [
+        "42 elements extend past viewport"
       ]
     },
     {
@@ -852,13 +792,7 @@
       ]
     },
     {
-      "page": "stc-pma-data.html",
-      "issues": [
-        "3 elements extend past viewport"
-      ]
-    },
-    {
-      "page": "tape-wound-bobbin-cores-magnetometers.html",
+      "page": "service-bulletins.html",
       "issues": [
         "1 elements extend past viewport"
       ]
