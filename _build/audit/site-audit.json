@@ -1,0 +1,867 @@
+{
+  "auditedAt": "2026-07-09T15:37:44.253Z",
+  "totalPages": 299,
+  "staticIssuePages": 79,
+  "runtimeIssuePages": 30,
+  "uniqueFailedAssets": [
+    {
+      "url": "archive/tailwind_theme/tailwind.min.css?v=20260622",
+      "status": 404
+    },
+    {
+      "url": "archive/tailwind_theme/overrides.css?v=20260622",
+      "status": 404
+    },
+    {
+      "url": "archive/tailwind_theme/shared-layout.min.js?v=20260622",
+      "status": 404
+    },
+    {
+      "url": "archive/tailwind_theme/site-nav.min.js?v=20260622",
+      "status": 404
+    },
+    {
+      "url": "archive/tailwind_theme/aria-current.js?v=20260622",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0002-led-cabin-lights-falcon-900b.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0011-led-entry-door-underwing-light.jpg",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0019-led-logo-light.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0030-led-wingtip-light-assemblies.jpg",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0039-led-no-smoking-seat-belt-sign.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0055-fluorescent-lights.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0064-led-linear-light.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0079-led-ice-light.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0082-led-dimming-control-system.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0092-king-air-300-b300-350-led-cabin-overhead.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0097-king-air-90-100-200-b200-250-led-cabin-overhead.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0112-led-reading-light.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0115-citation-step-light.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/king-air-ice-light-window-cross.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/tailwind_theme/homepage.css?v=20260706a",
+      "status": 404
+    },
+    {
+      "url": "archive/images/pwi-logo.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0111-king-air-cockpit-interior.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/pwi-contract-engineering.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/coil-windings/IMG_9988.jpg",
+      "status": 404
+    },
+    {
+      "url": "archive/images/pwi-coil-winding-operator.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-product-303r-led-reading-light.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0011-led-entry-door-underwing-light.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0028-led-wingtip-light-assemblies.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/images/products/pwi-0067-led-linear-light.webp",
+      "status": 404
+    },
+    {
+      "url": "archive/fluorescent-power-supplies.html",
+      "status": 404
+    },
+    {
+      "url": "archive/tailwind_theme/qr-data.js?v=20260622",
+      "status": 404
+    }
+  ],
+  "staticIssues": [
+    {
+      "page": "1308-1309-led-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "1495-led-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "303-led-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "303-led-right-angle-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "archive/collection-of-images.html",
+      "issues": [
+        "missing assets: tailwind_theme/overrides.css, images/products/king-air-ice-light-window-cross.webp"
+      ]
+    },
+    {
+      "page": "archive/index-sidebar.html",
+      "issues": [
+        "broken local links: led-no-smoking-seat-belt-sign.html, smoking-fasten-seat-belt-sign-graphic.html, fluorescent-lighting-systems.html",
+        "missing assets: tailwind_theme/overrides.css, images/products/pwi-product-303r-led-reading-light.webp"
+      ]
+    },
+    {
+      "page": "archive/product-literature.html",
+      "issues": [
+        "broken local links: pdf-content.html, product-literature.html",
+        "missing assets: tailwind_theme/overrides.css"
+      ]
+    },
+    {
+      "page": "archive/qr-code-download.html",
+      "issues": [
+        "broken local links: pdf-content.html, product-literature.html",
+        "missing assets: tailwind_theme/overrides.css"
+      ]
+    },
+    {
+      "page": "beechjet-400-400a-hawker-400xp-led-cabin-lights.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "citation-led-cabin-light-system.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "citation-led-step-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "custom-led-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/1308-1309-led-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/1495-led-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/303-led-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/303-led-right-angle-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/beechjet-400-400a-hawker-400xp-led-cabin-lights.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/citation-led-cabin-light-system.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/citation-led-step-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/custom-led-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/falcon-900b-led-cabin-system.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/king-air-ice-light-windows.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/led-cabin-door-underwing-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/led-dimming-controller.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/led-ice-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/led-linear-lights.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/led-logo-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/led-wingtip-light-assemblies.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site BACKUP 2026-07-01/about.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site BACKUP 2026-07-01/contact.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site BACKUP 2026-07-01/index.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site BACKUP 2026-07-01/privacy.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site BACKUP 2026-07-01/terms.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site-v1-backup/about.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: css/site.css, about.html",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site-v1-backup/contact.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: css/site.css, about.html",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site-v1-backup/index.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: css/site.css, about.html",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site-v2/about.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: css/site.css, about.html",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site-v2/contact.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: css/site.css, about.html",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site-v2/index.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: css/site.css, about.html",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site/about.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site/contact.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site/index.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site/privacy.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site/terms.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "deploy/pilatus-pc-12.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/seat-belt-smoking-sign-led-backlight.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "deploy/smoking-seat-belt-sign-graphic.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "falcon-900b-led-cabin-system.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "footer.html",
+      "issues": [
+        "missing viewport meta",
+        "missing/empty title"
+      ]
+    },
+    {
+      "page": "king-air-ice-light-windows.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "led-cabin-door-underwing-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "led-dimming-controller.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "led-ice-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "led-linear-lights.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "led-logo-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "led-wingtip-light-assemblies.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "mobile-nav-review.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "mobile-pages-review.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "nav.html",
+      "issues": [
+        "missing viewport meta",
+        "missing/empty title"
+      ]
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/about.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/contact.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/index.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/privacy.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/terms.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "pgisr-site-v1-backup/about.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: css/site.css, about.html",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "pgisr-site-v1-backup/contact.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: css/site.css, about.html",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "pgisr-site-v1-backup/index.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: css/site.css, about.html",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "pgisr-site-v2/about.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: css/site.css, about.html",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "pgisr-site-v2/contact.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: css/site.css, about.html",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "pgisr-site-v2/index.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: css/site.css, about.html",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "pgisr-site/about.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "pgisr-site/contact.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "pgisr-site/index.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "pgisr-site/privacy.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "pgisr-site/terms.html",
+      "issues": [
+        "missing viewport meta",
+        "broken local links: favicon.svg, css/site.css, css/animations.css",
+        "missing assets: favicon.svg, css/site.css, css/animations.css"
+      ]
+    },
+    {
+      "page": "pgisr.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "pilatus-pc-12.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "seat-belt-smoking-sign-led-backlight.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "smoking-seat-belt-sign-graphic.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    }
+  ],
+  "runtimeIssues": [
+    {
+      "page": "_pages.html",
+      "issues": [
+        "544 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "archive/collection-of-images.html",
+      "issues": [
+        "HTTP errors: 404 archive/tailwind_theme/tailwind.min.css?v=20260622, 404 archive/tailwind_theme/overrides.css?v=20260622, 404 archive/tailwind_theme/shared-layout.min.js?v=20260622"
+      ]
+    },
+    {
+      "page": "archive/index-sidebar.html",
+      "issues": [
+        "horizontal overflow +205px",
+        "34 elements extend past viewport",
+        "HTTP errors: 404 archive/tailwind_theme/tailwind.min.css?v=20260622, 404 archive/tailwind_theme/homepage.css?v=20260706a, 404 archive/tailwind_theme/overrides.css?v=20260622"
+      ]
+    },
+    {
+      "page": "archive/overhauled-power-supplies.html",
+      "issues": [
+        "HTTP errors: 404 archive/fluorescent-power-supplies.html"
+      ]
+    },
+    {
+      "page": "archive/product-literature.html",
+      "issues": [
+        "HTTP errors: 404 archive/tailwind_theme/tailwind.min.css?v=20260622, 404 archive/tailwind_theme/overrides.css?v=20260622, 404 archive/tailwind_theme/qr-data.js?v=20260622"
+      ]
+    },
+    {
+      "page": "archive/qr-code-download.html",
+      "issues": [
+        "HTTP errors: 404 archive/tailwind_theme/tailwind.min.css?v=20260622, 404 archive/tailwind_theme/overrides.css?v=20260622, 404 archive/tailwind_theme/qr-data.js?v=20260622"
+      ]
+    },
+    {
+      "page": "citation-led-cabin-light-system.html",
+      "issues": [
+        "1 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "contract-manufacturing.html",
+      "issues": [
+        "1 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "deploy/citation-led-cabin-light-system.html",
+      "issues": [
+        "1 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "deploy/contract-manufacturing.html",
+      "issues": [
+        "1 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "deploy/engineering.html",
+      "issues": [
+        "1 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "deploy/fluxgate-magnetometers.html",
+      "issues": [
+        "2 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "deploy/led-lighting.html",
+      "issues": [
+        "6 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site BACKUP 2026-07-01/index.html",
+      "issues": [
+        "horizontal overflow +4px",
+        "33 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site-v1-backup/about.html",
+      "issues": [
+        "horizontal overflow +12px",
+        "20 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site-v2/index.html",
+      "issues": [
+        "4 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "deploy/pgisr-site/index.html",
+      "issues": [
+        "67 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "deploy/stc-pma-data.html",
+      "issues": [
+        "3 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "deploy/tape-wound-bobbin-cores-magnetometers.html",
+      "issues": [
+        "1 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "engineering.html",
+      "issues": [
+        "1 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "fluxgate-magnetometers.html",
+      "issues": [
+        "2 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "led-lighting.html",
+      "issues": [
+        "6 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "mobile-nav-review.html",
+      "issues": [
+        "horizontal overflow +47px",
+        "18 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "mobile-pages-review.html",
+      "issues": [
+        "horizontal overflow +112px",
+        "33 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/index.html",
+      "issues": [
+        "horizontal overflow +4px",
+        "33 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "pgisr-site-v1-backup/about.html",
+      "issues": [
+        "horizontal overflow +12px",
+        "20 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "pgisr-site-v2/index.html",
+      "issues": [
+        "4 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "pgisr-site/index.html",
+      "issues": [
+        "67 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "stc-pma-data.html",
+      "issues": [
+        "3 elements extend past viewport"
+      ]
+    },
+    {
+      "page": "tape-wound-bobbin-cores-magnetometers.html",
+      "issues": [
+        "1 elements extend past viewport"
+      ]
+    }
+  ]
+}

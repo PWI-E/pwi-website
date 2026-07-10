@@ -1,0 +1,19 @@
+#bobbin-spec-grid {
+            align-items:start!important;
+        }
+        #bobbin-spec-grid>.bobbin-spec-card {
+            align-self:start!important;
+            height:auto!important;
+            min-height:0!important;
+        }
+        .bobbin-hero-image {
+            object-position: 52% 58%;
+            transform: scale(2.1);
+            transform-origin: center;
+        }
+        
+.bobbin-hero-image {
+            object-position: 52% 58%;
+            transform: scale(2.1);
+            transform-origin: center;
+        }

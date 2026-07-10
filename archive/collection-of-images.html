@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-canvas">
+  <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png"/>
+    <link rel="manifest" href="favicon_io/site.webmanifest"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Media Gallery — PWI, Inc.</title>
+    <meta name="description" content="Browse PWI's product media gallery featuring LED cabin lights, exterior lighting, dimming controls, and more for general aviation aircraft."/>
+    <link rel="canonical" href="https://pwi-e.com/collection-of-images.html"/>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Media Gallery — PWI, Inc."/>
+    <meta property="og:description" content="Browse PWI's product media gallery featuring LED cabin lights, exterior lighting, dimming controls, and more for general aviation aircraft."/>
+    <meta property="og:url" content="https://pwi-e.com/collection-of-images.html"/>
+    <meta property="og:image" content="https://pwi-e.com/images/products/pwi-0002-led-cabin-lights-falcon-900b.webp"/>
+    <link href="tailwind_theme/tailwind.min.css?v=20260622" rel="stylesheet"/>
+    
+    
+    <link href="tailwind_theme/overrides.css?v=20260622" rel="stylesheet"/>
+    <style>
+
+        :root {
+            --font-sans: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            --brand: #1e4ed8;
+            --brand-hover: #1b46c4;
+            --ink: #0f172a;
+            --body: #1f2937;
+            --muted: #475569;
+            --line: #cbd5e1;
+            --surface: #ffffff;
+            --surface-soft: #f1f5f9;
+            --canvas: #f6f7f9;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            overflow-x: hidden;
+            background: var(--canvas);
+            color: var(--body);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        summary { list-style: none; }
+        summary::-webkit-details-marker { display: none; }
+        summary::marker { content: ""; }
+
+        .dd.is-open .soft-elev { box-shadow: 0 2px 10px rgba(15, 23, 42, 0.08); }
+
+        .bg-canvas { background: var(--canvas) !important; }
+        .bg-surface { background: var(--surface) !important; }
+        .bg-surface-soft { background: var(--surface-soft) !important; }
+        .text-ink { color: var(--ink) !important; }
+        .text-body { color: var(--body) !important; }
+        .text-muted { color: var(--muted) !important; }
+        .border-line { border-color: var(--line) !important; }
+
+        .btn-primary {
+            background: var(--brand);
+            border-color: var(--brand);
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background: var(--brand-hover);
+            border-color: var(--brand-hover);
+        }
+
+        .site-header {
+            background: linear-gradient(180deg, rgb(13, 30, 64) 0%, rgb(11, 24, 52) 100%);
+            border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+            box-shadow: 0 8px 24px rgba(2, 8, 23, 0.28);
+                    position: fixed;
+        }
+        .soft-elev {
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+        }
+        .data-heading {
+            color: #1B3A8A !important;
+            font-weight: 600 !important;
+        }
+        .card-headline {
+            color: #1B3A8A !important;
+            font-weight: 600 !important;
+            letter-spacing: 0.03em;
+        }
+        .gallery-card {
+            background: transparent !important;
+            transition: transform 180ms ease;
+        }
+        .gallery-card:hover {
+            background: transparent !important;
+            transform: translateY(-3px);
+        }
+        .gallery-card .rounded-2xl {
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+            transition: box-shadow 180ms ease;
+        }
+        .gallery-card:hover .rounded-2xl {
+            box-shadow: 0 8px 30px rgba(15, 23, 42, 0.13);
+        }
+        .gallery-card img {
+            transition: transform 300ms ease;
+        }
+        .gallery-card:hover img {
+            transform: scale(1.03);
+        }
+        .card-l2 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #1E4ED8;
+            line-height: 1.3;
+        }
+        .gallery-filter-btn {
+            display:inline-flex;
+            align-items:center;
+            padding:5px 14px;
+            font-size:12px;
+            font-weight:500;
+            text-transform:uppercase;
+            letter-spacing:0.08em;
+            border-radius:9999px;
+            border:1px solid var(--line);
+            background:var(--surface);
+            color:var(--muted);
+            cursor:pointer;
+            transition:border-color 0.15s,color 0.15s,background 0.15s;
+            white-space:nowrap
+        }
+        .gallery-filter-btn:hover {
+            border-color:var(--brand);
+            color:var(--brand)
+        }
+        .gallery-filter-btn.active {
+            background:var(--brand);
+            border-color:var(--brand);
+            color:#fff
+        }
+.gallery-card img{-webkit-user-drag:none;user-select:none}
+.gallery-img-link{display:block;border-radius:1rem}
+.gallery-img-link:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:1rem}
+.card-l2 a{color:inherit;text-decoration:none}
+.card-l2 a:hover{text-decoration:underline;text-underline-offset:3px}
+
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Media Gallery — PWI, Inc.",
+  "url": "https://pwi-e.com/collection-of-images.html",
+  "description": "Photo galleries of PWI aviation LED lighting products, installations, and aircraft interiors.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "PWI, Inc.",
+    "url": "https://pwi-e.com"
+  }
+}
+</script>
+</head>
+    <body class="bg-canvas font-light text-body">
+
+            <style>
+        .reveal {
+            opacity:0;
+            transform:translateY(10px);
+            animation:fade-up 520ms ease-out forwards
+        }
+        .reveal-1 {
+            animation-delay:60ms
+        }
+        .reveal-2 {
+            animation-delay:140ms
+        }
+        .reveal-3 {
+            animation-delay:220ms
+        }
+        @keyframes fade-up {
+            to {
+                opacity:1;
+                transform:translateY(0)
+            }
+        }
+        @media(prefers-reduced-motion:reduce) {
+            .reveal {
+                opacity:1;
+                transform:none;
+                animation:none
+            }
+        }
+    </style>
+            <main id="main-content" class="pb-16">
+              <section class="relative overflow-hidden hero-dark" aria-labelledby="images-heading">
+                <div class="max-w-7xl mx-auto px-6  pb-4 sm:pb-14" style="padding-top:8rem">
+                  <div class="lg:max-w-3xl">
+                    <p class="reveal reveal-1 mb-4 font-sans text-xs uppercase tracking-[0.18em] text-[#93C5FD]">PWI Resources</p>
+                    <h1 id="images-heading" class="reveal reveal-2 font-sans text-[clamp(2.55rem,10.5vw,3.75rem)] font-light uppercase leading-[1.05] md:leading-[1.09] tracking-[-0.015em] sm:tracking-[-0.02em] text-white" style="text-wrap: balance;">Collection of Images</h1>
+                    <p class="reveal reveal-3 mt-5 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">Browse featured product imagery for PWI's aviation LED lighting systems, cabin upgrades, and exterior light assemblies.</p>
+                  </div>
+                </div>
+              </section>
+              <!-- ================= GALLERY GRID ================= -->
+              <div class="bg-canvas">
+                <div class="max-w-7xl mx-auto">
+                  <div class="px-6 sm:px-8 lg:px-10 py-8 sm:py-14">
+                    <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+                      <div id="gallery-filters" class="flex flex-wrap gap-2"></div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                      <!-- Card 1: PWI LED cabin lights for the Falcon 900B -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="cabin">
+                        <a href="falcon-900b-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0002-led-cabin-lights-falcon-900b.webp" alt="PWI LED cabin lights for the Falcon 900B" title="PWI LED cabin lights for the Falcon 900B" width="400" height="300" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="falcon-900b-photos.html">LED Cabin Lights for the Falcon 900B</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 2: PWI LED Cabin Door Underwing Light -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="exterior">
+                        <a href="led-cabin-door-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0011-led-entry-door-underwing-light.jpg" alt="PWI LED Cabin Door Underwing Light" title="PWI LED Cabin Door Underwing Light" width="1600" height="1200" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="led-cabin-door-photos.html">LED Cabin Door Underwing Light</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 3: PWI LED Logo Light -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="exterior">
+                        <a href="led-logo-light-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0019-led-logo-light.webp" alt="PWI LED Logo Light" title="PWI LED Logo Light" width="400" height="300" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="led-logo-light-photos.html">LED Logo Light</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 4: LED Wingtip Light Assembly -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="exterior">
+                        <a href="led-wingtip-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0030-led-wingtip-light-assemblies.jpg" alt="PWI LED Wingtip Light Assembly" title="PWI LED Wingtip Light Assembly" width="1600" height="1066" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="led-wingtip-photos.html">LED Wingtip Light Assemblies</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 5: Seat Belt / No Smoking LED Sign -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="signs">
+                        <a href="led-no-smoking-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0039-led-no-smoking-seat-belt-sign.webp" alt="PWI Seat Belt / No Smoking LED Sign" title="PWI Seat Belt / No Smoking LED Sign" width="400" height="300" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="led-no-smoking-photos.html">Seat Belt / No Smoking Sign LED Backlight</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 6: Fluorescent Lights -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="other">
+                        <a href="fluorescent-lights-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0055-fluorescent-lights.webp" alt="PWI Fluorescent Lights" title="PWI Fluorescent Lights" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="fluorescent-lights-photos.html">Fluorescent Lights</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 7: LED Linear Light -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="signs">
+                        <a href="led-linear-light-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0064-led-linear-light.webp" alt="PWI LED Linear Light" title="PWI LED Linear Light" width="1400" height="933" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="led-linear-light-photos.html">LED Linear Light</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 8: LED Ice Light -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="exterior">
+                        <a href="led-ice-light-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0079-led-ice-light.webp" alt="PWI LED Ice Light" title="PWI LED Ice Light" width="400" height="300" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="led-ice-light-photos.html">LED Ice Light</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 9: LED Dimming Control System -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="cabin">
+                        <a href="led-dimming-control-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0082-led-dimming-control-system.webp" alt="PWI LED Dimming Control System" title="PWI LED Dimming Control System" width="1400" height="933" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="led-dimming-control-photos.html">LED Dimming Control System</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 10: King Air 300, B300/350 Series LED Cabin Overhead Upgrades -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="cabin">
+                        <a href="king-air-300-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0092-king-air-300-b300-350-led-cabin-overhead.webp" alt="PWI King Air 300, B300/350 Series LED Cabin Overhead Upgrades" title="PWI King Air 300, B300/350 Series LED Cabin Overhead Upgrades" width="400" height="300" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="king-air-300-photos.html">King Air 300, B300/350 LED Cabin Lighting System</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 11: King Air 90, 100, 200, B200/250 Cabin Window LED Upgrades -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="cabin">
+                        <a href="king-air-90-100-200-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0097-king-air-90-100-200-b200-250-led-cabin-overhead.webp" alt="PWI King Air 90, 100, 200, B200/250 Cabin Window LED Upgrades" title="PWI King Air 90, 100, 200, B200/250 Cabin Window LED Upgrades" width="1400" height="933" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="king-air-90-100-200-photos.html">King Air 90, 100, 200, B200, 250 LED Cabin Systems</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 12: PWI LED Reading Lights -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="signs">
+                        <a href="303-reading-light-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0112-led-reading-light.webp" alt="PWI LED Reading Lights" title="PWI LED Reading Lights" width="400" height="300" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="303-reading-light-photos.html">LED Reading Lights</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 13: PWI LED Citation Step Light -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="signs">
+                        <a href="citation-step-light-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/pwi-0115-citation-step-light.webp" alt="PWI LED Citation Step Light" title="PWI LED Citation Step Light" width="400" height="300" class="w-full h-full object-cover" style="object-position: center 65%; transform:scale(2); transform-origin:50% 65%;" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="citation-step-light-photos.html">Citation LED Entry Door Step Light</a></h2>
+                        </div>
+                      </div>
+
+                      <!-- Card 14: King Air Ice Light Windows -->
+                      <div class="gallery-card group overflow-hidden flex flex-col" data-cat="exterior">
+                        <a href="king-air-ice-light-windows-photos.html" class="gallery-img-link aspect-[16/10] overflow-hidden bg-surface-soft rounded-2xl block">
+                          <img src="images/products/king-air-ice-light-window-cross.webp" alt="PWI King Air Ice Light Window — acrylic replacement window blank" title="PWI King Air Ice Light Windows" width="400" height="300" class="w-full h-full object-cover" loading="lazy" decoding="async"/>
+                        </a>
+                        <div class="pt-3">
+                          <h2 class="card-l2"><a href="king-air-ice-light-windows-photos.html">King Air Ice Light Windows</a></h2>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+        <script>
+        // Block right-click on images
+ (function() {
+          document.querySelectorAll('.gallery-card').forEach(function(card) {
+            var img = card.querySelector('img');
+            if (img) {
+              img.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+            }
+          });
+        })();
+
+ (function() {
+          const categories = [
+            { key:"all",      label:"All Images" },
+            { key:"cabin",    label:"LED Cabin Lighting Systems" },
+            { key:"exterior", label:"Exterior LED Lighting" },
+            { key:"signs",    label:"Reading Lights & Signs" },
+            { key:"other",    label:"Other" },
+          ];
+          const cards = Array.from(document.querySelectorAll(".gallery-card"));
+          const filterContainer = document.getElementById("gallery-filters");
+          if (!filterContainer) return;
+          let activeCat ="all";
+          categories.forEach(function(cat) {
+            const count = cat.key ==="all" ? cards.length : cards.filter(function(c) { return c.dataset.cat === cat.key; }).length;
+            if (count === 0) return;
+            const btn = document.createElement("button");
+            btn.type ="button";
+            btn.className ="gallery-filter-btn" + (cat.key ==="all" ?" active" :"");
+            btn.setAttribute("data-cat", cat.key);
+            btn.textContent = cat.label + (cat.key !=="all" ?" (" + count +")" :"");
+            btn.addEventListener("click", function() {
+              if (activeCat === cat.key) return;
+              activeCat = cat.key;
+              filterContainer.querySelectorAll(".gallery-filter-btn").forEach(function(b) {
+                b.classList.toggle("active", b.dataset.cat === activeCat);
+              });
+              cards.forEach(function(card) {
+                card.style.display = (activeCat ==="all" || card.dataset.cat === activeCat) ?"" :"none";
+              });
+            });
+            filterContainer.appendChild(btn);
+          });
+        })();
+        </script>
+            </main>
+            <!-- ================= FOOTER ================= -->
+            
+<div data-site-footer-slot=""></div>
+
+<div data-site-nav-slot=""></div>
+
+<script src="tailwind_theme/shared-layout.min.js?v=20260622" defer></script>
+<script src="tailwind_theme/site-nav.min.js?v=20260622" defer></script>
+<script src="tailwind_theme/aria-current.js?v=20260622" defer></script>
+
+</body>
+            </html>

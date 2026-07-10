@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>QR Code Redirect</title>
+    <meta name="robots" content="noindex"/>
+    <script>
+      var map = {
+        'citation-led-cabin':               '../pwi-citation-led-cabin-pdf.html',
+        'beechjet-400-led-cabin':           '../pwi-beechjet-400-led-cabin-pdf.html',
+        'falcon-900b-led-cabin':            '../pwi-falcon-900b-led-cabin-pdf.html',
+        'king-air-300-led-cabin':           '../pwi-king-air-300-led-cabin-pdf.html',
+        'king-air-90-100-200-led-cabin':    '../pwi-king-air-90-100-200-b200-250-led-upgrade-pdf.html',
+        'king-air-ice-light-windows':       '../pwi-king-air-ice-light-windows-pdf.html',
+        'learjet-led-cabin':                '../pwi-learjet-led-cabin-pdf.html',
+        'pilatus-pc-12-led-cabin':          '../pwi-pilatus-pc12-led-cabin-pdf.html',
+        'led-cabin-door-underwing-light':   '../pwi-led-cabin-door-underwing-light-pdf.html',
+        'led-ice-light':                    '../pwi-led-ice-light-pdf.html',
+        'led-linear-lights':                '../pwi-led-linear-lights-pdf.html',
+        'led-logo-light':                   '../pwi-led-logo-light-pdf.html',
+        'led-wingtip-light-assemblies':     '../pwi-led-wingtip-light-assembly-pdf.html',
+        'led-reading-lights':               '../pwi-led-replacement-reading-lights-pdf.html',
+        '303-reading-light':                '../pwi-led-replacement-reading-lights-pdf.html',
+        '303-right-angle-reading-light':    '../pwi-led-replacement-reading-lights-pdf.html',
+        '1308-1309-reading-light':          '../pwi-led-replacement-reading-lights-pdf.html',
+        '1495-reading-light':               '../pwi-led-replacement-reading-lights-pdf.html',
+        'citation-led-step-light':          '../pwi-led-step-light-citation-pdf.html',
+        'led-seat-belt-smoking-sign-backlight': '../pwi-led-no-smoking-seat-belt-sign-pdf.html',
+        'no-smoking-seat-belt-sign-graphic':'../pwi-no-smoking-seat-belt-sign-graphic-pdf.html',
+        'custom-engineering-services':      '../pwi-custom-engineering-services-pdf.html',
+        'coil-windings-transformers':       '../all-product-info.html',
+        'contract-manufacturing':           '../all-product-info.html',
+        'fluorescent-lighting-upgrade':     '../all-product-info.html',
+        'fluxgate-magnetometers':           '../all-product-info.html',
+        'led-dimming-control':              '../all-product-info.html',
+        'qr-code-reference-list':           '../all-product-info.html'
+      };
+      var item = new URLSearchParams(window.location.search).get('item');
+      var target = (item && map[item]) ? map[item] : '../all-product-info.html';
+      window.location.replace(target);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting&hellip;</p>
+  </body>
+</html>

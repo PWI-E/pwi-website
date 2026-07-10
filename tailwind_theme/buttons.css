@@ -1,0 +1,228 @@
+/* PWI button system — style guide §04 (v3.3) */
+
+:root {
+  --pwi-btn-ghost-bg: rgba(255, 255, 255, 0.1);
+  --pwi-btn-ghost-border: transparent;
+  --pwi-btn-ghost-hover-bg: rgba(255, 255, 255, 0.15);
+  --pwi-btn-ghost-hover-border: transparent;
+}
+
+/* ── Primary ── */
+.btn-primary,
+a.btn-primary,
+button.btn-primary,
+.hero-cta-primary,
+.site-cta a[href*="request-quote"],
+.site-cta a[href*="contact.html"],
+.site-cta .btn-primary,
+.form-page-form .btn-primary,
+.form-submit-button.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #fff;
+  background: #1e4ed8;
+  border: 1px solid #1e4ed8;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+
+.btn-primary:hover,
+a.btn-primary:hover,
+button.btn-primary:hover,
+.hero-cta-primary:hover,
+.site-cta a[href*="request-quote"]:hover,
+.site-cta a[href*="contact.html"]:hover,
+.site-cta .btn-primary:hover,
+.form-page-form .btn-primary:hover,
+.form-submit-button.btn-primary:hover {
+  background: #1b46c4;
+  border-color: #1b46c4;
+  color: #fff;
+}
+
+/* ── Ghost — secondary on dark surfaces ── */
+.btn-ghost,
+.hero-cta-secondary,
+.product-hero-section .btn-secondary,
+.site-cta a[href^="tel:"],
+.site-cta a:not([href*="request-quote"]):not([href*="contact.html"]):not([href^="tel:"]):not([href^="mailto:"]):not(.btn-primary),
+.led-cta-btn-secondary,
+.pdf-cta-btn-secondary,
+.pdf-filter-btn:not(.active),
+.error-hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 42px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #e2e8f0;
+  background: var(--pwi-btn-ghost-bg);
+  border: 1px solid var(--pwi-btn-ghost-border);
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.btn-ghost:hover,
+.hero-cta-secondary:hover,
+.product-hero-section .btn-secondary:hover,
+.site-cta a[href^="tel:"]:hover,
+.site-cta a:not([href*="request-quote"]):not([href*="contact.html"]):not([href^="tel:"]):not([href^="mailto:"]):not(.btn-primary):hover,
+.led-cta-btn-secondary:hover,
+.led-cta-btn-secondary:focus-visible,
+.pdf-cta-btn-secondary:hover,
+.pdf-cta-btn-secondary:focus-visible,
+.pdf-filter-btn:not(.active):hover,
+.error-hero-btn-secondary:hover {
+  color: #fff;
+  background: var(--pwi-btn-ghost-hover-bg);
+  border-color: var(--pwi-btn-ghost-hover-border);
+}
+
+/* Legacy Tailwind white-outline pills on dark pages */
+a.rounded-full.border-white\/20,
+a.rounded-full.border-white\/15 {
+  border-color: transparent !important;
+  background: var(--pwi-btn-ghost-bg) !important;
+}
+a.rounded-full.border-white\/20:hover,
+a.rounded-full.border-white\/15:hover,
+a.rounded-full.border-white\/20.hover\:border-white\/40:hover,
+a.rounded-full.border-white\/15.hover\:border-white\/40:hover {
+  border-color: var(--pwi-btn-ghost-hover-border) !important;
+  background: var(--pwi-btn-ghost-hover-bg) !important;
+}
+
+.btn-primary.gap-2,
+.btn-ghost.gap-2 {
+  gap: 8px;
+}
+
+/* Secondary in light site-cta sections (e.g. FAQ) */
+.site-cta .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #1e4ed8;
+  background: #eef2ff;
+  border: 1px solid #1e4ed8;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.site-cta .btn-secondary:hover,
+.site-cta .btn-secondary:focus-visible {
+  color: #1b46c4;
+  background: #dbeafe;
+  border-color: #1b46c4;
+}
+
+/* Hub / dark hero CTA rows */
+.hero-ctas .btn-primary,
+.hero-ctas .btn-ghost {
+  min-height: 44px;
+}
+
+/* ── Secondary — light surfaces ── */
+.form-page-form .btn-secondary,
+.form-direct-link.btn-secondary,
+.bg-surface .btn-secondary,
+.section-pop .btn-secondary {
+  color: #1e4ed8;
+  background: #f1f5f9;
+  border-color: #94a3b8;
+  font-weight: 700;
+}
+
+.form-page-form .btn-secondary:hover,
+.form-direct-link.btn-secondary:hover,
+.bg-surface .btn-secondary:hover,
+.section-pop .btn-secondary:hover {
+  color: #1e4ed8;
+  background: #e2e8f0;
+  border-color: #64748b;
+}
+
+/* Site-cta tel — beat inline styles on hub/engineering pages */
+.site-cta a[href^="tel:"] {
+  background: var(--pwi-btn-ghost-bg) !important;
+  border: 1px solid transparent !important;
+  color: #e2e8f0 !important;
+}
+.site-cta a[href^="tel:"]:hover {
+  background: var(--pwi-btn-ghost-hover-bg) !important;
+  border-color: var(--pwi-btn-ghost-hover-border) !important;
+  color: #fff !important;
+}
+
+/* ── Site-cta primary mailto (inline styles on product pages) ── */
+.site-cta a[href^="mailto:"] {
+  color: #fff !important;
+  background: #1e4ed8 !important;
+  border: 1px solid #1e4ed8 !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .site-cta a[href^="mailto:"]:hover {
+    background: #1b46c4 !important;
+    border-color: #1b46c4 !important;
+  }
+}
+
+/* Mobile — readable CTA label size (≥14px) */
+@media (max-width: 639px) {
+  .btn-primary,
+  a.btn-primary,
+  button.btn-primary,
+  .hero-cta-primary,
+  .site-cta a[href*="request-quote"],
+  .site-cta a[href*="contact.html"],
+  .site-cta .btn-primary,
+  .form-page-form .btn-primary,
+  .form-submit-button.btn-primary,
+  .btn-ghost,
+  .hero-cta-secondary,
+  .product-hero-section .btn-secondary,
+  .site-cta a[href^="tel:"],
+  .site-cta a:not([href*="request-quote"]):not([href*="contact.html"]):not([href^="tel:"]):not([href^="mailto:"]):not(.btn-primary),
+  .led-cta-btn-secondary,
+  .pdf-cta-btn-secondary,
+  .pdf-filter-btn:not(.active),
+  .error-hero-btn-primary,
+  .error-hero-btn-secondary,
+  .site-cta .btn-secondary,
+  .form-page-form .btn-secondary,
+  .form-direct-link.btn-secondary,
+  .bg-surface .btn-secondary,
+  .section-pop .btn-secondary,
+  .hero-ctas .btn-primary,
+  .hero-ctas .btn-ghost,
+  .error-hero-ctas a {
+    font-size: 0.875rem;
+    white-space: nowrap;
+    letter-spacing: 0.08em;
+  }
+}

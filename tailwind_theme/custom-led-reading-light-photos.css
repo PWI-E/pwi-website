@@ -1,0 +1,28 @@
+/* Custom LED reading light — split image/text gallery rows */
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+    .photo-grid {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+.photo-text-col {
+    padding: 2rem 1.5rem;
+}
+.photo-placeholder {
+    min-height: 320px;
+    background: linear-gradient(180deg, #0d1e40 0%, #0f2244 52%, #0b1a38 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo-placeholder span {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(148, 163, 184, 0.6);
+}

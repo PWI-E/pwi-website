@@ -1,0 +1,75 @@
+/* Cookie policy page */
+.cert-card-body {
+    color: #1f2937;
+}
+.cert-card-body p + p { margin-top: 0.75rem; }
+.cert-card-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+    font-size: 0.8125rem;
+}
+.cert-card-body th {
+    text-align: left;
+    padding: 6px 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    font-weight: 600;
+    color: #374151;
+}
+.cert-card-body td {
+    padding: 6px 10px;
+    border: 1px solid #e2e8f0;
+    vertical-align: top;
+}
+@media (max-width: 640px) {
+    .cert-card-body table,
+    .cert-card-body thead,
+    .cert-card-body tbody,
+    .cert-card-body th,
+    .cert-card-body td,
+    .cert-card-body tr {
+        display: block;
+    }
+    .cert-card-body thead { display: none; }
+    .cert-card-body tr {
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        margin-bottom: 0.75rem;
+        overflow: hidden;
+    }
+    .cert-card-body tr:last-child { margin-bottom: 0; }
+    .cert-card-body td {
+        border: none;
+        border-bottom: 1px solid #e2e8f0;
+        padding: 8px 10px;
+    }
+    .cert-card-body td:last-child { border-bottom: none; }
+    .cert-card-body td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.6875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #64748b;
+        margin-bottom: 2px;
+    }
+}
+.pref-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 8px 18px;
+    min-height: 44px;
+    box-sizing: border-box;
+    background: #1e4ed8;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity .2s;
+}
+.pref-btn:hover { opacity: .85; }

@@ -1,0 +1,118 @@
+/*
+ * PGI · PGISR — Animation Layer
+ * All motion is gated on html.anim (added by JS) so nothing
+ * flickers if scripts are slow or blocked.
+ * Reduced-motion preference is fully respected.
+ */
+
+/* ============================================================
+   HERO ENTRANCE — elements that rise in after page load
+   ============================================================ */
+html.anim .hero-enter {
+  opacity: 0;
+  animation: hero-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: none; }
+}
+html.anim .hero-enter-2 { animation-delay: 0.32s; }
+html.anim .hero-enter-3 { animation-delay: 0.54s; }
+html.anim .hero-enter-4 { animation-delay: 0.76s; }
+
+/* ============================================================
+   PGISR TITLE — character-by-character reveal
+   ============================================================ */
+.char-reveal {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0.18em);
+}
+html.anim .char-reveal {
+  animation: char-rise 0.58s cubic-bezier(0.22, 1, 0.36, 1) var(--ch-delay, 0s) both;
+}
+@keyframes char-rise {
+  from { opacity: 0; transform: translateY(0.18em); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Intelligence I label fades in after the headline lands */
+html.anim .hero-product-name .title-i::after {
+  opacity: 0;
+  animation: intel-label-in 0.6s ease 1.0s forwards;
+}
+@keyframes intel-label-in {
+  from { opacity: 0; letter-spacing: 0.35em; }
+  to   { opacity: 0.85; letter-spacing: 0.22em; }
+}
+
+/* ============================================================
+   SCROLL REVEAL — slide in from left (not generic rise-from-below)
+   ============================================================ */
+html.anim [data-reveal] {
+  opacity: 0;
+  transform: translateX(-14px);
+  transition: opacity 0.72s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.72s cubic-bezier(0.22, 1, 0.36, 1);
+}
+html.anim [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger delays when inside a [data-reveal-stagger] parent */
+html.anim [data-reveal-stagger] > [data-reveal]:nth-child(1)  { transition-delay: 0.00s; }
+html.anim [data-reveal-stagger] > [data-reveal]:nth-child(2)  { transition-delay: 0.07s; }
+html.anim [data-reveal-stagger] > [data-reveal]:nth-child(3)  { transition-delay: 0.14s; }
+html.anim [data-reveal-stagger] > [data-reveal]:nth-child(4)  { transition-delay: 0.21s; }
+html.anim [data-reveal-stagger] > [data-reveal]:nth-child(5)  { transition-delay: 0.28s; }
+html.anim [data-reveal-stagger] > [data-reveal]:nth-child(6)  { transition-delay: 0.35s; }
+html.anim [data-reveal-stagger] > [data-reveal]:nth-child(7)  { transition-delay: 0.42s; }
+html.anim [data-reveal-stagger] > [data-reveal]:nth-child(8)  { transition-delay: 0.49s; }
+
+/* ============================================================
+   HERO SCANNER — continuous ambient scan line
+   ============================================================ */
+html.anim .hero-scanner {
+  animation: hero-scan 9s ease-in-out infinite;
+}
+@keyframes hero-scan {
+  0%   { top: 8%;  opacity: 0; }
+  6%   { opacity: 1; }
+  92%  { opacity: 0.65; }
+  100% { top: 90%; opacity: 0; }
+}
+
+/* .hero-watermark suppressed — superseded by full-width headline */
+
+/* ============================================================
+   SYSTEM STATUS BAR — subtle pulse on new event
+   ============================================================ */
+html.anim .sys-event-flash {
+  animation: event-flash 0.6s ease forwards;
+}
+@keyframes event-flash {
+  0%   { color: #fff; }
+  50%  { color: var(--accent); }
+  100% { color: var(--accent); }
+}
+
+/* ============================================================
+   REDUCED MOTION — override everything
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  html.anim .hero-enter,
+  html.anim .char-reveal,
+  html.anim [data-reveal],
+  html.anim .hero-scanner {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+    clip-path: none !important;
+  }
+  html.anim .hero-product-name .title-i::after {
+    opacity: 0.85 !important;
+    animation: none !important;
+  }
+}

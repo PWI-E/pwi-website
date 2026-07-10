@@ -1,0 +1,913 @@
+{
+  "auditedAt": "2026-07-09T16:22:24.246Z",
+  "viewport": "390x844",
+  "pagesChecked": 76,
+  "pagesWithIssues": 62,
+  "failCount": 0,
+  "warnCount": 84,
+  "thresholds": {
+    "failBelowPx": 12,
+    "warnBelowPx": 14,
+    "bodyIdealPx": 16
+  },
+  "results": [
+    {
+      "page": "1308-1309-led-reading-light.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Number 7310007-001"
+        }
+      ]
+    },
+    {
+      "page": "1308-1309-reading-light-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← 1308 / 1309 LED Reading Light"
+        }
+      ]
+    },
+    {
+      "page": "1495-led-reading-light.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Number 7310006-001"
+        }
+      ]
+    },
+    {
+      "page": "1495-reading-light-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← 1495 LED Reading Light"
+        }
+      ]
+    },
+    {
+      "page": "303-led-reading-light.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Number 7310010-001"
+        }
+      ]
+    },
+    {
+      "page": "303-led-right-angle-reading-light.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Number 7310046-000"
+        }
+      ]
+    },
+    {
+      "page": "303-reading-light-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← 303 LED Reading Light"
+        }
+      ]
+    },
+    {
+      "page": "303-right-angle-reading-light-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← 303 Right Angle LED Reading Light"
+        }
+      ]
+    },
+    {
+      "page": "all-product-info.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "h2",
+          "selector": "h2.pdf-category-heading.text-xs",
+          "text": "LED Cabin Lighting Systems"
+        }
+      ]
+    },
+    {
+      "page": "authorized-dealers-distributors.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "p",
+          "selector": "p.mt-1.text-xs",
+          "text": "Wichita, Kansas"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "p",
+          "selector": "p.mt-1.text-xs",
+          "text": "SC · TN · GA · OH"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "p",
+          "selector": "p.mt-1.text-xs",
+          "text": "Mena, AR"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "p",
+          "selector": "p.mt-1.text-xs",
+          "text": "Bartlesville, OK"
+        }
+      ]
+    },
+    {
+      "page": "beechcraft-king-air-products.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "Citation"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "Beechjet / Hawker"
+        }
+      ]
+    },
+    {
+      "page": "beechjet-400-400a-hawker-400xp-led-cabin-lights.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Numbers 6910100-032 through 6910100-039"
+        }
+      ]
+    },
+    {
+      "page": "beechjet-400-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← Beechjet 400, 400A, Hawker 400XP LED Cabin Lighting"
+        }
+      ]
+    },
+    {
+      "page": "beechjet-hawker-products.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "King Air"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "Citation"
+        }
+      ]
+    },
+    {
+      "page": "certifications-qualifications.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.8,
+          "tag": "span",
+          "selector": "span.cert-ledger-auth",
+          "text": "Aerospace Quality Management System"
+        },
+        {
+          "level": "warn",
+          "px": 13.8,
+          "tag": "span",
+          "selector": "span.cert-ledger-auth",
+          "text": "Quality Management System"
+        }
+      ]
+    },
+    {
+      "page": "citation-led-cabin-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← Citation LED Cabin System"
+        }
+      ]
+    },
+    {
+      "page": "citation-led-step-light.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Number 6900163-003"
+        }
+      ]
+    },
+    {
+      "page": "citation-products.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "King Air"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "Beechjet / Hawker"
+        }
+      ]
+    },
+    {
+      "page": "citation-step-light-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← Citation LED Step Light"
+        }
+      ]
+    },
+    {
+      "page": "coil-winding-transformers.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "Download Capabilities Sheet"
+        }
+      ]
+    },
+    {
+      "page": "contact.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "p",
+          "selector": "p.contact-hero-meta.reveal",
+          "text": "Wichita, Kansas • Central Time"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "p",
+          "selector": "p.contact-role.text-muted",
+          "text": "CEO / President"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "p",
+          "selector": "p.contact-role.text-muted",
+          "text": "VP Corporate Communications"
+        },
+        {
+          "level": "warn",
+          "px": 13,
+          "tag": "span",
+          "selector": "span.block.truncate",
+          "text": "rick@pwi-e.com"
+        },
+        {
+          "level": "warn",
+          "px": 13,
+          "tag": "span",
+          "selector": "span.block.text-[13px]",
+          "text": "+1 316 942 2811 ext. 115"
+        },
+        {
+          "level": "warn",
+          "px": 13,
+          "tag": "span",
+          "selector": "span.block.text-[13px]",
+          "text": "+1 316 655 1894"
+        },
+        {
+          "level": "warn",
+          "px": 13,
+          "tag": "span",
+          "selector": "span.block.truncate",
+          "text": "eric@pwi-e.com"
+        }
+      ]
+    },
+    {
+      "page": "contract-manufacturing.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "Download Capabilities Sheet"
+        }
+      ]
+    },
+    {
+      "page": "custom-led-reading-light-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← Custom LED Reading Light"
+        }
+      ]
+    },
+    {
+      "page": "custom-led-reading-light.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Numbers 7310056-001 through 7310056-011"
+        }
+      ]
+    },
+    {
+      "page": "engineering.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "Download Capabilities Sheet"
+        }
+      ]
+    },
+    {
+      "page": "falcon-900b-led-cabin-system.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Numbers 6910100-000 and 6910100-007"
+        }
+      ]
+    },
+    {
+      "page": "falcon-900b-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← Falcon 900B LED Cabin System"
+        }
+      ]
+    },
+    {
+      "page": "faq.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.2,
+          "tag": "h2",
+          "selector": "h2.faq-category",
+          "text": "Aviation LEDs"
+        }
+      ]
+    },
+    {
+      "page": "fluorescent-light-part-numbers.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "span",
+          "selector": "span#partFilterCount.pointer-events-none.absolute",
+          "text": "1,570 parts"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "button",
+          "selector": "button#partFilterClear.w-auto.rounded-lg",
+          "text": "Clear filter"
+        }
+      ]
+    },
+    {
+      "page": "fluorescent-lighting.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "Photo Gallery"
+        }
+      ]
+    },
+    {
+      "page": "fluorescent-lights-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← Fluorescent Lighting"
+        }
+      ]
+    },
+    {
+      "page": "fluxgate-magnetometers.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "Download Literature Sheet"
+        }
+      ]
+    },
+    {
+      "page": "index.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.8,
+          "tag": "a",
+          "selector": "a.hero-cta.hero-cta-primary",
+          "text": "Product Information"
+        },
+        {
+          "level": "warn",
+          "px": 13.8,
+          "tag": "a",
+          "selector": "a.hero-cta.hero-cta-secondary",
+          "text": "Get in Touch"
+        }
+      ]
+    },
+    {
+      "page": "king-air-300-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← King Air 300 and B300/350 LED Cabin Lighting"
+        }
+      ]
+    },
+    {
+      "page": "king-air-300.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Numbers 6900336-036 through 6900336-142"
+        }
+      ]
+    },
+    {
+      "page": "king-air-90-100-200-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← King Air 90/100/200 LED Cabin Lighting"
+        }
+      ]
+    },
+    {
+      "page": "king-air-90-100-200.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Numbers 6910080-006 through 6910080-011 and 6900422-009 through 690"
+        }
+      ]
+    },
+    {
+      "page": "king-air-ice-light-windows-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← King Air Ice Light Windows"
+        }
+      ]
+    },
+    {
+      "page": "king-air-ice-light-windows.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Numbers 4000041-000 / 4000041-001"
+        }
+      ]
+    },
+    {
+      "page": "learjet-led-cabin-lights.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Number 6910100-040"
+        }
+      ]
+    },
+    {
+      "page": "learjet-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← Learjet LED Cabin Lighting Systems"
+        }
+      ]
+    },
+    {
+      "page": "led-cabin-door-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← LED Cabin Door Underwing Light"
+        }
+      ]
+    },
+    {
+      "page": "led-cabin-door-underwing-light.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Number 7310009-001"
+        }
+      ]
+    },
+    {
+      "page": "led-dimming-control-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← LED Dimming Control System"
+        }
+      ]
+    },
+    {
+      "page": "led-dimming-controller.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Number 2901045-001"
+        }
+      ]
+    },
+    {
+      "page": "led-ice-light-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← LED Ice Light"
+        }
+      ]
+    },
+    {
+      "page": "led-ice-light.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Numbers 7310009-000 / 7310045-000"
+        }
+      ]
+    },
+    {
+      "page": "led-linear-light-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← LED Linear Lights"
+        }
+      ]
+    },
+    {
+      "page": "led-logo-light-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← LED Logo Light"
+        }
+      ]
+    },
+    {
+      "page": "led-logo-light.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Number 7310050-000"
+        }
+      ]
+    },
+    {
+      "page": "led-no-smoking-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← Seat Belt / Smoking Sign LED Backlight"
+        }
+      ]
+    },
+    {
+      "page": "led-wingtip-light-assemblies.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Numbers 6900430-002 · 6900431-002 · 6900445-001 · 6900446-001"
+        }
+      ]
+    },
+    {
+      "page": "led-wingtip-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← LED Wingtip Light Assemblies"
+        }
+      ]
+    },
+    {
+      "page": "pilatus-pc-12-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← Pilatus PC-12 LED Cabin System"
+        }
+      ]
+    },
+    {
+      "page": "pilatus-pc-12.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Number 6910100-028"
+        }
+      ]
+    },
+    {
+      "page": "press-releases.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.pr-read-more.text-xs",
+          "text": "Read PDF"
+        },
+        {
+          "level": "warn",
+          "px": 13.9,
+          "tag": "p",
+          "selector": "p.pr-summary",
+          "text": "After nearly 50 years with the family business started by his father in "
+        },
+        {
+          "level": "warn",
+          "px": 13.9,
+          "tag": "p",
+          "selector": "p.pr-summary",
+          "text": "STC SA01748WI now covers later serial number King Air 90 aircraft (LJ-12"
+        }
+      ]
+    },
+    {
+      "page": "seat-belt-smoking-sign-led-backlight.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Number 7310004-000"
+        }
+      ]
+    },
+    {
+      "page": "service-bulletins.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.2,
+          "tag": "span",
+          "selector": "span",
+          "text": "Published February 23, 2017"
+        },
+        {
+          "level": "warn",
+          "px": 12.2,
+          "tag": "span",
+          "selector": "span",
+          "text": "Rev. 1"
+        },
+        {
+          "level": "warn",
+          "px": 12.2,
+          "tag": "span",
+          "selector": "span",
+          "text": "STC# SA01748WI"
+        },
+        {
+          "level": "warn",
+          "px": 12.2,
+          "tag": "span",
+          "selector": "span",
+          "text": "PN 6910080-006 through 6910080-011"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "p",
+          "selector": "p.reveal.reveal-1",
+          "text": "Field Service & Compliance"
+        }
+      ]
+    },
+    {
+      "page": "services.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "span",
+          "selector": "span.svc-tile-cta",
+          "text": "Learn More"
+        }
+      ]
+    },
+    {
+      "page": "smoking-seat-belt-sign-graphic.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 13.6,
+          "tag": "p",
+          "selector": "p.product-pn.reveal",
+          "text": "Part Number 7200198-001"
+        }
+      ]
+    },
+    {
+      "page": "smoking-sign-graphic-photos.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "a",
+          "selector": "a.inline-flex.items-center",
+          "text": "← No Smoking / Fasten Seat Belt Sign Graphic"
+        }
+      ]
+    },
+    {
+      "page": "stc-pma-data.html",
+      "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "p",
+          "selector": "p#search-status.mt-2.text-xs",
+          "text": "Showing all 18 entries"
+        },
+        {
+          "level": "warn",
+          "px": 13.3,
+          "tag": "span",
+          "selector": "span.approval-badge",
+          "text": "STC"
+        }
+      ]
+    }
+  ]
+}

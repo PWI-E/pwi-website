@@ -1,0 +1,23 @@
+# robots.txt — PWI, Inc. (https://pwi-e.com)
+
+User-agent: *
+Allow: /
+
+# Exclude utility and non-public pages
+Disallow: /archive/
+Disallow: /_pgbackup/
+Disallow: /nav.html
+Disallow: /all-pages.html
+Disallow: /_pages.html
+Disallow: /all-pages-visual-v2.html
+Disallow: /style-guide.html
+Disallow: /404.html
+Disallow: /search.html
+Disallow: /index-legacy.html
+Disallow: /index-redesign.html
+Disallow: /pgisr.html
+Disallow: /qr-
+Disallow: /qr-code-download/
+Disallow: /pwi-
+
+Sitemap: https://pwi-e.com/sitemap.xml

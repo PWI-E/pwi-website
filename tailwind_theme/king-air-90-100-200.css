@@ -1,0 +1,17 @@
+/* King Air 90/100/200 data table */
+.ka-data-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+.ka-data-table .pn { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); font-weight: 600; }
+.ka-data-table .not-approved { color: #f87171; }
+@media (min-width: 768px) {
+  .ka-data-table thead th { padding: 0.75rem 1.25rem; text-align: left; font-size: 0.625rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); border-bottom: 1px solid rgba(148,163,184,0.15); background: rgba(255,255,255,0.05); }
+  .ka-data-table tbody tr { border-bottom: 1px solid rgba(148,163,184,0.08); }
+  .ka-data-table tbody tr:last-child { border-bottom: none; }
+  .ka-data-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+  .ka-data-table tbody td { padding: 0.875rem 1.25rem; color: var(--body); vertical-align: top; line-height: 1.5; }
+  .ka-data-table tbody td:first-child { color: var(--ink); font-weight: 600; }
+  .ka-data-table .pn { white-space: nowrap; }
+  .ka-data-table .center { text-align: center; }
+}
+.ka-table-scroll { overflow-x: auto; border: 1px solid rgba(148,163,184,0.15); border-radius: 0.875rem; }
+@media (max-width: 767px) { .ka-table-scroll { border: none; border-radius: 0; padding: 0; } }
+@media (max-width: 767px) { .ka-data-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.06); } }

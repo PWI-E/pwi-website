@@ -1,0 +1,26 @@
+/* King Air 300 data table and serial-number controls */
+.ka-data-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+.ka-data-table .pn { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); font-weight: 600; }
+.ka-data-table .not-approved { color: #f87171; }
+@media (min-width: 768px) {
+  .ka-data-table thead th { padding: 0.75rem 1.25rem; text-align: left; font-size: 0.625rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); border-bottom: 1px solid rgba(148,163,184,0.15); background: rgba(255,255,255,0.05); }
+  .ka-data-table tbody tr { border-bottom: 1px solid rgba(148,163,184,0.08); }
+  .ka-data-table tbody tr:last-child { border-bottom: none; }
+  .ka-data-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+  .ka-data-table tbody td { padding: 0.875rem 1.25rem; color: var(--body); vertical-align: top; line-height: 1.5; }
+  .ka-data-table tbody td:first-child { color: var(--ink); font-weight: 600; }
+  .ka-data-table .pn { white-space: nowrap; }
+  .ka-data-table .center { text-align: center; }
+}
+.sn-list { display: none; flex-wrap: wrap; gap: 0.4rem; }
+.sn-list.is-inline-open { display: flex; }
+.sn-expansion-td { padding: 0.25rem 1.25rem 1rem !important; border-top: none !important; }
+.sn-expansion-td .sn-list { display: flex; }
+.sn-expansion-row td { border-top: none !important; }
+.sn-toggle { display: inline-flex; align-items: center; gap: 0.3rem; font-family: var(--font-sans); font-size: 0.6875rem; font-weight: 600; color: var(--accent); background: rgba(96,165,250,0.1); border: 1px solid rgba(96,165,250,0.25); border-radius: 0.375rem; padding: 0.2rem 0.55rem; cursor: pointer; }
+.sn-toggle:hover { background: rgba(96,165,250,0.16); }
+.ka-table-scroll { overflow-x: auto; border: 1px solid rgba(148,163,184,0.15); border-radius: 0.875rem; }
+@media (max-width: 767px) { .ka-table-scroll { border: none; border-radius: 0; padding: 0; } }
+@media (max-width: 767px) { .ka-data-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.06); } }
+.sn-pill { display: inline-flex !important; align-items: center !important; font-family: var(--font-mono) !important; font-size: 0.6875rem !important; letter-spacing: 0.04em !important; color: rgba(148,163,184,0.85) !important; background: rgba(255,255,255,0.04) !important; border: 1px solid rgba(148,163,184,0.15) !important; border-radius: 0.375rem !important; padding: 3px 10px !important; margin: 2px 2px 2px 0; }
+.note-callout { border-left: 3px solid var(--accent); background: rgba(96,165,250,0.06); border-radius: 0 0.5rem 0.5rem 0; padding: 0.75rem 1rem; margin-top: 1rem; }

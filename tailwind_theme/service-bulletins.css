@@ -1,0 +1,90 @@
+/* Service bulletins page */
+.bulletin-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    transition: box-shadow 220ms ease, border-color 220ms ease;
+}
+.bulletin-title {
+    line-height: 1.32;
+    letter-spacing: -0.01em;
+}
+.bulletin-meta {
+    color: #64748b;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+}
+.bulletin-summary {
+    max-width: 64ch;
+    color: #334155;
+}
+.bulletin-download-btn {
+    align-items: center;
+    gap: 0.5rem;
+}
+.bulletin-card:hover {
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.10);
+    border-color: color-mix(in oklab, var(--brand) 28%, var(--line));
+}
+.bulletins-section {
+    min-height: 0;
+}
+.bulletins-shell {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+@media (min-width: 640px) {
+    .bulletins-shell {
+        padding-top: 1.5rem;
+        padding-bottom: 4rem;
+    }
+}
+@media (min-width: 1024px) {
+    .bulletins-shell {
+        padding-top: 1.75rem;
+    }
+}
+@media (max-width: 900px) {
+    .sb-hero-inner p {
+        margin-top: 1.25rem !important;
+    }
+    .bulletins-shell {
+        padding-top: 0.5rem;
+    }
+    .bulletin-summary {
+        max-width: none;
+    }
+}
+.pdf-icon-wrap {
+    flex-shrink: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.5rem;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.meta-tag {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--canvas);
+    border: 1px solid var(--line);
+    border-radius: 0.375rem;
+    padding: 3px 10px;
+}
+.section-label {
+    display: inline-block;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--brand);
+    padding: 0;
+}

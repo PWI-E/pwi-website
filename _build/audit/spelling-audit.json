@@ -1,0 +1,1531 @@
+{
+  "pages_scanned": 154,
+  "findings": [
+    {
+      "page": "1308-1309-led-reading-light.html",
+      "line": 409,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<p style=\"font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(148,163,184,0.4);margin:0 0 0.1rem;\">Ap"
+    },
+    {
+      "page": "1308-1309-led-reading-light.html",
+      "line": 409,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<p style=\"font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(148,163,184,0.4);margin:0 0 0.1rem;\">Ap"
+    },
+    {
+      "page": "1308-1309-reading-light-photos.html",
+      "line": 259,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"303-led-right-angle-reading-light.html\" class=\"mnv2-link\">303 Right Angle LED Reading Light</a>"
+    },
+    {
+      "page": "1308-1309-reading-light-photos.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "1495-led-reading-light.html",
+      "line": 427,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "PWI LED reading lights provide 33,000 operating hours. LED lights are a whiter replacement for incandescent bulbs. Barely warmer than cabin "
+    },
+    {
+      "page": "1495-led-reading-light.html",
+      "line": 427,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "PWI LED reading lights provide 33,000 operating hours. LED lights are a whiter replacement for incandescent bulbs. Barely warmer than cabin "
+    },
+    {
+      "page": "1495-reading-light-photos.html",
+      "line": 259,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"303-led-right-angle-reading-light.html\" class=\"mnv2-link\">303 Right Angle LED Reading Light</a>"
+    },
+    {
+      "page": "1495-reading-light-photos.html",
+      "line": 260,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"1308-1309-led-reading-light.html\" class=\"mnv2-link\">1308 / 1309 LED Reading Light</a>"
+    },
+    {
+      "page": "303-led-reading-light.html",
+      "line": 394,
+      "issue": "repeated word",
+      "match": "303 303",
+      "snippet": "<p class=\"trust-card-sub\">Supplements 14 &amp; 16</p>"
+    },
+    {
+      "page": "303-led-reading-light.html",
+      "line": 427,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "Get a modern passenger cabin with PWI LED cabin lighting. LED reading lights deliver maintenance-free performance. Replacing 303 bulbs with "
+    },
+    {
+      "page": "303-led-reading-light.html",
+      "line": 427,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "Get a modern passenger cabin with PWI LED cabin lighting. LED reading lights deliver maintenance-free performance. Replacing 303 bulbs with "
+    },
+    {
+      "page": "303-led-right-angle-reading-light.html",
+      "line": 410,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<div style=\"margin-bottom:0.5rem;\"><p style=\"font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(148,"
+    },
+    {
+      "page": "303-led-right-angle-reading-light.html",
+      "line": 415,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<svg fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path stroke-linecap=\"round\" d=\""
+    },
+    {
+      "page": "303-reading-light-photos.html",
+      "line": 259,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"303-led-right-angle-reading-light.html\" class=\"mnv2-link\">303 Right Angle LED Reading Light</a>"
+    },
+    {
+      "page": "303-reading-light-photos.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "303-right-angle-reading-light-photos.html",
+      "line": 259,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"303-led-right-angle-reading-light.html\" class=\"mnv2-link\">303 Right Angle LED Reading Light</a>"
+    },
+    {
+      "page": "303-right-angle-reading-light-photos.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "404.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "404.html",
+      "line": 263,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-light-part-numbers.html\" class=\"mnv2-link\">Fluorescent Light Part Numbers</a>"
+    },
+    {
+      "page": "_pages.html",
+      "line": 247,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"fluorescent-power-supplies.html\" class=\"mnv2-link\">Fluorescent Power Supplies</a>"
+    },
+    {
+      "page": "_pages.html",
+      "line": 248,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-light-part-numbers.html\" class=\"mnv2-link\">Fluorescent Light Part Numbers</a>"
+    },
+    {
+      "page": "about-us.html",
+      "line": 373,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<h2 class=\"about-section-title\">Company History</h2>"
+    },
+    {
+      "page": "about-us.html",
+      "line": 377,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<div class=\"hist-row scroll-reveal\"><p class=\"hist-year\">1963</p><div class=\"hist-body\"><p class=\"hist-event\">Founded in Wichita, Kansas USA"
+    },
+    {
+      "page": "all-pages.html",
+      "line": 344,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<li><a href=\"learjet-led-cabin-lights.html\"><code>learjet-led-cabin-lights.html</code></a></li>"
+    },
+    {
+      "page": "all-pages.html",
+      "line": 346,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<li><a href=\"led-cabin-door-underwing-light.html\"><code>led-cabin-door-underwing-light.html</code></a></li>"
+    },
+    {
+      "page": "all-product-info.html",
+      "line": 267,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"citation-led-step-light.html\" class=\"mnv2-link\">Citation LED Step Light</a>"
+    },
+    {
+      "page": "all-product-info.html",
+      "line": 269,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"custom-led-reading-light.html\" class=\"mnv2-link\">Custom Reading &amp; Accent Lighting</a>"
+    },
+    {
+      "page": "authorized-dealers-distributors.html",
+      "line": 424,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<h3 class=\"card-headline data-heading font-sans text-sm sm:text-base tracking-tight text-ink group-hover:text-[#1E4ED8] transition\">DV Aviat"
+    },
+    {
+      "page": "authorized-dealers-distributors.html",
+      "line": 434,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<h3 class=\"card-headline data-heading font-sans text-sm sm:text-base tracking-tight text-ink group-hover:text-[#1E4ED8] transition\">Omni Air"
+    },
+    {
+      "page": "beechcraft-king-air-products.html",
+      "line": 431,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"led-cabin-door-underwing-light.html\" class=\"flex items-center justify-between px-6 py-4 border-b border-line hover:bg-surface-soft "
+    },
+    {
+      "page": "beechcraft-king-air-products.html",
+      "line": 432,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"seat-belt-smoking-sign-led-backlight.html\" class=\"flex items-center justify-between px-6 py-4 border-b border-line hover:bg-surface"
+    },
+    {
+      "page": "beechjet-400-400a-hawker-400xp-led-cabin-lights.html",
+      "line": 323,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"about-us.html\" class=\"mnv2-link mnv2-link--plain\">About</a>"
+    },
+    {
+      "page": "beechjet-400-400a-hawker-400xp-led-cabin-lights.html",
+      "line": 337,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<span>Call us</span>"
+    },
+    {
+      "page": "beechjet-400-photos.html",
+      "line": 263,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "beechjet-400-photos.html",
+      "line": 265,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"led-dimming-controller.html\" class=\"mnv2-link\">LED Dimming Control</a>"
+    },
+    {
+      "page": "beechjet-hawker-products.html",
+      "line": 300,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"all-product-info.html\" class=\"mnv2-link mnv2-link--plain\">All Product Information</a>"
+    },
+    {
+      "page": "beechjet-hawker-products.html",
+      "line": 310,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "</div>"
+    },
+    {
+      "page": "certifications-qualifications.html",
+      "line": 346,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<span class=\"cert-chip\">AS9100 Quality System</span>"
+    },
+    {
+      "page": "certifications-qualifications.html",
+      "line": 350,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "</div>"
+    },
+    {
+      "page": "citation-led-cabin-light-system.html",
+      "line": 49,
+      "issue": "repeated word",
+      "match": "550 550",
+      "snippet": "{ \"@type\": \"Product\", \"name\": \"Citation LED Cabin Lighting System\", \"sku\": \"6910100-033\", \"mpn\": \"6910100-033\" },"
+    },
+    {
+      "page": "citation-led-cabin-light-system.html",
+      "line": 297,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "citation-led-cabin-light-system.html",
+      "line": 300,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"seat-belt-smoking-sign-led-backlight.html\" class=\"mnv2-link\">Seat Belt / Smoking Sign LED Backlight</a>"
+    },
+    {
+      "page": "citation-led-cabin-photos.html",
+      "line": 259,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"303-led-right-angle-reading-light.html\" class=\"mnv2-link\">303 Right Angle LED Reading Light</a>"
+    },
+    {
+      "page": "citation-led-cabin-photos.html",
+      "line": 260,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"1308-1309-led-reading-light.html\" class=\"mnv2-link\">1308 / 1309 LED Reading Light</a>"
+    },
+    {
+      "page": "citation-led-step-light.html",
+      "line": 425,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "Welcome passengers into the Citation cabin with new LED Step Lights from PWI. As the OEM supplier of the original Step Lights, this LED vers"
+    },
+    {
+      "page": "citation-led-step-light.html",
+      "line": 425,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "Welcome passengers into the Citation cabin with new LED Step Lights from PWI. As the OEM supplier of the original Step Lights, this LED vers"
+    },
+    {
+      "page": "citation-products.html",
+      "line": 458,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<span class=\"flex items-center gap-3\"><span class=\"hub-card-icon flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg\"><svg wid"
+    },
+    {
+      "page": "citation-products.html",
+      "line": 463,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"citation-led-cabin-light-system.html\" class=\"flex items-center justify-between px-6 py-4 border-b border-line hover:bg-surface-soft"
+    },
+    {
+      "page": "citation-step-light-photos.html",
+      "line": 262,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"1308-1309-led-reading-light.html\" class=\"mnv2-link\">1308 / 1309 LED Reading Light</a>"
+    },
+    {
+      "page": "citation-step-light-photos.html",
+      "line": 263,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "coil-winding-transformers.html",
+      "line": 387,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "title=\"PWI Coil Winding &amp; Transformers\""
+    },
+    {
+      "page": "coil-winding-transformers.html",
+      "line": 390,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "decoding=\"async\""
+    },
+    {
+      "page": "contact-form.html",
+      "line": 281,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"fluorescent-light-part-numbers.html\" class=\"mnv2-link\">Fluorescent Light Part Numbers</a>"
+    },
+    {
+      "page": "contact-form.html",
+      "line": 286,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"tape-wound-bobbin-cores-magnetometers.html\" class=\"mnv2-link\">Tape-wound Bobbin Cores</a>"
+    },
+    {
+      "page": "contact.html",
+      "line": 426,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<span class=\"block text-[10px] uppercase tracking-[0.12em] text-muted font-medium leading-none mb-0.5\">Email</span>"
+    },
+    {
+      "page": "contact.html",
+      "line": 436,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<span class=\"block text-[13px] font-medium text-[#1E4ED8]\">+1 316 942 2811 ext. 104</span>"
+    },
+    {
+      "page": "contract-manufacturing.html",
+      "line": 386,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<p class=\"text-sm sm:text-base text-body leading-relaxed mb-10 max-w-3xl\">PWI offers a full range of manufacturing services to meet any proj"
+    },
+    {
+      "page": "contract-manufacturing.html",
+      "line": 386,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<p class=\"text-sm sm:text-base text-body leading-relaxed mb-10 max-w-3xl\">PWI offers a full range of manufacturing services to meet any proj"
+    },
+    {
+      "page": "cookie-policy.html",
+      "line": 466,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<p>Google Analytics may set cookies when you accept analytics preferences. Google Translate may set cookies when you use the site language p"
+    },
+    {
+      "page": "cookie-policy.html",
+      "line": 466,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<p>Google Analytics may set cookies when you accept analytics preferences. Google Translate may set cookies when you use the site language p"
+    },
+    {
+      "page": "custom-led-reading-light-photos.html",
+      "line": 274,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"contract-manufacturing.html\" class=\"mnv2-link mnv2-link--plain\">Contract Manufacturing</a>"
+    },
+    {
+      "page": "custom-led-reading-light-photos.html",
+      "line": 281,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"all-product-info.html\" class=\"mnv2-link mnv2-link--plain\">All Product Information</a>"
+    },
+    {
+      "page": "custom-led-reading-light.html",
+      "line": 424,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "Add more style options to any VIP or aircraft cabin lighting project. Ideal for color brand identification for sports team travel, business "
+    },
+    {
+      "page": "custom-led-reading-light.html",
+      "line": 424,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "Add more style options to any VIP or aircraft cabin lighting project. Ideal for color brand identification for sports team travel, business "
+    },
+    {
+      "page": "engineering.html",
+      "line": 410,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<p class=\"text-sm sm:text-base text-body leading-relaxed mb-10 max-w-3xl\">We bring innovative solutions to meet your design specifications. "
+    },
+    {
+      "page": "engineering.html",
+      "line": 410,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<p class=\"text-sm sm:text-base text-body leading-relaxed mb-10 max-w-3xl\">We bring innovative solutions to meet your design specifications. "
+    },
+    {
+      "page": "falcon-900b-led-cabin-system.html",
+      "line": 414,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<div style=\"display:flex;align-items:center;gap:5px;font-size:0.8rem;color:rgba(148,163,184,0.65);\"><svg width=\"11\" height=\"11\" fill=\"none\" "
+    },
+    {
+      "page": "falcon-900b-led-cabin-system.html",
+      "line": 415,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<div style=\"display:flex;align-items:center;gap:5px;font-size:0.8rem;color:rgba(148,163,184,0.65);\"><svg width=\"11\" height=\"11\" fill=\"none\" "
+    },
+    {
+      "page": "falcon-900b-photos.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "falcon-900b-photos.html",
+      "line": 263,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"led-dimming-controller.html\" class=\"mnv2-link\">LED Dimming Control</a>"
+    },
+    {
+      "page": "faq.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<span>Not sure where to start?</span>"
+    },
+    {
+      "page": "faq.html",
+      "line": 269,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "Services"
+    },
+    {
+      "page": "fluorescent-light-part-numbers.html",
+      "line": 5381,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<td class=\"border-b border-slate-200 px-4 py-1.5 align-top\">5100TC-D10AB-40.25EF-20-60</td>"
+    },
+    {
+      "page": "fluorescent-light-part-numbers.html",
+      "line": 5388,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<td class=\"border-b border-slate-200 px-4 py-1.5 align-top whitespace-nowrap\">7300250-001</td>"
+    },
+    {
+      "page": "fluorescent-lighting.html",
+      "line": 352,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<p class=\"reveal reveal-3 mt-5 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl\">PWI is the trusted fluorescent cabin light pow"
+    },
+    {
+      "page": "fluorescent-lighting.html",
+      "line": 352,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<p class=\"reveal reveal-3 mt-5 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl\">PWI is the trusted fluorescent cabin light pow"
+    },
+    {
+      "page": "fluorescent-lights-photos.html",
+      "line": 260,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"303-led-right-angle-reading-light.html\" class=\"mnv2-link\">303 Right Angle LED Reading Light</a>"
+    },
+    {
+      "page": "fluorescent-lights-photos.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"1308-1309-led-reading-light.html\" class=\"mnv2-link\">1308 / 1309 LED Reading Light</a>"
+    },
+    {
+      "page": "fluorescent-power-supplies.html",
+      "line": 247,
+      "issue": "repeated word",
+      "match": "warranty Warranty",
+      "snippet": "<a href=\"beechjet-400-400a-hawker-400xp-led-cabin-lights.html\" class=\"mnv2-link\">Beechjet 400, 400A, Hawker 400XP</a>"
+    },
+    {
+      "page": "fluorescent-power-supplies.html",
+      "line": 492,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<td class=\"px-4 py-2\"> <span class=\"text-[#1E4ED8] font-medium\">6900053-000</span><span class=\"text-muted ml-2\">/ 285-40CC-4</span> </td>"
+    },
+    {
+      "page": "fluorescent-power-supplies.html",
+      "line": 497,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<td class=\"px-4 py-2\"> <span class=\"text-[#1E4ED8] font-medium\">RO00053-001</span><span class=\"text-muted ml-2\">/ 285-40CC-4A</span> </td>"
+    },
+    {
+      "page": "fluxgate-magnetometers.html",
+      "line": 396,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<h3 class=\"text-xs uppercase tracking-widest text-[#60a5fa] mb-4\">Specifications</h3>"
+    },
+    {
+      "page": "fluxgate-magnetometers.html",
+      "line": 399,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<li class=\"py-2.5 flex justify-between gap-3\"><span class=\"text-muted\">Operating Temperature</span><span class=\"font-semibold text-[#1E4ED8]"
+    },
+    {
+      "page": "footer.html",
+      "line": 34,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<span class=\"pwi-footer-company-name\">PWI, Inc.</span>"
+    },
+    {
+      "page": "footer.html",
+      "line": 35,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=109+South+Knight+Street+Wichita+Kansas+67213\" target=\"_blank\" rel=\"noopener nor"
+    },
+    {
+      "page": "index-legacy.html",
+      "line": 313,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"fluorescent-light-part-numbers.html\" class=\"mnv2-link\">Fluorescent Light Part Numbers</a>"
+    },
+    {
+      "page": "index-legacy.html",
+      "line": 318,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"tape-wound-bobbin-cores-magnetometers.html\" class=\"mnv2-link\">Tape-wound Bobbin Cores</a>"
+    },
+    {
+      "page": "index-redesign.html",
+      "line": 114,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "body:has(.pwi-home-site-bottom) .pwi-home-site-bottom {"
+    },
+    {
+      "page": "index-redesign.html",
+      "line": 116,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "margin-top: 0;"
+    },
+    {
+      "page": "index.html",
+      "line": 113,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "color: #cbd5e1; font-size: 0.75rem; font-weight: 600; text-decoration: none;"
+    },
+    {
+      "page": "index.html",
+      "line": 113,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "color: #cbd5e1; font-size: 0.75rem; font-weight: 600; text-decoration: none;"
+    },
+    {
+      "page": "king-air-300-photos.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "king-air-300-photos.html",
+      "line": 263,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"led-dimming-controller.html\" class=\"mnv2-link\">LED Dimming Control</a>"
+    },
+    {
+      "page": "king-air-300.html",
+      "line": 548,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<span class=\"sn-list\">FL-1 thru FL-423, FL-425&ndash;FL-462, FL-464 thru FL-521, FL-524 thru FL-529, FL-532, FL-534 thru FL-545, FL-547 thru"
+    },
+    {
+      "page": "king-air-300.html",
+      "line": 548,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<span class=\"sn-list\">FL-1 thru FL-423, FL-425&ndash;FL-462, FL-464 thru FL-521, FL-524 thru FL-529, FL-532, FL-534 thru FL-545, FL-547 thru"
+    },
+    {
+      "page": "king-air-90-100-200-photos.html",
+      "line": 262,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"led-linear-lights.html\" class=\"mnv2-link\">LED Linear Light</a>"
+    },
+    {
+      "page": "king-air-90-100-200-photos.html",
+      "line": 264,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"seat-belt-smoking-sign-led-backlight.html\" class=\"mnv2-link\">Seat Belt / Smoking Sign LED Backlight</a>"
+    },
+    {
+      "page": "king-air-90-100-200.html",
+      "line": 368,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<div class=\"cta-row reveal reveal-4\"><a class=\"btn-primary\" href=\"mailto:sales@pwi-e.com?subject=Pricing%20Inquiry%20%E2%80%93%20King%20Air%"
+    },
+    {
+      "page": "king-air-90-100-200.html",
+      "line": 376,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "9 photos"
+    },
+    {
+      "page": "king-air-ice-light-windows-photos.html",
+      "line": 259,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"303-led-right-angle-reading-light.html\" class=\"mnv2-link\">303 Right Angle LED Reading Light</a>"
+    },
+    {
+      "page": "king-air-ice-light-windows-photos.html",
+      "line": 260,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"1308-1309-led-reading-light.html\" class=\"mnv2-link\">1308 / 1309 LED Reading Light</a>"
+    },
+    {
+      "page": "king-air-ice-light-windows.html",
+      "line": 188,
+      "issue": "repeated word",
+      "match": "Beechcraft Beechcraft",
+      "snippet": "</div>"
+    },
+    {
+      "page": "king-air-ice-light-windows.html",
+      "line": 308,
+      "issue": "repeated word",
+      "match": "Part Part",
+      "snippet": "<a href=\"fluxgate-magnetometers.html\" class=\"mnv2-link\">Fluxgate Magnetometers</a>"
+    },
+    {
+      "page": "king-air-ice-light-windows.html",
+      "line": 589,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<p style=\"font-size:0.75rem;color:var(--muted);margin:0 0 0.875rem;\">For quote and fit verification, provide aircraft model and serial numbe"
+    },
+    {
+      "page": "king-air-ice-light-windows.html",
+      "line": 589,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<p style=\"font-size:0.75rem;color:var(--muted);margin:0 0 0.875rem;\">For quote and fit verification, provide aircraft model and serial numbe"
+    },
+    {
+      "page": "learjet-led-cabin-lights.html",
+      "line": 412,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "Create a refreshed cabin appearance with PWI LED Learjet lighting systems. Replace all original fluorescent lights in the Learjet cabin, gal"
+    },
+    {
+      "page": "learjet-led-cabin-lights.html",
+      "line": 412,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "Create a refreshed cabin appearance with PWI LED Learjet lighting systems. Replace all original fluorescent lights in the Learjet cabin, gal"
+    },
+    {
+      "page": "learjet-photos.html",
+      "line": 262,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"1308-1309-led-reading-light.html\" class=\"mnv2-link\">1308 / 1309 LED Reading Light</a>"
+    },
+    {
+      "page": "learjet-photos.html",
+      "line": 263,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "led-cabin-door-photos.html",
+      "line": 263,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "led-cabin-door-photos.html",
+      "line": 265,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"led-dimming-controller.html\" class=\"mnv2-link\">LED Dimming Control</a>"
+    },
+    {
+      "page": "led-cabin-door-underwing-light.html",
+      "line": 430,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "The PWI Entry Door LED brings serious illumination to all who enter and exit the King Air. Mounted under the wing, this LED illuminates the "
+    },
+    {
+      "page": "led-cabin-door-underwing-light.html",
+      "line": 430,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "The PWI Entry Door LED brings serious illumination to all who enter and exit the King Air. Mounted under the wing, this LED illuminates the "
+    },
+    {
+      "page": "led-dimming-control-photos.html",
+      "line": 259,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"303-led-right-angle-reading-light.html\" class=\"mnv2-link\">303 Right Angle LED Reading Light</a>"
+    },
+    {
+      "page": "led-dimming-control-photos.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "led-dimming-controller.html",
+      "line": 361,
+      "issue": "repeated word",
+      "match": "Aircraft Aircraft",
+      "snippet": "<span class=\"breadcrumb-sep\">/</span>"
+    },
+    {
+      "page": "led-dimming-controller.html",
+      "line": 409,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<div style=\"margin-bottom:0.25rem;\"><p style=\"font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(148"
+    },
+    {
+      "page": "led-dimming-controller.html",
+      "line": 410,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<div><p style=\"font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(148,163,184,0.4);margin:0 0 0.3rem"
+    },
+    {
+      "page": "led-ice-light-photos.html",
+      "line": 260,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"1308-1309-led-reading-light.html\" class=\"mnv2-link\">1308 / 1309 LED Reading Light</a>"
+    },
+    {
+      "page": "led-ice-light-photos.html",
+      "line": 262,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"led-linear-lights.html\" class=\"mnv2-link\">LED Linear Light</a>"
+    },
+    {
+      "page": "led-ice-light.html",
+      "line": 450,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<span class=\"product-variant-label\">Bayonet mount</span>"
+    },
+    {
+      "page": "led-ice-light.html",
+      "line": 460,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<span class=\"product-variant-label\">Threaded mount option</span>"
+    },
+    {
+      "page": "led-lighting.html",
+      "line": 456,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<p class=\"showcase-title\">King Air 300 and B300/350 LED Cabin Lighting Systems</p>"
+    },
+    {
+      "page": "led-lighting.html",
+      "line": 463,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<p class=\"showcase-title\">King Air 90, 100, 200, B200 and 250 LED Cabin Lighting Systems</p>"
+    },
+    {
+      "page": "led-linear-light-photos.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"1308-1309-led-reading-light.html\" class=\"mnv2-link\">1308 / 1309 LED Reading Light</a>"
+    },
+    {
+      "page": "led-linear-light-photos.html",
+      "line": 263,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"led-linear-lights.html\" class=\"mnv2-link\">LED Linear Light</a>"
+    },
+    {
+      "page": "led-linear-lights.html",
+      "line": 463,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<p class=\"feature-title\">Custom-Built for Your Aircraft</p>"
+    },
+    {
+      "page": "led-linear-lights.html",
+      "line": 464,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<p class=\"feature-desc\">Custom-built LEDs for any 28V or 120 VAC/400Hz aircraft &mdash; fixed or rotary wing. Upwash and downwash, accent, w"
+    },
+    {
+      "page": "led-logo-light-photos.html",
+      "line": 263,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "led-logo-light-photos.html",
+      "line": 265,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"led-dimming-controller.html\" class=\"mnv2-link\">LED Dimming Control</a>"
+    },
+    {
+      "page": "led-logo-light.html",
+      "line": 432,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<svg width=\"13\" height=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path stroke-linecap"
+    },
+    {
+      "page": "led-logo-light.html",
+      "line": 445,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "</div>"
+    },
+    {
+      "page": "led-no-smoking-photos.html",
+      "line": 262,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"led-linear-lights.html\" class=\"mnv2-link\">LED Linear Light</a>"
+    },
+    {
+      "page": "led-no-smoking-photos.html",
+      "line": 264,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"seat-belt-smoking-sign-led-backlight.html\" class=\"mnv2-link\">Seat Belt / Smoking Sign LED Backlight</a>"
+    },
+    {
+      "page": "led-wingtip-light-assemblies.html",
+      "line": 146,
+      "issue": "repeated word",
+      "match": "Beechcraft Beechcraft",
+      "snippet": "<a href=\"citation-led-step-light.html\" class=\"mega-link\">Citation LED Step Light</a>"
+    },
+    {
+      "page": "led-wingtip-light-assemblies.html",
+      "line": 423,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "Add LED wingtips to your King Air or 1900 for added safety. STC-approved, with a 5-year warranty. Not a box of parts, it is delivered fully "
+    },
+    {
+      "page": "led-wingtip-light-assemblies.html",
+      "line": 423,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "Add LED wingtips to your King Air or 1900 for added safety. STC-approved, with a 5-year warranty. Not a box of parts, it is delivered fully "
+    },
+    {
+      "page": "led-wingtip-photos.html",
+      "line": 262,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"led-linear-lights.html\" class=\"mnv2-link\">LED Linear Light</a>"
+    },
+    {
+      "page": "led-wingtip-photos.html",
+      "line": 264,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"seat-belt-smoking-sign-led-backlight.html\" class=\"mnv2-link\">Seat Belt / Smoking Sign LED Backlight</a>"
+    },
+    {
+      "page": "mobile-nav-review-frame.html",
+      "line": 548,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<span class=\"sn-list\">FL-1 thru FL-423, FL-425&ndash;FL-462, FL-464 thru FL-521, FL-524 thru FL-529, FL-532, FL-534 thru FL-545, FL-547 thru"
+    },
+    {
+      "page": "mobile-nav-review-frame.html",
+      "line": 548,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<span class=\"sn-list\">FL-1 thru FL-423, FL-425&ndash;FL-462, FL-464 thru FL-521, FL-524 thru FL-529, FL-532, FL-534 thru FL-545, FL-547 thru"
+    },
+    {
+      "page": "mobile-pages-review-navopen-frame.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "mobile-pages-review-navopen-frame.html",
+      "line": 263,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"led-dimming-controller.html\" class=\"mnv2-link\">LED Dimming Control</a>"
+    },
+    {
+      "page": "newsletter-signup.html",
+      "line": 288,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"engineering.html\" class=\"mnv2-link mnv2-link--plain\">Custom Engineering</a>"
+    },
+    {
+      "page": "newsletter-signup.html",
+      "line": 295,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"stc-pma-data.html\" class=\"mnv2-link mnv2-link--plain\">STC / PMA</a>"
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/about.html",
+      "line": 101,
+      "issue": "repeated word",
+      "match": "EASA EASA",
+      "snippet": "<p style=\"font-size:0.78rem;color:var(--muted);line-height:1.6;margin:0.5rem 0 0.75rem;\">FAA, EASA, and UK CAA certifications are held by PW"
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/index.html",
+      "line": 543,
+      "issue": "repeated word",
+      "match": "PGI PGI",
+      "snippet": "<p class=\"sector-desc\">Persistent wide-area surveillance across border corridors, crossing points, wildlife reserves, and remote terrain. No"
+    },
+    {
+      "page": "pgisr-site-v1-backup/about.html",
+      "line": 81,
+      "issue": "repeated word",
+      "match": "EASA EASA",
+      "snippet": "<p style=\"color:var(--body);font-size:0.95rem;line-height:1.8;\">Every PGISR unit is designed, assembled, and tested in the USA. PWI maintain"
+    },
+    {
+      "page": "pgisr-site-v1-backup/about.html",
+      "line": 81,
+      "issue": "repeated word",
+      "match": "Level Level",
+      "snippet": "<p style=\"color:var(--body);font-size:0.95rem;line-height:1.8;\">Every PGISR unit is designed, assembled, and tested in the USA. PWI maintain"
+    },
+    {
+      "page": "pgisr-site-v2/about.html",
+      "line": 82,
+      "issue": "repeated word",
+      "match": "EASA EASA",
+      "snippet": "<p style=\"color:var(--body);font-size:0.95rem;line-height:1.8;\">The result is PGISR \u2014 a persistent ground intelligence platform purpose-buil"
+    },
+    {
+      "page": "pgisr-site-v2/index.html",
+      "line": 471,
+      "issue": "repeated word",
+      "match": "PGI PGI",
+      "snippet": "<p class=\"sector-name\">Smart Cities &amp; Transportation</p>"
+    },
+    {
+      "page": "pgisr.html",
+      "line": 398,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<span class=\"sensor-label\">FLIR</span>"
+    },
+    {
+      "page": "pilatus-pc-12-photos.html",
+      "line": 259,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"303-led-right-angle-reading-light.html\" class=\"mnv2-link\">303 Right Angle LED Reading Light</a>"
+    },
+    {
+      "page": "pilatus-pc-12-photos.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "pilatus-pc-12.html",
+      "line": 403,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<div style=\"display:flex;align-items:center;gap:5px;font-size:0.8rem;color:rgba(148,163,184,0.65);\"><svg width=\"11\" height=\"11\" fill=\"none\" "
+    },
+    {
+      "page": "pilatus-pc-12.html",
+      "line": 407,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<p style=\"font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(148,163,184,0.4);margin:0 0 0.1rem;\">Ap"
+    },
+    {
+      "page": "press-releases.html",
+      "line": 362,
+      "issue": "repeated word",
+      "match": "PWI PWI",
+      "snippet": "<h2 class=\"pr-title flex-1 text-base font-normal\">LED Cabin Lighting System Earns PMA Approval in Beechjet/Hawker 400A and 400XP Jets</h2>"
+    },
+    {
+      "page": "press-releases.html",
+      "line": 381,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<p class=\"pr-summary\">PMA-approved LED cabin solution now supports Learjet 60/60XR operators looking for improved reliability and cabin appe"
+    },
+    {
+      "page": "press-releases.html",
+      "line": 387,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<span class=\"pr-date-badge\">Feb 17, 2025</span>"
+    },
+    {
+      "page": "privacy-statement.html",
+      "line": 465,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<li>Report the breach to relevant authorities where required by law \u2014 including within 72 hours under GDPR for EU residents, and as required"
+    },
+    {
+      "page": "privacy-statement.html",
+      "line": 465,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<li>Report the breach to relevant authorities where required by law \u2014 including within 72 hours under GDPR for EU residents, and as required"
+    },
+    {
+      "page": "pwi-beechjet-400-led-cabin-pdf.html",
+      "line": 254,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"custom-led-reading-light.html\" class=\"mnv2-link\">Custom Reading &amp; Accent Lighting</a>"
+    },
+    {
+      "page": "pwi-beechjet-400-led-cabin-pdf.html",
+      "line": 258,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "pwi-citation-led-cabin-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-citation-led-cabin-pdf.html",
+      "line": 254,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"custom-led-reading-light.html\" class=\"mnv2-link\">Custom Reading &amp; Accent Lighting</a>"
+    },
+    {
+      "page": "pwi-custom-engineering-services-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-custom-engineering-services-pdf.html",
+      "line": 256,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": ""
+    },
+    {
+      "page": "pwi-falcon-900b-led-cabin-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-falcon-900b-led-cabin-pdf.html",
+      "line": 254,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"custom-led-reading-light.html\" class=\"mnv2-link\">Custom Reading &amp; Accent Lighting</a>"
+    },
+    {
+      "page": "pwi-king-air-300-led-cabin-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-king-air-300-led-cabin-pdf.html",
+      "line": 258,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "pwi-king-air-90-100-200-b200-250-led-upgrade-pdf.html",
+      "line": 254,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"custom-led-reading-light.html\" class=\"mnv2-link\">Custom Reading &amp; Accent Lighting</a>"
+    },
+    {
+      "page": "pwi-king-air-90-100-200-b200-250-led-upgrade-pdf.html",
+      "line": 258,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "pwi-king-air-ice-light-windows-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-king-air-ice-light-windows-pdf.html",
+      "line": 258,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "pwi-learjet-led-cabin-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-learjet-led-cabin-pdf.html",
+      "line": 256,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": ""
+    },
+    {
+      "page": "pwi-led-cabin-door-underwing-light-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-led-cabin-door-underwing-light-pdf.html",
+      "line": 258,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "pwi-led-ice-light-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-led-ice-light-pdf.html",
+      "line": 254,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"custom-led-reading-light.html\" class=\"mnv2-link\">Custom Reading &amp; Accent Lighting</a>"
+    },
+    {
+      "page": "pwi-led-linear-lights-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-led-linear-lights-pdf.html",
+      "line": 258,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "pwi-led-logo-light-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-led-logo-light-pdf.html",
+      "line": 255,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "</div>"
+    },
+    {
+      "page": "pwi-led-no-smoking-seat-belt-sign-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-led-no-smoking-seat-belt-sign-pdf.html",
+      "line": 258,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "pwi-led-replacement-reading-lights-pdf.html",
+      "line": 254,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"custom-led-reading-light.html\" class=\"mnv2-link\">Custom Reading &amp; Accent Lighting</a>"
+    },
+    {
+      "page": "pwi-led-replacement-reading-lights-pdf.html",
+      "line": 258,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "pwi-led-step-light-citation-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-led-step-light-citation-pdf.html",
+      "line": 258,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "pwi-led-wingtip-light-assembly-pdf.html",
+      "line": 254,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"custom-led-reading-light.html\" class=\"mnv2-link\">Custom Reading &amp; Accent Lighting</a>"
+    },
+    {
+      "page": "pwi-led-wingtip-light-assembly-pdf.html",
+      "line": 258,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "pwi-no-smoking-seat-belt-sign-graphic-pdf.html",
+      "line": 254,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"custom-led-reading-light.html\" class=\"mnv2-link\">Custom Reading &amp; Accent Lighting</a>"
+    },
+    {
+      "page": "pwi-no-smoking-seat-belt-sign-graphic-pdf.html",
+      "line": 258,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "pwi-pilatus-pc12-led-cabin-pdf.html",
+      "line": 253,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"smoking-seat-belt-sign-graphic.html\" class=\"mnv2-link\">Smoking / Seat Belt Sign Graphic</a>"
+    },
+    {
+      "page": "pwi-pilatus-pc12-led-cabin-pdf.html",
+      "line": 257,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<div class=\"mnv2-cat-links\" data-cat-panel=\"fluorescent\" data-group=\"Aircraft Fluorescent Systems\" hidden>"
+    },
+    {
+      "page": "request-quote.html",
+      "line": 279,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"coil-winding-transformers.html\" class=\"mnv2-link\">Coil Winding &amp; Transformers</a>"
+    },
+    {
+      "page": "request-quote.html",
+      "line": 280,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"tape-wound-bobbin-cores-magnetometers.html\" class=\"mnv2-link\">Tape-wound Bobbin Cores</a>"
+    },
+    {
+      "page": "search.html",
+      "line": 261,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"custom-led-reading-light.html\" class=\"mnv2-link\">Custom Reading &amp; Accent Lighting</a>"
+    },
+    {
+      "page": "search.html",
+      "line": 266,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-power-supplies.html\" class=\"mnv2-link\">Fluorescent Power Supplies</a>"
+    },
+    {
+      "page": "seat-belt-smoking-sign-led-backlight.html",
+      "line": 409,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<div style=\"margin-bottom:0.5rem;\"><p style=\"font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(148,"
+    },
+    {
+      "page": "seat-belt-smoking-sign-led-backlight.html",
+      "line": 417,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "Freshen up your aircraft cabin with our Smoking/Seat Belt sign LED backlight. A direct replacement for the original Teledyne part #1202-300."
+    },
+    {
+      "page": "service-bulletins.html",
+      "line": 342,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<p class=\"reveal reveal-3 mt-5 text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl\">Official notices from PWI for aircraft lightin"
+    },
+    {
+      "page": "service-bulletins.html",
+      "line": 342,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<p class=\"reveal reveal-3 mt-5 text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl\">Official notices from PWI for aircraft lightin"
+    },
+    {
+      "page": "services.html",
+      "line": 278,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"fluorescent-lighting.html\" class=\"mnv2-link\">Fluorescent Lighting</a>"
+    },
+    {
+      "page": "services.html",
+      "line": 280,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"fluorescent-light-part-numbers.html\" class=\"mnv2-link\">Fluorescent Light Part Numbers</a>"
+    },
+    {
+      "page": "smoking-seat-belt-sign-graphic.html",
+      "line": 417,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "The answer to warped and damaged signage. Includes two pieces: a filter and the printed graphic. When paired with <a href=\"seat-belt-smoking"
+    },
+    {
+      "page": "smoking-seat-belt-sign-graphic.html",
+      "line": 424,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "Download Product Information"
+    },
+    {
+      "page": "smoking-sign-graphic-photos.html",
+      "line": 263,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<a href=\"1495-led-reading-light.html\" class=\"mnv2-link\">1495 LED Reading Light</a>"
+    },
+    {
+      "page": "smoking-sign-graphic-photos.html",
+      "line": 265,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"led-dimming-controller.html\" class=\"mnv2-link\">LED Dimming Control</a>"
+    },
+    {
+      "page": "stc-pma-data.html",
+      "line": 446,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<span class=\"card-headline data-heading font-sans text-[15px] font-semibold text-[#1E4ED8]\" role=\"heading\" aria-level=\"2\">Falcon 900B LED Ca"
+    },
+    {
+      "page": "stc-pma-data.html",
+      "line": 451,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<a href=\"pma-supplements/PMA-23-6910100-007-900B.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"rowlink\">Supplement 23</a>"
+    },
+    {
+      "page": "tape-wound-bobbin-cores-magnetometers.html",
+      "line": 397,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<p>There is also a variety of tape thickness and widths to produce your desired results. Our cores are oven annealed to 1100 degrees C.</p>"
+    },
+    {
+      "page": "tape-wound-bobbin-cores-magnetometers.html",
+      "line": 397,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<p>There is also a variety of tape thickness and widths to produce your desired results. Our cores are oven annealed to 1100 degrees C.</p>"
+    },
+    {
+      "page": "terms-and-conditions.html",
+      "line": 368,
+      "issue": "repeated word",
+      "match": "Damage Damage",
+      "snippet": "<p class=\"cert-card-body\">Any request for order cancellation must be presented to Seller in writing. Seller may accept cancellation of an or"
+    },
+    {
+      "page": "terms-and-conditions.html",
+      "line": 378,
+      "issue": "repeated word",
+      "match": "certifications Certifications",
+      "snippet": "<p class=\"cert-card-body\">Shipments are made FOB origin &ndash; Wichita, Kansas USA. All shipping and handling charges &ndash; including exc"
+    },
+    {
+      "page": "terms-and-conditions.html",
+      "line": 378,
+      "issue": "repeated word",
+      "match": "FAA FAA",
+      "snippet": "<p class=\"cert-card-body\">Shipments are made FOB origin &ndash; Wichita, Kansas USA. All shipping and handling charges &ndash; including exc"
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "tested": 18,
+  "withIssues": 0,
+  "results": [
+    {
+      "page": "index.html",
+      "viewport": "iphone-se",
+      "width": 375,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 67,
+        "spacerHeight": 66,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 154,
+        "mainExists": true
+      },
+      "mobileMenuOk": {
+        "toggleChecked": true,
+        "panelVisible": true,
+        "linkCount": 37
+      }
+    },
+    {
+      "page": "index.html",
+      "viewport": "iphone-14",
+      "width": 390,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 67,
+        "spacerHeight": 66,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 158,
+        "mainExists": true
+      },
+      "mobileMenuOk": {
+        "toggleChecked": true,
+        "panelVisible": true,
+        "linkCount": 37
+      }
+    },
+    {
+      "page": "index.html",
+      "viewport": "ipad",
+      "width": 768,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 86,
+        "spacerHeight": 85,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 245,
+        "mainExists": true
+      },
+      "mobileMenuOk": null
+    },
+    {
+      "page": "about-us.html",
+      "viewport": "iphone-se",
+      "width": 375,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 67,
+        "spacerHeight": 66,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 135,
+        "mainExists": true
+      },
+      "mobileMenuOk": {
+        "toggleChecked": true,
+        "panelVisible": true,
+        "linkCount": 37
+      }
+    },
+    {
+      "page": "about-us.html",
+      "viewport": "iphone-14",
+      "width": 390,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 67,
+        "spacerHeight": 66,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 135,
+        "mainExists": true
+      },
+      "mobileMenuOk": {
+        "toggleChecked": true,
+        "panelVisible": true,
+        "linkCount": 37
+      }
+    },
+    {
+      "page": "about-us.html",
+      "viewport": "ipad",
+      "width": 768,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 86,
+        "spacerHeight": 85,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 163,
+        "mainExists": true
+      },
+      "mobileMenuOk": null
+    },
+    {
+      "page": "services.html",
+      "viewport": "iphone-se",
+      "width": 375,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 67,
+        "spacerHeight": 66,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 113,
+        "mainExists": true
+      },
+      "mobileMenuOk": {
+        "toggleChecked": true,
+        "panelVisible": true,
+        "linkCount": 37
+      }
+    },
+    {
+      "page": "services.html",
+      "viewport": "iphone-14",
+      "width": 390,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 67,
+        "spacerHeight": 66,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 113,
+        "mainExists": true
+      },
+      "mobileMenuOk": {
+        "toggleChecked": true,
+        "panelVisible": true,
+        "linkCount": 37
+      }
+    },
+    {
+      "page": "services.html",
+      "viewport": "ipad",
+      "width": 768,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 86,
+        "spacerHeight": 85,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 136,
+        "mainExists": true
+      },
+      "mobileMenuOk": null
+    },
+    {
+      "page": "led-wingtip-light-assemblies.html",
+      "viewport": "iphone-se",
+      "width": 375,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 67,
+        "spacerHeight": 66,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 131,
+        "mainExists": true
+      },
+      "mobileMenuOk": {
+        "toggleChecked": true,
+        "panelVisible": true,
+        "linkCount": 37
+      }
+    },
+    {
+      "page": "led-wingtip-light-assemblies.html",
+      "viewport": "iphone-14",
+      "width": 390,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 67,
+        "spacerHeight": 66,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 131,
+        "mainExists": true
+      },
+      "mobileMenuOk": {
+        "toggleChecked": true,
+        "panelVisible": true,
+        "linkCount": 37
+      }
+    },
+    {
+      "page": "led-wingtip-light-assemblies.html",
+      "viewport": "ipad",
+      "width": 768,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 86,
+        "spacerHeight": 85,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 203,
+        "mainExists": true
+      },
+      "mobileMenuOk": null
+    },
+    {
+      "page": "led-lighting.html",
+      "viewport": "iphone-se",
+      "width": 375,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 67,
+        "spacerHeight": 66,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 126,
+        "mainExists": true
+      },
+      "mobileMenuOk": {
+        "toggleChecked": true,
+        "panelVisible": true,
+        "linkCount": 37
+      }
+    },
+    {
+      "page": "led-lighting.html",
+      "viewport": "iphone-14",
+      "width": 390,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 67,
+        "spacerHeight": 66,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 126,
+        "mainExists": true
+      },
+      "mobileMenuOk": {
+        "toggleChecked": true,
+        "panelVisible": true,
+        "linkCount": 37
+      }
+    },
+    {
+      "page": "led-lighting.html",
+      "viewport": "ipad",
+      "width": 768,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 86,
+        "spacerHeight": 85,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 106,
+        "mainExists": true
+      },
+      "mobileMenuOk": null
+    },
+    {
+      "page": "contact.html",
+      "viewport": "iphone-se",
+      "width": 375,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 67,
+        "spacerHeight": 66,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 121,
+        "mainExists": true
+      },
+      "mobileMenuOk": {
+        "toggleChecked": true,
+        "panelVisible": true,
+        "linkCount": 37
+      }
+    },
+    {
+      "page": "contact.html",
+      "viewport": "iphone-14",
+      "width": 390,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 67,
+        "spacerHeight": 66,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 121,
+        "mainExists": true
+      },
+      "mobileMenuOk": {
+        "toggleChecked": true,
+        "panelVisible": true,
+        "linkCount": 37
+      }
+    },
+    {
+      "page": "contact.html",
+      "viewport": "ipad",
+      "width": 768,
+      "issues": [],
+      "metrics": {
+        "horizontalOverflow": false,
+        "overflowPx": 0,
+        "headerHeight": 86,
+        "spacerHeight": 85,
+        "headerSpacerMismatch": false,
+        "desktopNavVisible": false,
+        "mobileBtnVisible": true,
+        "h1UnderHeader": false,
+        "h1Top": 153,
+        "mainExists": true
+      },
+      "mobileMenuOk": null
+    }
+  ]
+}

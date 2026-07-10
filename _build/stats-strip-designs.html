@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Stats Strip Design Options — PWI Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --brand: #1E4ED8;
+      --brand-light: #93c5fd;
+      --canvas: #0b1a38;
+      --navy: #0d1e40;
+      --ink: #0F172A;
+      --muted: #94a3b8;
+      --font: "Rubik", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: #060e1f;
+      color: #e2e8f0;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page-head {
+      padding: 2.5rem 1.5rem 1.5rem;
+      max-width: 80rem;
+      margin: 0 auto;
+    }
+    .page-head h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .page-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.55;
+      max-width: 42rem;
+    }
+    .option {
+      margin: 0 0 3rem;
+    }
+    .option-label {
+      max-width: 80rem;
+      margin: 0 auto;
+      padding: 0 1.5rem 0.75rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .option-label strong {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--brand-light);
+    }
+    .option-label span {
+      font-size: 0.82rem;
+      color: #64748b;
+    }
+    .preview-context {
+      background: linear-gradient(180deg, #1a2744 0%, var(--navy) 35%, #0a1628 100%);
+      padding: 0 0 0.5rem;
+      border-bottom: 1px solid rgba(148,163,184,0.08);
+    }
+    .fake-cap {
+      height: 6px;
+      background: repeating-linear-gradient(90deg, #334155 0, #334155 25%, #475569 25%, #475569 50%, #334155 50%, #334155 75%, #475569 75%, #475569 100%);
+      opacity: 0.35;
+    }
+
+    /* shared stat content helpers */
+    .stat-num { font-variant-numeric: tabular-nums; }
+    .stat-suffix { color: var(--brand-light); }
+
+    /* ========== A: Glass Cards ========== */
+    .stats-a {
+      padding: 2.75rem 4rem;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 50%, rgba(30,78,216,0.18) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 50% at 85% 40%, rgba(96,165,250,0.12) 0%, transparent 50%),
+        var(--navy);
+      border-top: 1px solid rgba(148,163,184,0.12);
+    }
+    .stats-a-inner {
+      max-width: 80rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    .stats-a-card {
+      position: relative;
+      padding: 1.5rem 1.35rem 1.35rem;
+      border-radius: 1rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(148,163,184,0.16);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px -8px rgba(0,0,0,0.45);
+      transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+    }
+    .stats-a-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(96,165,250,0.35);
+      box-shadow: 0 16px 40px -12px rgba(30,78,216,0.25);
+    }
+    .stats-a-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 1rem; right: 1rem;
+      height: 2px;
+      border-radius: 0 0 2px 2px;
+      background: linear-gradient(90deg, transparent, var(--brand), transparent);
+      opacity: 0.7;
+    }
+    .stats-a-icon {
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 0.65rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(30,78,216,0.22);
+      border: 1px solid rgba(96,165,250,0.25);
+      color: var(--brand-light);
+      margin-bottom: 1rem;
+    }
+    .stats-a-icon svg { width: 1.1rem; height: 1.1rem; }
+    .stats-a-value {
+      display: block;
+      font-size: clamp(1.45rem, 2vw, 1.85rem);
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+    }
+    .stats-a-label {
+      display: block;
+      margin-top: 0.45rem;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ========== B: Blueprint / Instrument Panel ========== */
+    .stats-b {
+      position: relative;
+      padding: 2.5rem 4rem;
+      background: var(--canvas);
+      border-top: 1px solid rgba(96,165,250,0.2);
+      overflow: hidden;
+    }
+    .stats-b::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(96,165,250,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(96,165,250,0.06) 1px, transparent 1px);
+      background-size: 24px 24px;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, transparent 100%);
+      pointer-events: none;
+    }
+    .stats-b-inner {
+      position: relative;
+      max-width: 80rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .stats-b-cell {
+      position: relative;
+      padding: 1.35rem 1.25rem 1.25rem 1.5rem;
+      border: 1px solid rgba(96,165,250,0.22);
+      background: rgba(7,16,30,0.55);
+    }
+    .stats-b-cell::before,
+    .stats-b-cell::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-color: rgba(96,165,250,0.55);
+      border-style: solid;
+    }
+    .stats-b-cell::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+    .stats-b-cell::after { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+    .stats-b-tag {
+      display: inline-block;
+      font-size: 0.58rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(96,165,250,0.85);
+      margin-bottom: 0.55rem;
+      padding: 0.2rem 0.45rem;
+      border: 1px solid rgba(96,165,250,0.25);
+      background: rgba(30,78,216,0.12);
+    }
+    .stats-b-value {
+      display: block;
+      font-size: clamp(1.5rem, 2vw, 1.95rem);
+      font-weight: 600;
+      color: #f8fafc;
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+    }
+    .stats-b-label {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 0.72rem;
+      color: #64748b;
+      line-height: 1.4;
+    }
+
+    /* ========== C: Certification Ribbon ========== */
+    .stats-c {
+      padding: 0;
+      background: linear-gradient(180deg, #12264d 0%, var(--navy) 100%);
+      border-top: 1px solid rgba(148,163,184,0.1);
+      border-bottom: 1px solid rgba(30,78,216,0.35);
+    }
+    .stats-c-band {
+      max-width: 80rem;
+      margin: 0 auto;
+      padding: 2.25rem 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .stats-c-intro {
+      flex-shrink: 0;
+      max-width: 14rem;
+    }
+    .stats-c-kicker {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--brand-light);
+      margin-bottom: 0.35rem;
+    }
+    .stats-c-headline {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: #f1f5f9;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+    .stats-c-grid {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+    .stats-c-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0 1.75rem;
+      border-left: 1px solid rgba(148,163,184,0.18);
+    }
+    .stats-c-item:first-child { border-left: none; padding-left: 0; }
+    .stats-c-badge {
+      flex-shrink: 0;
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, var(--brand) 0%, #1a3a8a 100%);
+      box-shadow: 0 4px 14px -2px rgba(30,78,216,0.55), inset 0 1px 0 rgba(255,255,255,0.15);
+      color: #fff;
+    }
+    .stats-c-badge svg { width: 1.15rem; height: 1.15rem; }
+    .stats-c-value {
+      display: block;
+      font-size: clamp(1.25rem, 1.6vw, 1.55rem);
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .stats-c-label {
+      display: block;
+      margin-top: 0.2rem;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ========== D: Aerospace Medallion ========== */
+    .stats-d {
+      padding: 3rem 4rem;
+      background:
+        linear-gradient(180deg, rgba(30,78,216,0.08) 0%, transparent 40%),
+        var(--navy);
+      border-top: 1px solid rgba(148,163,184,0.1);
+    }
+    .stats-d-inner {
+      max-width: 80rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      text-align: center;
+    }
+    .stats-d-item {
+      position: relative;
+      padding: 0 1rem;
+    }
+    .stats-d-item:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 15%;
+      height: 70%;
+      width: 1px;
+      background: linear-gradient(180deg, transparent, rgba(96,165,250,0.35), transparent);
+    }
+    .stats-d-ring {
+      width: 3.5rem;
+      height: 3.5rem;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 30% 25%, rgba(255,255,255,0.12) 0%, transparent 50%),
+                  linear-gradient(160deg, rgba(30,78,216,0.35) 0%, rgba(7,16,30,0.8) 100%);
+      border: 1px solid rgba(96,165,250,0.35);
+      box-shadow: 0 0 0 4px rgba(30,78,216,0.08), 0 8px 24px -6px rgba(0,0,0,0.5);
+      color: var(--brand-light);
+    }
+    .stats-d-ring svg { width: 1.35rem; height: 1.35rem; }
+    .stats-d-value {
+      display: block;
+      font-size: clamp(1.55rem, 2.2vw, 2rem);
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.03em;
+      background: linear-gradient(180deg, #fff 30%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stats-d-value.plain {
+      background: none;
+      -webkit-text-fill-color: #fff;
+      color: #fff;
+    }
+    .stats-d-label {
+      display: block;
+      margin-top: 0.4rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .stats-d-sub {
+      display: block;
+      margin-top: 0.25rem;
+      font-size: 0.72rem;
+      color: #64748b;
+    }
+
+    /* ========== E: Spotlight Band (featured + inline) ========== */
+    .stats-e {
+      padding: 0;
+      background: var(--navy);
+      border-top: 1px solid rgba(148,163,184,0.12);
+    }
+    .stats-e-inner {
+      max-width: 80rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 2fr;
+      min-height: 9rem;
+    }
+    .stats-e-feature {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 2.5rem 2rem 4rem;
+      background:
+        linear-gradient(135deg, rgba(30,78,216,0.45) 0%, rgba(30,78,216,0.12) 100%),
+        linear-gradient(180deg, #152a52 0%, var(--navy) 100%);
+      border-right: 1px solid rgba(96,165,250,0.2);
+      overflow: hidden;
+    }
+    .stats-e-feature::after {
+      content: "";
+      position: absolute;
+      right: -2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(96,165,250,0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .stats-e-est {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(191,219,254,0.85);
+      margin-bottom: 0.4rem;
+    }
+    .stats-e-big {
+      font-size: clamp(2.25rem, 3.5vw, 3rem);
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+    .stats-e-big .stat-suffix { font-size: 0.55em; vertical-align: baseline; }
+    .stats-e-feature-label {
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      color: rgba(226,232,240,0.75);
+      letter-spacing: 0.04em;
+    }
+    .stats-e-rest {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    .stats-e-item {
+      padding: 2rem 2rem 2rem 2.5rem;
+      border-left: 1px solid rgba(148,163,184,0.12);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .stats-e-item-label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brand-light);
+      margin-bottom: 0.45rem;
+    }
+    .stats-e-item-value {
+      font-size: clamp(1.35rem, 1.8vw, 1.65rem);
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    .stats-e-item-desc {
+      margin-top: 0.35rem;
+      font-size: 0.72rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    /* ========== Mobile ========== */
+    @media (max-width: 900px) {
+      .stats-a, .stats-b, .stats-d { padding: 2rem 1.25rem; }
+      .stats-a-inner, .stats-b-inner, .stats-d-inner { grid-template-columns: 1fr; gap: 1rem; }
+      .stats-c-band { flex-direction: column; align-items: stretch; padding: 2rem 1.25rem; gap: 1.5rem; }
+      .stats-c-intro { max-width: none; }
+      .stats-c-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .stats-c-item { border-left: none; padding: 0; border-top: 1px solid rgba(148,163,184,0.12); padding-top: 1rem; }
+      .stats-c-item:first-child { border-top: none; padding-top: 0; }
+      .stats-d-item:not(:last-child)::after { display: none; }
+      .stats-d-item { padding: 1rem 0; border-bottom: 1px solid rgba(148,163,184,0.1); }
+      .stats-d-item:last-child { border-bottom: none; }
+      .stats-e-inner { grid-template-columns: 1fr; }
+      .stats-e-feature { padding: 2rem 1.25rem; border-right: none; border-bottom: 1px solid rgba(96,165,250,0.2); }
+      .stats-e-rest { grid-template-columns: 1fr; }
+      .stats-e-item { padding: 1.5rem 1.25rem; border-left: none; border-top: 1px solid rgba(148,163,184,0.1); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="page-head">
+    <h1>Stats strip — design options</h1>
+    <p>Five directions for the homepage trust bar. Same content, different visual weight. Open this file in a browser and tell me which letter (A–E) you want on the live homepage — or mix elements from two.</p>
+  </header>
+
+  <!-- A -->
+  <section class="option">
+    <div class="option-label"><strong>Option A</strong><span>Glass cards — depth, icons, hover lift</span></div>
+    <div class="preview-context">
+      <div class="fake-cap"></div>
+      <section class="stats-a" aria-label="Option A">
+        <div class="stats-a-inner">
+          <article class="stats-a-card">
+            <div class="stats-a-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <span class="stats-a-value"><span class="stat-num">60</span><span class="stat-suffix">+ Years</span></span>
+            <span class="stats-a-label">Manufacturing Experience</span>
+          </article>
+          <article class="stats-a-card">
+            <div class="stats-a-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+            </div>
+            <span class="stats-a-value">FAA PMA</span>
+            <span class="stats-a-label">Approved Products</span>
+          </article>
+          <article class="stats-a-card">
+            <div class="stats-a-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+            </div>
+            <span class="stats-a-value">Made in the USA</span>
+            <span class="stats-a-label">Wichita, Kansas</span>
+          </article>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- B -->
+  <section class="option">
+    <div class="option-label"><strong>Option B</strong><span>Blueprint / instrument panel — aviation engineering feel</span></div>
+    <div class="preview-context">
+      <div class="fake-cap"></div>
+      <section class="stats-b" aria-label="Option B">
+        <div class="stats-b-inner">
+          <article class="stats-b-cell">
+            <span class="stats-b-tag">Heritage</span>
+            <span class="stats-b-value"><span class="stat-num">60</span><span class="stat-suffix">+ Years</span></span>
+            <span class="stats-b-label">Manufacturing experience since 1963</span>
+          </article>
+          <article class="stats-b-cell">
+            <span class="stats-b-tag">Certification</span>
+            <span class="stats-b-value">FAA PMA</span>
+            <span class="stats-b-label">Approved aircraft lighting &amp; parts</span>
+          </article>
+          <article class="stats-b-cell">
+            <span class="stats-b-tag">Origin</span>
+            <span class="stats-b-value">Made in the USA</span>
+            <span class="stats-b-label">Designed &amp; built in Wichita, Kansas</span>
+          </article>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- C -->
+  <section class="option">
+    <div class="option-label"><strong>Option C</strong><span>Certification ribbon — badge icons + intro line</span></div>
+    <div class="preview-context">
+      <div class="fake-cap"></div>
+      <section class="stats-c" aria-label="Option C">
+        <div class="stats-c-band">
+          <div class="stats-c-intro">
+            <p class="stats-c-kicker">Trusted manufacturer</p>
+            <h2 class="stats-c-headline">Built for aviation. Certified for flight.</h2>
+          </div>
+          <div class="stats-c-grid">
+            <article class="stats-c-item">
+              <div class="stats-c-badge" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <span class="stats-c-value"><span class="stat-num">60</span><span class="stat-suffix">+ Years</span></span>
+                <span class="stats-c-label">Manufacturing Experience</span>
+              </div>
+            </article>
+            <article class="stats-c-item">
+              <div class="stats-c-badge" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <span class="stats-c-value">FAA PMA</span>
+                <span class="stats-c-label">Approved Products</span>
+              </div>
+            </article>
+            <article class="stats-c-item">
+              <div class="stats-c-badge" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15m-16.5 18v-9a2.25 2.25 0 012.25-2.25h12A2.25 2.25 0 0121.75 12v9M12 3v18"/></svg>
+              </div>
+              <div>
+                <span class="stats-c-value">Made in the USA</span>
+                <span class="stats-c-label">Wichita, Kansas</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- D -->
+  <section class="option">
+    <div class="option-label"><strong>Option D</strong><span>Aerospace medallion — centered, gradient type, ring icons</span></div>
+    <div class="preview-context">
+      <div class="fake-cap"></div>
+      <section class="stats-d" aria-label="Option D">
+        <div class="stats-d-inner">
+          <article class="stats-d-item">
+            <div class="stats-d-ring" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <span class="stats-d-value"><span class="stat-num">60</span><span class="stat-suffix">+ Years</span></span>
+            <span class="stats-d-label">Manufacturing Experience</span>
+            <span class="stats-d-sub">Est. 1963 · Wichita, KS</span>
+          </article>
+          <article class="stats-d-item">
+            <div class="stats-d-ring" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+            </div>
+            <span class="stats-d-value plain">FAA PMA</span>
+            <span class="stats-d-label">Approved Products</span>
+            <span class="stats-d-sub">Lighting, parts &amp; assemblies</span>
+          </article>
+          <article class="stats-d-item">
+            <div class="stats-d-ring" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/></svg>
+            </div>
+            <span class="stats-d-value plain">Made in the USA</span>
+            <span class="stats-d-label">Wichita, Kansas</span>
+            <span class="stats-d-sub">ISO 9001 · AS9100 · ITAR</span>
+          </article>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- E -->
+  <section class="option">
+    <div class="option-label"><strong>Option E</strong><span>Spotlight band — hero stat featured left, supporting stats right</span></div>
+    <div class="preview-context">
+      <div class="fake-cap"></div>
+      <section class="stats-e" aria-label="Option E">
+        <div class="stats-e-inner">
+          <div class="stats-e-feature">
+            <span class="stats-e-est">Established 1963</span>
+            <p class="stats-e-big"><span class="stat-num">60</span><span class="stat-suffix">+ Years</span></p>
+            <span class="stats-e-feature-label">Of precision manufacturing experience</span>
+          </div>
+          <div class="stats-e-rest">
+            <article class="stats-e-item">
+              <span class="stats-e-item-label">Certification</span>
+              <span class="stats-e-item-value">FAA PMA Approved</span>
+              <span class="stats-e-item-desc">Aircraft lighting, parts, and PMA/STC-approved products.</span>
+            </article>
+            <article class="stats-e-item">
+              <span class="stats-e-item-label">Headquarters</span>
+              <span class="stats-e-item-value">Made in the USA</span>
+              <span class="stats-e-item-desc">Designed and manufactured in Wichita, Kansas.</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+</body>
+</html>

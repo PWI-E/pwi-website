@@ -1,0 +1,64 @@
+# Curated GoDaddy deploy — exclude dev, source, and non-public files.
+# Used by _build/build-deploy.sh (rsync --exclude-from).
+
+# Dependencies and tooling
+node_modules/
+package.json
+package-lock.json
+tailwind.config.js
+pinegrow.json
+serve.json
+
+# Build / QA / editor
+_build/
+.audit/
+.claude/
+.cursor/
+.vscode/
+_pgbackup/
+_pginfo/
+
+# Non-production content
+archive/
+deploy/
+
+# Dev-only HTML (robots.txt also blocks several of these)
+nav.html
+footer.html
+_pages.html
+all-pages.html
+style-guide.html
+pgisr.html
+127.0.0.1_*.report.html
+mobile-nav-review.html
+mobile-nav-review-frame.html
+mobile-pages-review.html
+mobile-pages-review-navopen-frame.html
+
+# Build scripts (not needed on host)
+build_nav.py
+build_qr_pages.py
+gen_gallery_pages.py
+check_nav_order.py
+
+# Source CSS (compiled site.css is deployed)
+tailwind_theme/src.css
+tailwind_theme/pgisr.css
+
+# Internal docs
+*.docx
+WORKFLOW.md
+webedits.zip
+
+# OS / junk
+.DS_Store
+Thumbs.db
+.tmp-signup-script-*.js
+
+# Unreferenced source photo library (~300 MB). Two live assets are copied back in by build-deploy.sh.
+images/2022 PWI Material 2022 Photos/
+
+# Design/source image formats
+*.psd
+*.eps
+*.psd._00_

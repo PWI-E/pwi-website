@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "PWI Static Site",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "/Users/francisong/Documents/PWI WEBSITE 051326"],
+      "port": 3000,
+      "autoPort": true
+    }
+  ]
+}

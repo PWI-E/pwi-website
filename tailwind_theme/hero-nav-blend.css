@@ -1,0 +1,59 @@
+/* Flat nav + hero blend — no radial glare. Load LAST (after site.css + page CSS). */
+
+/* Strip header chrome that reads as glare */
+.site-header {
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    --tw-ring-shadow: 0 0 #0000 !important;
+    --tw-ring-offset-shadow: 0 0 #0000 !important;
+    outline: none !important;
+}
+
+/* Request Quote uses btn-primary, not inline-flex.rounded-full */
+.site-header nav a.btn-primary,
+.site-header nav a[href="request-quote.html"],
+.site-header nav a.mob-cta {
+    box-shadow: none !important;
+}
+
+/* Kill layered / pseudo glows on dark heroes */
+.hero-dark::before,
+.hero-dark::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Default (engineering, fluorescent hubs): opaque header */
+.site-header {
+    background: var(--pwi-canvas-top) !important;
+}
+.hero-dark {
+    background: var(--pwi-canvas-gradient) !important;
+    background-image: var(--pwi-canvas-gradient) !important;
+}
+
+/*
+ * Dark-canvas utility pages (services, STC/PMA, all-product-info):
+ * Opaque header matched to canvas — same principle as product pages (#0a1930).
+ */
+body.pwi-dark-canvas .site-header {
+    background: var(--pwi-canvas-bottom) !important;
+}
+body.pwi-dark-canvas .hero-dark {
+    background: var(--pwi-canvas-bottom) !important;
+    background-image: none !important;
+}
+
+/* Keep desktop nav links on one line (no shrink-wrap overlap) */
+@media (min-width: 1280px) {
+    .site-header .site-header-inner > nav.md\:flex {
+        flex-shrink: 0;
+        min-width: auto;
+    }
+    .site-header nav > a,
+    .site-header nav > .dd {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+}

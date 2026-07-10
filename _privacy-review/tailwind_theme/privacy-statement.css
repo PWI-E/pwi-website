@@ -1,0 +1,12 @@
+/* Privacy statement page */
+.cert-card-body ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin-top: 0.4rem;
+}
+.cert-card-body ul li {
+    margin-bottom: 0.25rem;
+}
+.space-y-8 p.text-body {
+    font-size: 1rem !important;
+}

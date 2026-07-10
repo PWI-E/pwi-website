@@ -1,0 +1,94 @@
+/* Shared PDF literature viewer pages */
+:root {
+    --font-sans: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --brand: #1e4ed8;
+    --brand-hover: #1b46c4;
+    --muted: #526173;
+    --line: #cbd5e1;
+    --surface: #ffffff;
+}
+body {
+    font-family: var(--font-sans);
+    background: #0a1830;
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.bg-canvas { background: #0a1830 !important; }
+.bg-surface { background: var(--surface) !important; }
+.text-muted { color: var(--muted) !important; }
+.border-line { border-color: var(--line) !important; }
+
+.pdf-page-top {
+    background: #0a1830;
+    padding-top: 1.25rem;
+}
+@media (min-width: 640px) {
+    .pdf-page-top { padding-top: 1.5rem; }
+}
+.pdf-page-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem 0;
+}
+@media (min-width: 640px) {
+    .pdf-page-inner { padding: 2rem 2rem 0; }
+}
+.pdf-page-intro {
+    margin-bottom: 1.5rem;
+}
+.pdf-page-title {
+    font-size: clamp(1.35rem, 3.5vw, 1.9rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+.pdf-page-accent {
+    color: #60a5fa;
+}
+.pdf-mobile-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+.pdf-mobile-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 44px;
+    box-sizing: border-box;
+    background: transparent;
+    color: #60a5fa;
+    border: 1.5px solid #60a5fa;
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.125rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.pdf-embed-section {
+    display: none;
+    padding: 0 1.5rem 2.5rem;
+}
+@media (min-width: 768px) {
+    .pdf-embed-section.is-visible { display: block; }
+}
+.pdf-embed-shell {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.pdf-embed-frame {
+    display: block;
+    width: 100%;
+    aspect-ratio: 8.5 / 11;
+    border: 0;
+    background: #fff;
+}

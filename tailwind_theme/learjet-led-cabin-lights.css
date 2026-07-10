@@ -1,0 +1,17 @@
+/* Learjet compatibility table inside the 303 product template */
+.hero-media--single .product-img-wrap { flex: none !important; height: 520px !important; }
+.hero-media .product-img-wrap img {
+  object-position: center 42%;
+}
+
+/* Tighten hero spacing so CTA buttons stay above the fold */
+.hero-grid .product-title { margin-top: 0.5rem !important; }
+.hero-grid .trust-grid { margin-top: 0.875rem; }
+.hero-grid .meta-row { margin-top: 0.5rem; }
+.hero-grid .approvals-block { margin-top: 0.625rem; }
+.hero-grid .product-desc { margin-top: 0.875rem; }
+.hero-grid .cta-row { margin-top: 1rem; }
+
+/* ── Aircraft reference table ───────────── */
+.sn-pill { display: inline-flex !important; align-items: center !important; font-family: var(--font-mono) !important; font-size: 0.6875rem !important; letter-spacing: 0.04em !important; color: rgba(148,163,184,0.85) !important; background: rgba(255,255,255,0.04) !important; border: 1px solid rgba(148,163,184,0.15) !important; border-radius: 0.375rem !important; padding: 3px 10px !important; margin: 2px 2px 2px 0; }
+.note-callout { border-left: 3px solid var(--accent); background: rgba(96,165,250,0.06); border-radius: 0 0.5rem 0.5rem 0; padding: 0.75rem 1rem; margin-top: 1rem; }

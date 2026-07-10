@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-07-09T14:30:49.781Z",
+  "base": "http://127.0.0.1:52173/",
+  "outDir": "/Users/francisong/Documents/PWI WEBSITE 051326/_build/lighthouse",
+  "pages": [
+    {
+      "path": "index.html",
+      "slug": "index",
+      "url": "http://127.0.0.1:52173/index.html",
+      "categories": {
+        "performance": 78,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "failingAudits": [
+        {
+          "id": "unminified-css",
+          "score": 0,
+          "title": "Minify CSS",
+          "displayValue": "Est savings of 30 KiB"
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0,
+          "title": "Reduce unused CSS",
+          "displayValue": "Est savings of 140 KiB"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0,
+          "title": "Use efficient cache lifetimes",
+          "displayValue": "Est savings of 1,145 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree",
+          "displayValue": ""
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render-blocking requests",
+          "displayValue": "Est savings of 1,600 ms"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.3,
+          "title": "Largest Contentful Paint",
+          "displayValue": "4.8 s"
+        },
+        {
+          "id": "unminified-javascript",
+          "score": 0.5,
+          "title": "Minify JavaScript",
+          "displayValue": "Est savings of 9 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0.5,
+          "title": "Reduce unused JavaScript",
+          "displayValue": "Est savings of 70 KiB"
+        }
+      ],
+      "reports": {
+        "html": "index.report.html",
+        "json": "index.report.json"
+      }
+    },
+    {
+      "path": "king-air-ice-light-windows.html",
+      "slug": "king-air-ice-light-windows",
+      "url": "http://127.0.0.1:52173/king-air-ice-light-windows.html",
+      "categories": {
+        "accessibility": 100,
+        "best-practices": 100
+      },
+      "failingAudits": [],
+      "reports": {
+        "html": "king-air-ice-light-windows.report.html",
+        "json": "king-air-ice-light-windows.report.json"
+      }
+    }
+  ]
+}

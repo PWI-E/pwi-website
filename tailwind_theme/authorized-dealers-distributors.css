@@ -1,0 +1,311 @@
+:root {
+    --font-sans: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --brand: #1e4ed8;
+    --brand-hover: #1b46c4;
+    --ink: #0f172a;
+    --body: #1f2937;
+    --muted: #475569;
+    --line: #cbd5e1;
+    --surface: #ffffff;
+    --surface-soft: #f1f5f9;
+    --canvas: #f6f7f9;
+}
+
+body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    background: var(--canvas);
+    color: var(--body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+summary { list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::marker { content: ""; }
+
+.dd.is-open .soft-elev { box-shadow: 0 2px 10px rgba(15, 23, 42, 0.08); }
+
+.bg-canvas { background: var(--canvas) !important; }
+.bg-surface { background: var(--surface) !important; }
+.bg-surface-soft { background: var(--surface-soft) !important; }
+.text-ink { color: var(--ink) !important; }
+.text-body { color: var(--body) !important; }
+.text-muted { color: var(--muted) !important; }
+.border-line { border-color: var(--line) !important; }
+
+.btn-primary {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+}
+.btn-primary:hover {
+    background: var(--brand-hover);
+    border-color: var(--brand-hover);
+}
+
+.section-pop {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.98) 0%, rgba(15, 23, 42, 0.93) 100%) !important;
+    color: #e2e8f0;
+}
+.card-headline {
+    color: #1B3A8A !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.03em;
+}
+.partner-grid .card-headline {
+    font-size: 16px !important;
+}
+.partner-wall {
+    background: transparent !important;
+}
+.partner-wall .max-w-7xl {
+    max-width: 80rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+.partner-grid {
+    gap: 1rem !important;
+    border: none !important;
+}
+.partner-grid > a,
+.partner-grid > div {
+    text-align: center;
+}
+.partner-grid > a .stat-card,
+.partner-grid > div .stat-card {
+    min-height: 220px;
+    border-radius: 0.875rem !important;
+    border: 1px solid var(--line) !important;
+    background: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06) !important;
+    padding: 1.5rem 1.125rem !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.partner-grid > a img,
+.partner-grid > div img {
+    height: 6.5rem !important;
+    width: min(300px, 88%);
+}
+@media (hover: hover) and (pointer: fine) {
+    .partner-grid > a:hover img {
+        filter: grayscale(0);
+        opacity: 1 !important;
+    }
+    .partner-grid > div:hover img {
+        filter: grayscale(0);
+        opacity: 1 !important;
+    }
+}
+.partner-grid > a h3,
+.partner-grid > div h3 {
+    margin-top: 0.9rem;
+    color: #0b0b0b !important;
+    font-size: clamp(0.94rem, 1.05vw, 1.06rem) !important;
+    font-weight: 600 !important;
+    line-height: 1.2;
+    letter-spacing: -0.002em;
+    text-align: center;
+    text-wrap: balance;
+}
+.partner-grid > a p,
+.partner-grid > div p {
+    display: block;
+    margin-top: 0.25rem;
+}
+.partner-grid > a:focus-visible {
+    outline: 2px solid #1e4ed8;
+    outline-offset: 2px;
+    border-radius: 1rem;
+}
+.distributor-grid {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+}
+.distributor-grid > a,
+.distributor-grid > div {
+    width: calc(20% - 0.8rem);
+    min-width: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .distributor-grid > a,
+    .distributor-grid > div {
+        width: calc(25% - 0.75rem);
+    }
+}
+@media (max-width: 767px) {
+    .distributor-grid {
+        flex-wrap: wrap !important;
+    }
+    .distributor-grid > a,
+    .distributor-grid > div {
+        width: calc(50% - 0.5rem);
+    }
+}
+@media (max-width: 639px) {
+    .partner-grid {
+        gap: 0.625rem !important;
+    }
+    .partner-grid > a .stat-card,
+    .partner-grid > div .stat-card {
+        min-height: 160px;
+        padding: 1rem 0.75rem !important;
+    }
+    .partner-grid > a img,
+    .partner-grid > div img {
+        height: 64px !important;
+        width: min(200px, 88%);
+    }
+    .partner-grid > a h3,
+    .partner-grid > div h3 {
+        font-size: 0.84rem !important;
+        margin-top: 0.6rem;
+    }
+    .partner-wall .max-w-7xl {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* ---- Scroll reveal ---- */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 600ms cubic-bezier(.22,1,.36,1), transform 600ms cubic-bezier(.22,1,.36,1);
+}
+.scroll-reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+.partner-grid > .scroll-reveal:nth-child(1) { transition-delay: 0ms; }
+.partner-grid > .scroll-reveal:nth-child(2) { transition-delay: 40ms; }
+.partner-grid > .scroll-reveal:nth-child(3) { transition-delay: 80ms; }
+.partner-grid > .scroll-reveal:nth-child(4) { transition-delay: 120ms; }
+.partner-grid > .scroll-reveal:nth-child(5) { transition-delay: 160ms; }
+.partner-grid > .scroll-reveal:nth-child(6) { transition-delay: 200ms; }
+.partner-grid > .scroll-reveal:nth-child(7) { transition-delay: 240ms; }
+.partner-grid > .scroll-reveal:nth-child(8) { transition-delay: 280ms; }
+@media (prefers-reduced-motion: reduce) {
+    .scroll-reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Hero (utility page) */
+.dealer-hero-inner {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.dealer-hero-eyebrow {
+    color: #1e4ed8;
+}
+.dealer-hero-title {
+    font-size: clamp(2.55rem, 10.5vw, 3.75rem);
+    font-weight: 300;
+    line-height: 0.93;
+    letter-spacing: -0.02em;
+    color: #0f172a;
+    margin: 0;
+}
+.dealer-hero-accent {
+    color: #1e4ed8;
+}
+.dealer-hero-lede {
+    color: #334155;
+}
+@media (min-width: 640px) {
+    .dealer-hero-inner {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+@media (max-width: 639px) {
+    .hero-unified.dealer-hero .dealer-hero-inner,
+    .hero-unified.dealer-hero .utility-hero-inner {
+        padding-top: 1.25rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    .dealer-hero-title {
+        font-size: 2.55rem !important;
+        line-height: 1.02 !important;
+    }
+    .dealer-hero-lede {
+        margin-top: 0.75rem !important;
+        font-size: 0.92rem !important;
+        line-height: 1.45 !important;
+    }
+}
+
+.dealer-cta {
+    background: #0a1930;
+}
+.dealer-cta-eyebrow {
+    color: #93c5fd;
+}
+.dealer-cta-title {
+    text-wrap: balance;
+    color: #f1f5f9;
+}
+.dealer-cta-lede,
+.dealer-cta-note {
+    color: #94a3b8;
+}
+.dealer-cta-note a[href^="mailto:"] {
+    display: inline;
+    min-height: unset;
+    padding: 0;
+    color: #93c5fd !important;
+    background: none !important;
+    border: none !important;
+    border-radius: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: normal;
+    text-transform: none;
+    text-decoration: none;
+}
+.dealer-cta-note a[href^="mailto:"]:hover,
+.dealer-cta-note a[href^="mailto:"]:focus-visible {
+    color: #93c5fd !important;
+    background: none !important;
+    border: none !important;
+    text-decoration: underline;
+}
+.dealer-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    box-sizing: border-box;
+    background: #1e4ed8;
+    color: #fff;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    padding: 0.8125rem 1.75rem;
+    text-decoration: none;
+    transition: background 180ms ease;
+}
+.dealer-cta-btn:hover,
+.dealer-cta-btn:focus-visible {
+    background: #1b46c4;
+}
+
+/* Match homepage: CTA band flows into footer */
+.pwi-site-bottom > .site-cta.led-cta {
+    background: transparent !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+@media (min-width: 768px) {
+    .pwi-site-bottom .pwi-footer-grid {
+        padding-top: 1.5rem;
+    }
+}

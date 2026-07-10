@@ -1,0 +1,309 @@
+{
+  "static_issue_pages": 45,
+  "spelling_findings": 0,
+  "static": [
+    {
+      "page": ".audit/live-collection-of-images.html",
+      "issues": [
+        "missing viewport meta",
+        "missing/empty title"
+      ]
+    },
+    {
+      "page": ".audit/live-faq.html",
+      "issues": [
+        "missing viewport meta",
+        "missing/empty title"
+      ]
+    },
+    {
+      "page": ".audit/live-pdf-content.html",
+      "issues": [
+        "missing viewport meta",
+        "missing/empty title"
+      ]
+    },
+    {
+      "page": ".audit/live-press-releases.html",
+      "issues": [
+        "missing viewport meta",
+        "missing/empty title"
+      ]
+    },
+    {
+      "page": ".audit/live-terms-and-conditions.html",
+      "issues": [
+        "missing viewport meta",
+        "missing/empty title"
+      ]
+    },
+    {
+      "page": ".audit/page-suffix.html",
+      "issues": [
+        "missing viewport meta",
+        "missing/empty title",
+        "broken links: /about-us/, /awards/, /contact-pwi/, /faq/, /media-and-pictures/"
+      ]
+    },
+    {
+      "page": "1308-1309-led-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "1495-led-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "303-led-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "303-led-right-angle-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "about-us.html",
+      "issues": [
+        "broken links: images/2022%20PWI%20Material%202022%20Photos/PWI%20File%2048%20Media%20package.jpg",
+        "missing assets: images/2022%20PWI%20Material%202022%20Photos/PWI%20File%2048%20Media%20package.jpg"
+      ]
+    },
+    {
+      "page": "beechjet-400-400a-hawker-400xp-led-cabin-lights.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "citation-led-cabin-light-system.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "citation-led-step-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "custom-led-reading-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "falcon-900b-led-cabin-system.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "footer.html",
+      "issues": [
+        "missing viewport meta",
+        "missing/empty title"
+      ]
+    },
+    {
+      "page": "index-legacy.html",
+      "issues": [
+        "broken links: ' + r.url + '"
+      ]
+    },
+    {
+      "page": "index-redesign.html",
+      "issues": [
+        "broken links: ' + r.url + '"
+      ]
+    },
+    {
+      "page": "index.html",
+      "issues": [
+        "broken links: ' + r.url + '"
+      ]
+    },
+    {
+      "page": "king-air-ice-light-windows.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "led-cabin-door-underwing-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "led-dimming-controller.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "led-ice-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "led-linear-lights.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "led-logo-light.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "led-wingtip-light-assemblies.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "mobile-nav-review.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "mobile-pages-review.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "nav.html",
+      "issues": [
+        "missing viewport meta",
+        "missing/empty title"
+      ]
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/about.html",
+      "issues": [
+        "missing viewport meta",
+        "broken links: about.html, css/animations.css, css/site.css, favicon.svg, privacy.html",
+        "missing assets: css/animations.css, css/site.css, favicon.svg"
+      ]
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/contact.html",
+      "issues": [
+        "missing viewport meta",
+        "broken links: about.html, css/animations.css, css/site.css, favicon.svg, privacy.html",
+        "missing assets: css/animations.css, css/site.css, favicon.svg"
+      ]
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/index.html",
+      "issues": [
+        "missing viewport meta",
+        "broken links: about.html, css/animations.css, css/site.css, favicon.svg, privacy.html",
+        "missing assets: css/animations.css, css/site.css, favicon.svg"
+      ]
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/privacy.html",
+      "issues": [
+        "missing viewport meta",
+        "broken links: about.html, css/animations.css, css/site.css, favicon.svg, privacy.html",
+        "missing assets: css/animations.css, css/site.css, favicon.svg"
+      ]
+    },
+    {
+      "page": "pgisr-site BACKUP 2026-07-01/terms.html",
+      "issues": [
+        "missing viewport meta",
+        "broken links: about.html, css/animations.css, css/site.css, favicon.svg, privacy.html",
+        "missing assets: css/animations.css, css/site.css, favicon.svg"
+      ]
+    },
+    {
+      "page": "pgisr-site-v1-backup/about.html",
+      "issues": [
+        "missing viewport meta",
+        "broken links: about.html, css/site.css",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "pgisr-site-v1-backup/contact.html",
+      "issues": [
+        "missing viewport meta",
+        "broken links: about.html, css/site.css",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "pgisr-site-v1-backup/index.html",
+      "issues": [
+        "missing viewport meta",
+        "broken links: about.html, css/site.css",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "pgisr-site-v2/about.html",
+      "issues": [
+        "missing viewport meta",
+        "broken links: about.html, css/site.css",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "pgisr-site-v2/contact.html",
+      "issues": [
+        "missing viewport meta",
+        "broken links: about.html, css/site.css",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "pgisr-site-v2/index.html",
+      "issues": [
+        "missing viewport meta",
+        "broken links: about.html, css/site.css",
+        "missing assets: css/site.css"
+      ]
+    },
+    {
+      "page": "pgisr.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "pilatus-pc-12.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "seat-belt-smoking-sign-led-backlight.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    },
+    {
+      "page": "smoking-seat-belt-sign-graphic.html",
+      "issues": [
+        "missing viewport meta"
+      ]
+    }
+  ],
+  "spelling": []
+}

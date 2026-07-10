@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>PWI, Inc. &mdash; Aircraft LED Lighting &amp; Windings, Magnetometers, Engineering and Manufacturing</title>
+    <meta name="description" content="PWI offers LED aircraft lighting, windings, magnetometers and engineering services, made in the USA."/>
+    <meta name="robots" content="noindex,follow"/>
+    <link rel="canonical" href="https://pwi-e.com/"/>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="FAA approved aircraft LED lighting, engineering, windings and manufacturing for more than 60 years in the USA"/>
+    <meta property="og:description" content="PWI engineers FAA-approved LED aircraft lighting, windings, magnetometers and engineering services."/>
+    <meta property="og:url" content="https://pwi-e.com/"/>
+    <meta property="og:image" content="https://pwi-e.com/images/products/pwi-0135-king-air-90-200-led-cabin.jpg"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png"/>
+    <link rel="manifest" href="favicon_io/site.webmanifest"/>
+ 
+    
+    <link rel="preload" as="image" href="images/products/pwi-0103-king-air-90-100-200-b200-250-led-cabin-overhead.webp" fetchpriority="high"/>
+    <link href="tailwind_theme/site.css?v=20260710ft4" rel="stylesheet"/>
+    <link href="tailwind_theme/homepage.css?v=20260706a" rel="stylesheet"/>
+    <style>
+/* Homepage: shop-by-aircraft */
+.pwi-aircraft {
+  background: #dde4ee;
+  border-top: 1px solid rgba(15,31,61,0.08);
+  padding: 4.25rem 1.5rem;
+}
+.pwi-aircraft-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: minmax(240px, 5fr) 12fr;
+  gap: 2.5rem 4rem; align-items: start; text-align: left;
+}
+.pwi-aircraft-label {
+  font-size: 0.68rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase;
+  color: #1e4ed8; margin: 0 0 0.6rem;
+}
+.pwi-aircraft-heading {
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem); font-weight: 750; color: #0b1a38;
+  letter-spacing: -0.02em; line-height: 1.15; margin: 0 0 0.65rem;
+}
+.pwi-aircraft-deck {
+  font-size: 0.95rem; line-height: 1.55; color: #4a5f85;
+  margin: 0 0 1.25rem; max-width: 28ch;
+}
+.pwi-aircraft-chips {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem;
+}
+.pwi-aircraft-chip {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
+  padding: 0.9rem 1.15rem; border-radius: 0.6rem;
+  border: 1px solid rgba(15,31,61,0.12); background: #eef2f8;
+  color: #22355c; font-size: 0.9rem; font-weight: 600; text-decoration: none;
+  transition: background 200ms ease, border-color 200ms ease, color 200ms ease;
+}
+.pwi-aircraft-chip::after {
+  content: "\2192"; color: #1e4ed8; font-weight: 700;
+  transition: transform 200ms ease;
+}
+.pwi-aircraft-chip:hover, .pwi-aircraft-chip:focus-visible {
+  background: #ffffff; border-color: #1e4ed8; color: #0b1a38;
+}
+.pwi-aircraft-chip:hover::after, .pwi-aircraft-chip:focus-visible::after { transform: translateX(3px); }
+.pwi-aircraft-more {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+  color: #1e4ed8; text-decoration: none; transition: color 200ms ease, gap 200ms ease;
+}
+.pwi-aircraft-more:hover, .pwi-aircraft-more:focus-visible { color: #1b46c4; gap: 0.6rem; }
+.pwi-aircraft-col-intro { display: flex; flex-direction: column; }
+.pwi-aircraft-deck--short { display: none; }
+@media (max-width: 900px) {
+  .pwi-aircraft-inner {
+    grid-template-columns: 1fr;
+    grid-template-areas: "intro" "chips" "more";
+    gap: 1.75rem;
+  }
+  .pwi-aircraft-col-intro { display: contents; }
+  .pwi-aircraft-intro { grid-area: intro; }
+  .pwi-aircraft-chips { grid-template-columns: 1fr; grid-area: chips; }
+  .pwi-aircraft-more { grid-area: more; margin-top: -0.5rem; }
+}
+@media (max-width: 767px) {
+  .pwi-aircraft { padding: 2.5rem 1.25rem 2.75rem; }
+  .pwi-aircraft-deck--full { display: none; }
+  .pwi-aircraft-deck--short { display: block; }
+}
+/* Fold peek: trim oversized hero on very large screens so capability cards peek */
+@media (min-width: 1600px) {
+  .hero-home, .hp-hero-grid { min-height: clamp(470px, calc((100vh - 64px) * 0.46), 580px) !important; }
+}
+/* Search hint chips */
+.hero-hints { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.85rem; }
+.hero-hints-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #94a3b8; }
+.hero-hint-chip {
+  padding: 0.28rem 0.8rem; border-radius: 9999px;
+  border: 1px solid rgba(148,163,184,0.28); background: rgba(15,26,52,0.45);
+  color: #cbd5e1; font-size: 0.75rem; font-weight: 600; text-decoration: none;
+  transition: color 200ms ease, border-color 200ms ease, background 200ms ease;
+}
+.hero-hint-chip:hover, .hero-hint-chip:focus-visible {
+  color: #fff; border-color: rgba(124,157,247,0.6); background: rgba(30,78,216,0.22);
+}
+@media (max-width: 767px) {
+  .hero-hints { justify-content: flex-start; }
+}
+@media (min-width: 768px) {
+  .pwi-home-site-bottom .pwi-footer-grid {
+    padding-top: 1.5rem;
+  }
+  body:has(.pwi-home-site-bottom) .pwi-home-site-bottom {
+    flex: 0 0 auto;
+    margin-top: 0;
+  }
+}
+    </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://pwi-e.com/#organization",
+      "name": "PWI, Inc.",
+      "url": "https://pwi-e.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://pwi-e.com/images/PWI-Color-Logo-2022-Dec-01-e1671049599525.png"
+      },
+      "description": "PWI Inc designs and manufactures LED aircraft lighting, contract engineering and production, coil windings and magnetometers. Over 60 years of manufacturing experience.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Wichita",
+        "addressRegion": "KS",
+        "addressCountry": "US"
+      },
+      "hasCredential": [
+        "FAA PMA",
+        "ISO 9001",
+        "AS9100",
+        "ITAR Compliant"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://pwi-e.com/#website",
+      "url": "https://pwi-e.com/",
+      "name": "PWI, Inc.",
+      "publisher": {
+        "@id": "https://pwi-e.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://pwi-e.com/search.html?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+<script src="tailwind_theme/gtag-consent.js?v=20260627"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PFX0VN5076"></script>
+<script>
+  gtag('config', 'G-PFX0VN5076');
+</script>
+<noscript><style>.scroll-reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+<!-- NAV:START -->
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+      <!-- ================= HEADER (YOUR PROVIDED HEADER) ================= -->
+    <header class="site-header fixed top-0 inset-x-0 overflow-visible border-b border-white/15 ring-1 ring-white/5 text-slate-200" style="z-index:100">
+      <input type="checkbox" id="mobile-menu-toggle" class="peer hidden" aria-hidden="true" autocomplete="off"/>
+      <div class="site-header-inner relative flex items-center justify-between w-full px-6 text-sm tracking-wide">
+        <a href="index.html" aria-label="PWI Home" class="pwi-header-logo-link flex items-center transition-opacity duration-200 hover:opacity-90 focus:outline-none"><img src="images/PWI-Color-Logo-2022-Dec-01-e1671049599525.png" alt="PWI" title="PWI" width="350" height="266" class="pwi-header-logo" loading="eager" decoding="async"/></a>
+        <nav class="hidden md:flex items-center gap-5 text-sm tracking-wide">
+          <div class="dd relative flex items-center h-16" data-dd>
+            <a href="led-lighting.html" class="flex items-center gap-2 py-4 whitespace-nowrap transition-colors duration-200 hover:text-[#7C9DF7] focus:text-[#7C9DF7] focus:outline-none">
+              Products
+              <span class="dd-chevron text-[10px]">
+                ▾
+              </span>
+            </a>
+            <div class="absolute inset-x-0 top-full h-4 z-[96]">
+            </div>
+            <div class="fixed inset-x-0 z-[97] dd-panel normal-case tracking-normal" style="top:5rem">
+              <div class="absolute inset-x-0 -top-4 h-4 z-[96]">
+              </div>
+              <div class="mega-accent-bar border-t border-white/10 ring-1 ring-white/5">
+                <div class="mega-grid max-w-[1440px] mx-auto px-6 py-6 grid gap-3" style="grid-template-columns:repeat(4,minmax(0,1fr)) 1.05fr">
+                  <div class="mega-card mega-card--compact">
+                    <div class="mega-col-head">
+                      <div class="mega-col-icon">
+                        <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-white leading-tight">Cabin LED Systems</p>
+                      </div>
+                    </div>
+                    <div class="space-y-0 text-[13px]">
+                      <a href="king-air-90-100-200.html" class="mega-link">King Air 90, 100, 200, B200, 250</a>
+                      <a href="king-air-300.html" class="mega-link">King Air 300, B300/350</a>
+                      <a href="citation-led-cabin-light-system.html" class="mega-link">Citation</a>
+                      <a href="falcon-900b-led-cabin-system.html" class="mega-link">Falcon 900B</a>
+                      <a href="beechjet-400-400a-hawker-400xp-led-cabin-lights.html" class="mega-link">Beechjet 400, 400A, Hawker 400XP</a>
+                      <a href="learjet-led-cabin-lights.html" class="mega-link">Learjet 35, 36, 60</a>
+                      <a href="pilatus-pc-12.html" class="mega-link">Pilatus PC-12</a>
+                    </div>
+                  </div>
+                  <div class="mega-card mega-card--compact">
+                    <div class="mega-col-head">
+                      <div class="mega-col-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-white leading-tight">Exterior LED Lighting</p>
+                      </div>
+                    </div>
+                    <div class="space-y-0 text-[13px]">
+                      <a href="led-ice-light.html" class="mega-link">LED Ice Light</a>
+                      <a href="king-air-ice-light-windows.html" class="mega-link">King Air Ice Light Windows</a>
+                      <a href="led-logo-light.html" class="mega-link">LED Logo Light</a>
+                      <a href="led-wingtip-light-assemblies.html" class="mega-link">LED Wingtip Light Assemblies</a>
+                      <a href="led-cabin-door-underwing-light.html" class="mega-link">LED Cabin Door Underwing Light</a>
+                    </div>
+                  </div>
+                  <div class="mega-card mega-card--compact">
+                    <div class="mega-col-head">
+                      <div class="mega-col-icon">
+                        <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-white leading-tight">Reading Lights &amp; Signs</p>
+                      </div>
+                    </div>
+                    <div class="space-y-0 text-[13px]">
+                      <a href="303-led-reading-light.html" class="mega-link">303 LED Reading Light</a>
+                      <a href="303-led-right-angle-reading-light.html" class="mega-link">303 Right Angle LED Reading Light</a>
+                      <a href="1308-1309-led-reading-light.html" class="mega-link">1308 / 1309 LED Reading Light</a>
+                      <a href="1495-led-reading-light.html" class="mega-link">1495 LED Reading Light</a>
+                      <a href="led-linear-lights.html" class="mega-link">LED Linear Light</a>
+                      <a href="led-dimming-controller.html" class="mega-link">LED Dimming Control</a>
+                      <a href="seat-belt-smoking-sign-led-backlight.html" class="mega-link">Seat Belt / Smoking Sign LED Backlight</a>
+                      <a href="citation-led-step-light.html" class="mega-link">Citation LED Step Light</a>
+                      <a href="smoking-seat-belt-sign-graphic.html" class="mega-link">Smoking / Seat Belt Sign Graphic</a>
+                      <a href="custom-led-reading-light.html" class="mega-link">Custom Reading &amp; Accent Lighting</a>
+                    </div>
+                  </div>
+                  <div class="mega-card mega-card--compact">
+                    <div class="mega-col-head">
+                      <div class="mega-col-icon">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-white leading-tight">Aircraft Fluorescent Lighting</p>
+                      </div>
+                    </div>
+                    <div class="space-y-0 text-[13px]">
+                      <a href="fluorescent-lighting.html" class="mega-link">Fluorescent Lighting</a>
+                      <a href="fluorescent-power-supplies.html" class="mega-link">Fluorescent Power Supplies</a>
+                      <a href="fluorescent-light-part-numbers.html" class="mega-link">Fluorescent Light Part Numbers</a>
+                    </div>
+                    <div class="mega-col-head" style="margin-top:0.85rem;">
+                      <div class="mega-col-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="3"/><path d="M6.5 8.5C5 10 4 12 4 14a8 8 0 0016 0c0-2-1-4-2.5-5.5"/><path d="M8.5 10.5C7.5 12 7 13 7 14a5 5 0 0010 0c0-1-.5-2-1.5-3.5"/></svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-white leading-tight">Coils &amp; Magnetics</p>
+                      </div>
+                    </div>
+                    <div class="space-y-0 text-[13px]">
+                      <a href="coil-winding-transformers.html" class="mega-link">Coil Winding &amp; Transformers</a>
+                      <a href="tape-wound-bobbin-cores-magnetometers.html" class="mega-link">Tape-wound Bobbin Cores</a>
+                      <a href="fluxgate-magnetometers.html" class="mega-link">Fluxgate Magnetometers</a>
+                    </div>
+                  </div>
+                  <div class="mega-card mega-card--featured">
+                    <div class="mega-featured-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+                    <span class="mega-featured-kicker">From PWI Services</span>
+                    <p class="mega-featured-title">Have a project idea?</p>
+                    <p class="mega-featured-body">Custom engineering and contract manufacturing, from prototype to volume production.</p>
+                    <a href="services.html" class="mega-featured-cta">Explore Services →</a>
+                  </div>
+                  <div class="mega-menu-assist">
+                    <span>Not sure where to start?</span>
+                    <a href="led-lighting.html">Browse LED Aircraft Lighting</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="services.html" class="flex items-center gap-2 py-4 whitespace-nowrap transition-colors duration-200 hover:text-[#7C9DF7] focus:text-[#7C9DF7] focus:outline-none">
+              Services
+            </a>
+          <a href="stc-pma-data.html" class="py-4 whitespace-nowrap transition-colors duration-200 hover:text-[#7C9DF7] focus:text-[#7C9DF7] focus:outline-none">
+            STC / PMA
+          </a>
+          <a href="all-product-info.html" class="py-4 whitespace-nowrap transition-colors duration-200 hover:text-[#7C9DF7] focus:text-[#7C9DF7] focus:outline-none">
+            All Product Information
+          </a>
+          <a href="authorized-dealers-distributors.html" class="py-4 whitespace-nowrap transition-colors duration-200 hover:text-[#7C9DF7] focus:text-[#7C9DF7] focus:outline-none">
+            Dealers
+          </a>
+          <span class="nav-sep" aria-hidden="true"></span>
+          <a href="about-us.html" class="nav-secondary py-4 whitespace-nowrap transition-colors duration-200 hover:text-[#7C9DF7] focus:text-[#7C9DF7] focus:outline-none">
+            About
+          </a>
+          <a href="contact.html" class="nav-secondary py-4 whitespace-nowrap transition-colors duration-200 hover:text-[#7C9DF7] focus:text-[#7C9DF7] focus:outline-none">
+            Contact
+          </a>
+          <div id="pwi-lang-wrap" style="position:relative;display:flex;align-items:center"><button type="button" id="pwi-lang-btn" aria-label="Select language" aria-haspopup="listbox" aria-expanded="false" style="display:flex;align-items:center;gap:5px;padding:1rem 0;cursor:pointer;background:none;border:none;color:#cbd5e1;font-family:inherit;font-size:inherit;letter-spacing:inherit;transition:color 200ms;white-space:nowrap"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg><span id="pwi-lang-label" style="font-size:0.6875rem;font-weight:700;letter-spacing:0.1em">EN</span><svg id="pwi-lang-chevron" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transition:transform 200ms"><polyline points="6 9 12 15 18 9"/></svg></button><div id="pwi-lang-dd" role="listbox" aria-label="Language" style="display:none;position:fixed;min-width:176px;background:linear-gradient(180deg,#0d1e40 0%,#0b1a38 100%);border:1px solid rgba(148,163,184,0.22);border-radius:0.625rem;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.5);z-index:200"></div></div>
+          <a href="request-quote.html" class="btn-primary">
+            Request a Quote
+          </a>
+        </nav>
+        <button id="mobile-menu-button" type="button" class="md:hidden cursor-pointer flex flex-col gap-1.5 relative z-[70] min-h-[44px] min-w-[44px] items-center justify-center" aria-label="Toggle navigation menu" aria-controls="mobile-nav" aria-expanded="false"><span class="block w-6 h-[2px] bg-white transition"></span><span class="block w-6 h-[2px] bg-white transition"></span><span class="block w-6 h-[2px] bg-white transition"></span></button>
+      </div>
+      <button id="mobile-menu-overlay" type="button" aria-label="Close navigation menu" class="fixed inset-0 z-[60] bg-black/30 opacity-0 pointer-events-none transition duration-300 peer-checked:opacity-100 peer-checked:pointer-events-auto md:hidden"></button>
+      <div id="mobile-menu-panel" class="fixed inset-x-0 z-[65] md:hidden scrollbar-hide overflow-y-auto overscroll-contain touch-pan-y opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto transition duration-300" style="-webkit-overflow-scrolling:touch">
+        <nav class="mnvc flex flex-col" id="mobile-nav">
+          <details class="mnvc-details" id="mnvc-products">
+            <summary class="mnvc-row">
+              <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 00-4 12.74V17h8v-2.26A7 7 0 0012 2z"/></svg></span>
+              <span class="mnvc-row-label">Products</span>
+              <svg class="mnvc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="mnvc-panel">
+              <a href="led-lighting.html" class="mnvc-browse-all">
+                <span>Browse all aircraft LED products</span>
+                <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+              </a>
+
+              <details class="mnvc-cat" data-cat="cabin">
+                <summary class="mnvc-row mnvc-row--cat">
+<span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+                  <span class="mnvc-row-label">Cabin LED Systems</span>
+                  <svg class="mnvc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <div class="mnvc-cat-panel">
+                  <a href="king-air-90-100-200.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>King Air 90, 100, 200, B200, 250</span></a>
+                  <a href="king-air-300.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>King Air 300, B300/350</span></a>
+                  <a href="citation-led-cabin-light-system.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Citation</span></a>
+                  <a href="falcon-900b-led-cabin-system.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Falcon 900B</span></a>
+                  <a href="beechjet-400-400a-hawker-400xp-led-cabin-lights.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Beechjet 400, 400A, Hawker 400XP</span></a>
+                  <a href="learjet-led-cabin-lights.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Learjet 35, 36, 60</span></a>
+                  <a href="pilatus-pc-12.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Pilatus PC-12</span></a>
+                </div>
+              </details>
+
+              <details class="mnvc-cat" data-cat="exterior">
+                <summary class="mnvc-row mnvc-row--cat">
+<span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></span>
+                  <span class="mnvc-row-label">Exterior LED Lighting</span>
+                  <svg class="mnvc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <div class="mnvc-cat-panel">
+                  <a href="led-ice-light.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>LED Ice Light</span></a>
+                  <a href="king-air-ice-light-windows.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>King Air Ice Light Windows</span></a>
+                  <a href="led-logo-light.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>LED Logo Light</span></a>
+                  <a href="led-wingtip-light-assemblies.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>LED Wingtip Light Assemblies</span></a>
+                  <a href="led-cabin-door-underwing-light.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>LED Cabin Door Underwing Light</span></a>
+                </div>
+              </details>
+
+              <details class="mnvc-cat" data-cat="reading">
+                <summary class="mnvc-row mnvc-row--cat">
+<span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></span>
+                  <span class="mnvc-row-label">Reading Lights &amp; Signs</span>
+                  <svg class="mnvc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <div class="mnvc-cat-panel">
+                  <a href="303-led-reading-light.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>303 LED Reading Light</span></a>
+                  <a href="303-led-right-angle-reading-light.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>303 Right Angle LED Reading Light</span></a>
+                  <a href="1308-1309-led-reading-light.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>1308 / 1309 LED Reading Light</span></a>
+                  <a href="1495-led-reading-light.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>1495 LED Reading Light</span></a>
+                  <a href="led-linear-lights.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>LED Linear Light</span></a>
+                  <a href="led-dimming-controller.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>LED Dimming Control</span></a>
+                  <a href="seat-belt-smoking-sign-led-backlight.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Seat Belt / Smoking Sign LED Backlight</span></a>
+                  <a href="citation-led-step-light.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Citation LED Step Light</span></a>
+                  <a href="smoking-seat-belt-sign-graphic.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Smoking / Seat Belt Sign Graphic</span></a>
+                  <a href="custom-led-reading-light.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Custom Reading &amp; Accent Lighting</span></a>
+                </div>
+              </details>
+
+              <details class="mnvc-cat" data-cat="fluorescent">
+                <summary class="mnvc-row mnvc-row--cat">
+<span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><circle cx="5" cy="5" r="1.5"/><circle cx="12" cy="5" r="1.5"/><circle cx="19" cy="5" r="1.5"/><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/><circle cx="5" cy="19" r="1.5"/><circle cx="12" cy="19" r="1.5"/><circle cx="19" cy="19" r="1.5"/></svg></span>
+                  <span class="mnvc-row-label">Aircraft Fluorescent Lighting</span>
+                  <svg class="mnvc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <div class="mnvc-cat-panel">
+                  <a href="fluorescent-lighting.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Fluorescent Lighting</span></a>
+                  <a href="fluorescent-power-supplies.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Fluorescent Power Supplies</span></a>
+                  <a href="fluorescent-light-part-numbers.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Fluorescent Light Part Numbers</span></a>
+                </div>
+              </details>
+
+              <details class="mnvc-cat" data-cat="coils">
+                <summary class="mnvc-row mnvc-row--cat">
+<span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8a7 7 0 0114 0v5a2 2 0 01-2 2h-2"/><path d="M5 15H3a2 2 0 01-2-2V8a7 7 0 0114 0"/></svg></span>
+                  <span class="mnvc-row-label">Coils &amp; Magnetics</span>
+                  <svg class="mnvc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <div class="mnvc-cat-panel">
+                  <a href="coil-winding-transformers.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Coil Winding &amp; Transformers</span></a>
+                  <a href="tape-wound-bobbin-cores-magnetometers.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Tape-wound Bobbin Cores</span></a>
+                  <a href="fluxgate-magnetometers.html" class="mnvc-link"><span class="mnvc-link-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span><span>Fluxgate Magnetometers</span></a>
+                </div>
+              </details>
+            </div>
+          </details>
+
+          <details class="mnvc-details" id="mnvc-services">
+            <summary class="mnvc-row">
+              <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></span>
+              <span class="mnvc-row-label">Services</span>
+              <svg class="mnvc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="mnvc-panel">
+              <a href="services.html" class="mnvc-browse-all">
+                <span>Browse all services</span>
+                <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+              </a>
+              <a href="engineering.html" class="mnvc-row mnvc-row--cat mnvc-row--link">
+              <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></span>
+              <span class="mnvc-row-label">Custom Engineering</span>
+            </a>
+              <a href="contract-manufacturing.html" class="mnvc-row mnvc-row--cat mnvc-row--link">
+              <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></span>
+              <span class="mnvc-row-label">Contract Manufacturing</span>
+            </a>
+            </div>
+          </details>
+          <a href="stc-pma-data.html" class="mnvc-row mnvc-row--link">
+            <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 3v6c0 5-3.2 8.6-7 10-3.8-1.4-7-5-7-10V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <span class="mnvc-row-label">STC / PMA</span>
+          </a>
+
+          <a href="certifications-qualifications.html" class="mnvc-row mnvc-row--link">
+            <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></span>
+            <span class="mnvc-row-label">Certifications &amp; Qualifications</span>
+          </a>
+          <a href="all-product-info.html" class="mnvc-row mnvc-row--link">
+            <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg></span>
+            <span class="mnvc-row-label">All Product Information</span>
+          </a>
+          <a href="authorized-dealers-distributors.html" class="mnvc-row mnvc-row--link">
+            <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span class="mnvc-row-label">Dealers</span>
+          </a>
+          <a href="service-bulletins.html" class="mnvc-row mnvc-row--link">
+            <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+            <span class="mnvc-row-label">Aviation Service Bulletins</span>
+          </a>          <a href="faq.html" class="mnvc-row mnvc-row--link">
+            <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/></svg></span>
+            <span class="mnvc-row-label">FAQ</span>
+          </a>
+
+          <span class="mnvc-divider" aria-hidden="true"></span>
+
+          <a href="about-us.html" class="mnvc-row mnvc-row--link">
+            <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V8l6-5 6 5v13M10 21v-6h4v6"/></svg></span>
+            <span class="mnvc-row-label">About</span>
+          </a>
+          <a href="press-releases.html" class="mnvc-row mnvc-row--link">
+            <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2M18 14h-8M18 18h-8M10 6h8v4h-8V6z"/></svg></span>
+            <span class="mnvc-row-label">Press Releases</span>
+          </a>
+          <a href="newsletter-signup.html" class="mnvc-row mnvc-row--link">
+            <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg></span>
+            <span class="mnvc-row-label">Newsletter</span>
+          </a>
+          <a href="contact.html" class="mnvc-row mnvc-row--link">
+            <span class="mnvc-row-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>
+            <span class="mnvc-row-label">Contact</span>
+          </a>
+
+          <div id="pwi-lang-mob" class="mnvc-lang">
+            <p class="mnvc-lang-label">Language</p>
+            <div id="pwi-lang-mob-grid" class="mnvc-lang-grid"></div>
+          </div>
+
+          <div class="mnvc-footer">
+            <div class="mnvc-quickcontact">
+              <a href="tel:+13169422811" class="mnvc-quick-btn">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                <span>Call us</span>
+              </a>
+              <a href="mailto:sales@pwi-e.com" class="mnvc-quick-btn">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                <span>Email us</span>
+              </a>
+            </div>
+            <a href="request-quote.html" class="mob-cta">
+              Request a Quote
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      
+    </header>
+
+<!-- NAV:END -->
+
+<!-- spacer so fixed header doesn't cover hero -->
+<div class="site-header-spacer" aria-hidden="true"></div>
+
+<!-- ================= HERO ================= -->
+        <main id="main-content">
+        <section class="hero-home">
+
+          <!-- Full-bleed background slideshow -->
+          <div class="hp-slider" id="hp-slider">
+            <a class="hp-slide hp-slide--cabin hp-active" href="king-air-90-100-200.html" data-tag="Cabin LED Systems" data-title="King Air LED Cabin Lighting">
+              <img src="images/products/pwi-0103-king-air-90-100-200-b200-250-led-cabin-overhead.webp" alt="PWI King Air LED cabin lighting installed in aircraft cabin" title="PWI King Air LED cabin lighting" loading="eager" fetchpriority="high" decoding="async">
+            </a>
+            <a class="hp-slide hp-slide--manufacturing" href="contract-manufacturing.html" data-tag="Services" data-title="Contract Manufacturing">
+              <img src="images/pwi-contract-manufacturing-hero.jpg" alt="PWI contract manufacturing — PCB assembly and production" title="PWI contract manufacturing" loading="lazy" decoding="async">
+            </a>
+            <a class="hp-slide hp-slide--fluorescent" href="fluorescent-lighting.html" data-tag="Legacy Support" data-title="Fluorescent Lighting">
+              <img src="images/products/pwi-0055-fluorescent-lights.webp" alt="PWI aircraft fluorescent cabin lighting" title="PWI fluorescent lighting" loading="lazy" decoding="async">
+            </a>
+            <a class="hp-slide hp-slide--fluxgate" href="fluxgate-magnetometers.html" data-tag="Sensors" data-title="Fluxgate Magnetometers">
+              <img src="images/pwi-fluxgate-magnetometer-hero.jpg" alt="PWI fluxgate magnetometer — precision hand-built sensor unit" title="PWI fluxgate magnetometer" loading="lazy" decoding="async">
+            </a>
+            <a class="hp-slide hp-slide--engineering" href="engineering.html" data-tag="Services" data-title="Contract Engineering">
+              <img src="images/pwi-engineering-hero.jpg" alt="PWI contract engineering workbench and electronics assembly" title="PWI contract engineering" loading="lazy" decoding="async">
+            </a>
+            <a class="hp-slide hp-slide--coil" href="coil-winding-transformers.html" data-tag="Precision Windings" data-title="Coil Winding &amp; Transformers">
+              <img src="images/hero-slideshow/coil-winding-bench.jpg" alt="PWI technician operating a precision coil winding machine" title="PWI coil winding and transformers" loading="lazy" decoding="async">
+            </a>
+          </div>
+
+          <!-- Dark gradient overlay (left-heavy for text legibility) -->
+          <div class="hp-bg-overlay"></div>
+
+          <!-- Slide caption (syncs with active slide) -->
+          <div class="hp-slide-caption" id="hp-slide-caption" aria-hidden="true">
+            <span class="hp-caption-tag"></span>
+            <span class="hp-caption-title"></span>
+          </div>
+
+          <!-- Slide dots -->
+          <div class="hp-slide-nav" id="hp-slide-nav" role="tablist" aria-label="Slideshow slides"></div>
+
+          <button type="button" id="hp-slideshow-toggle" class="hp-slideshow-toggle" aria-label="Pause background slideshow" aria-pressed="false">
+            <svg class="hp-slideshow-icon-pause" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="0.5"/><rect x="14" y="5" width="4" height="14" rx="0.5"/></svg>
+            <svg class="hp-slideshow-icon-play" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 5v14l11-7z"/></svg>
+            <span class="hp-slideshow-toggle-text">Pause</span>
+          </button>
+
+          <!-- Text content over the background -->
+          <div class="hp-hero-grid">
+            <div class="hp-hero-left">
+              <p class="hero-kicker">Wichita, Kansas USA</p>
+              <h1 class="hero-heading">History of<span>Building Quality</span></h1>
+              <p class="hero-lede">For more than 60 years, PWI has designed and manufactured precision windings, coils, magnetometers, aircraft lighting, contract engineering, production assistance, and manufacturing services.</p>
+              <div class="hero-ctas">
+                <a href="all-product-info.html" class="hero-cta hero-cta-primary">View All Products</a>
+                <a href="contact.html" class="hero-cta hero-cta-secondary">Get in Touch</a>
+              </div>
+              <form action="search.html" class="hero-search-form">
+                <label for="hero-search" class="sr-only">Search PWI products</label>
+                <input id="hero-search" class="hero-search-input" type="search" name="q" placeholder="Search by aircraft model, product, or part number..." data-ph-mobile="Search aircraft & parts…" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="hero-suggest"/>
+                <svg class="hero-search-icon" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path stroke-linecap="round" d="m20 20-3.6-3.6"/></svg>
+                <button class="hero-search-submit" type="submit" aria-label="Search">
+                  <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                </button>
+                <div class="hero-suggest" id="hero-suggest" role="listbox" aria-label="Search suggestions"></div>
+              </form>
+              <div class="hero-hints" aria-label="Popular searches">
+                <span class="hero-hints-label">Try:</span>
+                <a href="search.html?q=King+Air+200" class="hero-hint-chip">King Air 200</a>
+                <a href="search.html?q=LED+Ice+Light" class="hero-hint-chip">LED Ice Light</a>
+                <a href="search.html?q=1495" class="hero-hint-chip">1495 Reading Light</a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- ================= CAPABILITY STRIP ================= -->
+        <section class="cap-strip">
+          <a href="led-lighting.html" class="cap-tile scroll-reveal">
+            <img src="images/products/pwi-0111-king-air-cockpit-interior.webp" alt="Aircraft Lighting" title="Aircraft Lighting" loading="lazy" decoding="async">
+            <div class="cap-tile-overlay">
+              <span class="cap-tile-tag">Cabin &amp; Exterior</span>
+              <h2 class="cap-tile-title">Aircraft Lighting</h2>
+              <span class="cap-tile-desc">LED lighting for general aviation aircraft. Support for original fluorescent light cabin systems as well.</span>
+              <span class="cap-tile-cta">View Products →</span>
+            </div>
+          </a>
+          <a href="services.html" class="cap-tile scroll-reveal">
+            <img src="images/pwi-contract-engineering.webp" alt="Engineering &amp; Manufacturing" title="Engineering &amp; Manufacturing" loading="lazy" decoding="async" style="object-position:72% 62%;">
+            <div class="cap-tile-overlay">
+              <span class="cap-tile-tag">Services</span>
+              <h2 class="cap-tile-title">Engineering &amp; Manufacturing</h2>
+              <span class="cap-tile-desc">PWI contract manufacturing by a skilled engineering staff with more than 100 years of combined experience. From prototyping to turn-key PCB assembly to parts sourcing to volume production.</span>
+              <span class="cap-tile-cta">Learn More →</span>
+            </div>
+          </a>
+          <a href="coil-winding-transformers.html" class="cap-tile scroll-reveal">
+            <img src="images/coil-windings/IMG_9988-web.jpg" alt="Coil Winding &amp; Transformers" title="Coil Winding &amp; Transformers" loading="lazy" decoding="async" style="object-position:50% 40%;">
+            <div class="cap-tile-overlay">
+              <span class="cap-tile-tag">Precision Windings</span>
+              <h2 class="cap-tile-title">Coil Winding &amp; Transformers</h2>
+              <span class="cap-tile-desc">PWI has manufactured transformers, inductors, chokes, and solenoids for over 60 years. An excellent choice for high-quality, wound magnetics.</span>
+              <span class="cap-tile-cta">Learn More →</span>
+            </div>
+          </a>
+          <a href="fluxgate-magnetometers.html" class="cap-tile scroll-reveal">
+            <img src="images/coil-windings/pwi-tape-wound-bobbin-core.webp" alt="Magnetometers" title="Magnetometers" loading="lazy" decoding="async" style="transform:scale(1.8);transform-origin:54% 80%;">
+            <div class="cap-tile-overlay">
+              <span class="cap-tile-tag">Sensors</span>
+              <h2 class="cap-tile-title">Magnetometers</h2>
+              <span class="cap-tile-desc">PWI's highly sensitive and versatile fluxgate magnetometers use specialized tape wound bobbins and testing to ensure uniform quality.</span>
+              <span class="cap-tile-cta">Learn More →</span>
+            </div>
+          </a>
+        </section>
+
+        <!-- ================= SHOP BY AIRCRAFT ================= -->
+        <section class="pwi-aircraft" aria-labelledby="pwi-aircraft-heading">
+          <div class="pwi-aircraft-inner scroll-reveal">
+            <div class="pwi-aircraft-col-intro">
+              <div class="pwi-aircraft-intro">
+                <p class="pwi-aircraft-label">Browse by model</p>
+                <h2 id="pwi-aircraft-heading" class="pwi-aircraft-heading">Find lighting for your aircraft</h2>
+                <p class="pwi-aircraft-deck pwi-aircraft-deck--full">Jump straight to LED cabin lighting and STC data for popular models&mdash;or browse the full list.</p>
+                <p class="pwi-aircraft-deck pwi-aircraft-deck--short">Jump to LED cabin lighting for popular models.</p>
+              </div>
+              <a href="led-lighting.html" class="pwi-aircraft-more">View full list &rarr;</a>
+            </div>
+            <div class="pwi-aircraft-chips">
+              <a href="king-air-90-100-200.html" class="pwi-aircraft-chip">King Air 90, 100, 200, B200, 250</a>
+              <a href="king-air-300.html" class="pwi-aircraft-chip">King Air 300, B300 / 350</a>
+              <a href="citation-led-cabin-light-system.html" class="pwi-aircraft-chip">Citation 525, 550, 560, 650</a>
+              <a href="learjet-led-cabin-lights.html" class="pwi-aircraft-chip">Learjet 35, 36, 60</a>
+              <a href="pilatus-pc-12.html" class="pwi-aircraft-chip">Pilatus PC-12</a>
+            </div>
+          </div>
+        </section>
+
+</main>
+<!-- ================= FOOTER ================= -->
+<div class="pwi-home-site-bottom">
+<!-- MOBILE NEWSLETTER SECTION -->
+<section class="pwi-nl-section" aria-labelledby="pwi-home-newsletter-heading">
+  <div class="pwi-nl-inner">
+    <div class="pwi-nl-copy scroll-reveal">
+      <p class="pwi-nl-label">Stay Updated</p>
+      <h2 id="pwi-home-newsletter-heading" class="pwi-nl-heading">New products, certification updates, and news from PWI &mdash; delivered to your inbox.</h2>
+    </div>
+    <div class="pwi-nl-signup scroll-reveal" style="transition-delay:120ms;">
+      <form id="homepage-newsletter-form" action="newsletter-signup.html" method="get" class="pwi-nl-form">
+        <input id="homepage-newsletter-email" type="email" name="email" placeholder="Email address" required autocomplete="email" aria-label="Email address" class="pwi-nl-input"/>
+        <button type="submit" class="pwi-nl-btn">Continue</button>
+      </form>
+      <p class="pwi-nl-note">Enter your email to continue signup on the next page. No spam &mdash; we don&rsquo;t sell your data. Unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+<!-- FOOTER:START -->
+<footer class="pwi-footer" aria-label="Site footer">
+
+  <div class="pwi-footer-shell">
+
+    <div class="pwi-footer-frame">
+
+      <div class="pwi-footer-board">
+
+        <div class="pwi-footer-newsletter" role="region" aria-labelledby="pwi-footer-newsletter-head">
+          <details class="pwi-footer-accordion pwi-footer-accordion-first" open>
+            <summary class="pwi-footer-accordion-summary" id="pwi-footer-newsletter-head">
+              <span>Newsletter</span>
+              <svg class="pwi-footer-accordion-chevron" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="pwi-footer-accordion-body">
+              <p class="pwi-footer-nl-deck">New products, certification updates, and news from PWI.</p>
+              <form class="pwi-footer-nl-form" action="newsletter-signup.html" method="get">
+                <label class="sr-only" for="pwi-footer-newsletter-email">Email address</label>
+                <div class="pwi-footer-nl-field">
+                  <input id="pwi-footer-newsletter-email" class="pwi-footer-nl-input" type="email" name="email" placeholder="Your email" required autocomplete="email"/>
+                  <button type="submit" class="pwi-footer-nl-submit" aria-label="Subscribe">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                  </button>
+                </div>
+              </form>
+              <p class="pwi-footer-nl-note">No spam. Unsubscribe anytime.</p>
+              <div class="pwi-footer-social-icons pwi-footer-social-icons--col" aria-label="Follow PWI">
+                <a href="https://www.facebook.com/PWIInc" target="_blank" rel="noopener noreferrer" class="pwi-footer-social-icon" aria-label="PWI on Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.505 17.523 2 12 2S2 6.505 2 12.06c0 5.02 3.657 9.184 8.438 9.94v-7.03H7.898v-2.91h2.54V9.845c0-2.523 1.492-3.918 3.777-3.918 1.094 0 2.238.196 2.238.196v2.475h-1.26c-1.243 0-1.63.775-1.63 1.57v1.886h2.773l-.443 2.91h-2.33V22c4.78-.756 8.437-4.92 8.437-9.94z"/></svg></a>
+                <a href="https://www.linkedin.com/company/pwi-inc." target="_blank" rel="noopener noreferrer" class="pwi-footer-social-icon" aria-label="PWI on LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                <a href="https://www.youtube.com/@pwiinc.32" target="_blank" rel="noopener noreferrer" class="pwi-footer-social-icon" aria-label="PWI on YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.19a3.02 3.02 0 00-2.126-2.14C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.374.55A3.02 3.02 0 00.5 6.19 31.6 31.6 0 000 12a31.6 31.6 0 00.5 5.81 3.02 3.02 0 002.126 2.14C4.495 20.5 12 20.5 12 20.5s7.505 0 9.374-.55a3.02 3.02 0 002.126-2.14A31.6 31.6 0 0024 12a31.6 31.6 0 00-.5-5.81zM9.75 15.57V8.43L15.818 12z"/></svg></a>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div class="pwi-footer-links-grid">
+
+          <div class="pwi-footer-col" role="region" aria-labelledby="pwi-footer-contact-head">
+            <details class="pwi-footer-accordion pwi-footer-accordion-mobile-open" open>
+              <summary class="pwi-footer-accordion-summary" id="pwi-footer-contact-head">
+                <span>Contact</span>
+                <svg class="pwi-footer-accordion-chevron" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <div class="pwi-footer-accordion-body">
+                <address class="pwi-footer-contact">
+                  <div class="pwi-footer-contact-row">
+                    <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                    <a href="mailto:sales@pwi-e.com">sales@pwi-e.com</a>
+                  </div>
+                  <div class="pwi-footer-contact-row">
+                    <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                    <a href="tel:+13169422811">+1 316 942 2811</a>
+                  </div>
+                  <div class="pwi-footer-contact-row" aria-label="Fax +1 316 942 6209">
+                    <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                    <span>+1 316 942 6209 <span class="pwi-footer-fax-label">Fax</span></span>
+                  </div>
+                  <div class="pwi-footer-contact-row pwi-footer-address-row">
+                    <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                    <span>
+                      <span class="pwi-footer-company-name">PWI, Inc.</span>
+                      <a href="https://www.google.com/maps/search/?api=1&amp;query=109+South+Knight+Street+Wichita+Kansas+67213" target="_blank" rel="noopener noreferrer">109 South Knight Street<br/>Wichita, Kansas 67213 USA</a>
+                    </span>
+                  </div>
+                </address>
+              </div>
+            </details>
+          </div>
+
+          <div class="pwi-footer-col" role="region" aria-labelledby="pwi-footer-approvals-head">
+            <details class="pwi-footer-accordion" open>
+              <summary class="pwi-footer-accordion-summary" id="pwi-footer-approvals-head">
+                <span>Approvals</span>
+                <svg class="pwi-footer-accordion-chevron" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <div class="pwi-footer-accordion-body">
+                <ul class="pwi-footer-nav-list pwi-footer-nav-list--compact">
+                  <li><a href="certifications-qualifications.html">Certifications &amp; Qualifications</a></li>
+                </ul>
+                <div class="pwi-approvals-groups">
+                  <div class="pwi-approvals-group">
+                    <h4 class="pwi-approvals-label">US FAA</h4>
+                    <ul class="pwi-approvals-list">
+                      <li>FAA Repair Station: PJ2R085L</li>
+                      <li>14 CFR Part 145 Repair Station</li>
+                      <li>14 CFR Part 91, 14 CFR Part 125</li>
+                    </ul>
+                  </div>
+                  <div class="pwi-approvals-group">
+                    <h4 class="pwi-approvals-label">International</h4>
+                    <ul class="pwi-approvals-list">
+                      <li>EASA.145.5092</li>
+                      <li>UK CAA Part 145 Repair Station</li>
+                    </ul>
+                  </div>
+                  <div class="pwi-approvals-group">
+                    <h4 class="pwi-approvals-label">Registration</h4>
+                    <ul class="pwi-approvals-list">
+                      <li>SAM UEI: YGPZRUE86RL3</li>
+                      <li>CMMC Level 1</li>
+                      <li>CAGE: 33497</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <div class="pwi-footer-col" role="region" aria-labelledby="pwi-footer-resources-head">
+            <details class="pwi-footer-accordion" open>
+              <summary class="pwi-footer-accordion-summary" id="pwi-footer-resources-head">
+                <span>Resources</span>
+                <svg class="pwi-footer-accordion-chevron" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <div class="pwi-footer-accordion-body">
+                <ul class="pwi-footer-nav-list">
+                  <li><a href="led-lighting.html">Aircraft LED Lighting</a></li>
+                  <li><a href="stc-pma-data.html">STC / PMA Data</a></li>
+                  <li><a href="all-product-info.html">All Product Information</a></li>
+                  <li><a href="service-bulletins.html">Aviation Service Bulletins</a></li>
+                  <li><a href="authorized-dealers-distributors.html">Authorized Dealers</a></li>
+                  <li><a href="faq.html">Frequently Asked Questions</a></li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
+          <div class="pwi-footer-col" role="region" aria-labelledby="pwi-footer-company-head">
+            <details class="pwi-footer-accordion" open>
+              <summary class="pwi-footer-accordion-summary" id="pwi-footer-company-head">
+                <span>Company</span>
+                <svg class="pwi-footer-accordion-chevron" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <div class="pwi-footer-accordion-body">
+                <ul class="pwi-footer-nav-list">
+                  <li><a href="request-quote.html">Request a Quote</a></li>
+                  <li><a href="about-us.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="press-releases.html">Press Releases</a></li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="pwi-footer-utility">
+        <span class="pwi-footer-copy">&copy; 1963&ndash;2026 PWI, Inc. &middot; All rights reserved</span>
+        <div class="pwi-footer-utility-row">
+          <div class="pwi-footer-payment-list" aria-label="Accepted payment methods">
+            <span>Visa</span>
+            <span>MasterCard</span>
+            <span>Discover</span>
+            <span>Amex</span>
+            <span>PayPal</span>
+            <span>Wire transfer</span>
+          </div>
+          <nav class="pwi-footer-legal-links" aria-label="Legal links">
+            <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+            <a href="privacy-statement.html">Privacy Statement</a>
+            <a href="cookie-policy.html">Cookie Policy</a>
+            <a href="cookie-policy.html#managing" onclick="if(window.PWICookies){PWICookies.openPreferences();return false;}">Cookie Settings</a>
+            <a href="privacy-statement.html#privacy-request">Privacy Request</a>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+<script>
+(function () {
+  function syncFooterAccordions() {
+    var mobile = window.matchMedia("(max-width: 767px)").matches;
+    document.querySelectorAll(".pwi-footer-accordion").forEach(function (details) {
+      var summary = details.querySelector("summary");
+      if (mobile) {
+        if (details.classList.contains("pwi-footer-accordion-first") || details.classList.contains("pwi-footer-accordion-mobile-open")) {
+          details.setAttribute("open", "");
+        } else {
+          details.removeAttribute("open");
+        }
+        if (summary) {
+          summary.style.pointerEvents = "";
+          summary.tabIndex = 0;
+        }
+      } else {
+        details.setAttribute("open", "");
+        if (summary) {
+          summary.style.pointerEvents = "none";
+          summary.tabIndex = -1;
+        }
+      }
+    });
+  }
+  syncFooterAccordions();
+  window.matchMedia("(max-width: 767px)").addEventListener("change", syncFooterAccordions);
+})();
+</script>
+<script src="tailwind_theme/newsletter-handoff.js?v=20260708nl" defer></script>
+
+<!-- FOOTER:END -->
+</div>
+    <!-- ================= PAGE SCRIPTS ================= -->
+    <script>
+    // Search form handler: smart redirect + JS navigation
+    // Uses both .html and clean-URL paths so it works on any server
+    (function () {
+      var form = document.querySelector('form[action="search.html"]');
+      var input = document.getElementById("hero-search");
+      if (!form || !input) return;
+      var phDesktop = input.getAttribute("placeholder") || "";
+      var phMobile = input.getAttribute("data-ph-mobile") || phDesktop;
+      var phMq = window.matchMedia("(max-width: 767px)");
+      function syncPlaceholder() {
+        input.placeholder = phMq.matches ? phMobile : phDesktop;
+      }
+      if (phMq.addEventListener) phMq.addEventListener("change", syncPlaceholder);
+      else if (phMq.addListener) phMq.addListener(syncPlaceholder);
+      syncPlaceholder();
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var raw = String(input.value || "").trim();
+        if (!raw) return;
+        var q = encodeURIComponent(raw);
+        window.location.href = "search.html?q=" + q;
+      });
+
+      /* ---- Live autocomplete ---- */
+      var panel = document.getElementById("hero-suggest");
+      if (!panel) return;
+      var indexLoading = false;
+      var indexCallbacks = [];
+      var selectedIdx = -1;
+      var items = [];
+
+      function loadIndex(cb) {
+        if (window.searchIndex) { cb(); return; }
+        indexCallbacks.push(cb);
+        if (indexLoading) return;
+        indexLoading = true;
+        var s = document.createElement("script");
+        s.src = "search-index.js";
+        s.onload = function () {
+          var cbs = indexCallbacks.splice(0);
+          cbs.forEach(function (fn) { fn(); });
+        };
+        document.head.appendChild(s);
+      }
+
+      function decodeEntities(str) {
+        var t = document.createElement("textarea");
+        t.innerHTML = str;
+        return t.value;
+      }
+
+      function cleanTitle(title) {
+        return decodeEntities(String(title || ""))
+          .replace(/\s*[—-]\s*PWI.*$/i, "")
+          .replace(/\s+from PWI.*$/i, "")
+          .trim();
+      }
+
+      function tokenInText(token, text) {
+        var t = String(token || "").toLowerCase();
+        var hay = String(text || "").toLowerCase();
+        if (!t) return false;
+        if (/^\d+$/.test(t)) return hay.indexOf(t) !== -1;
+        var re = new RegExp("\\b" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i");
+        return re.test(hay);
+      }
+
+      function score(entry, terms) {
+        var title = cleanTitle(entry.title).toLowerCase();
+        var content = String(entry.content || "").toLowerCase();
+        var total = 0;
+        for (var i = 0; i < terms.length; i++) {
+          var t = terms[i];
+          if (tokenInText(t, title)) total += 10;
+          else if (tokenInText(t, content)) total += 2;
+          else return 0;
+        }
+        if (/photo|gallery/i.test(entry.title)) total -= 6;
+        if (/king-air-90-100-200\.html$/i.test(entry.url) && terms.indexOf("200") !== -1) total += 8;
+        return total;
+      }
+
+      function highlight(text, terms) {
+        var out = text;
+        terms.forEach(function (t) {
+          if (!t) return;
+          var re = new RegExp("(" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "ig");
+          out = out.replace(re, "\u0001$1\u0002");
+        });
+        return out
+          .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+          .replace(/\u0001/g, "<mark>").replace(/\u0002/g, "</mark>");
+      }
+
+      function close() {
+        panel.classList.remove("is-open");
+        panel.innerHTML = "";
+        input.setAttribute("aria-expanded", "false");
+        selectedIdx = -1;
+        items = [];
+      }
+
+      function render(results, raw, terms) {
+        if (!results.length) { close(); return; }
+        var html = results.map(function (r) {
+          return '<a class="hero-suggest-item" href="' + r.url + '" role="option">' +
+            '<svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path stroke-linecap="round" d="m20 20-3.6-3.6"/></svg>' +
+            '<span>' + highlight(cleanTitle(r.title), terms) + '</span></a>';
+        }).join("");
+        html += '<a class="hero-suggest-footer" href="search.html?q=' + encodeURIComponent(raw) + '" role="option">See all results for &ldquo;' + raw.replace(/&/g, "&amp;").replace(/</g, "&lt;") + '&rdquo; →</a>';
+        panel.innerHTML = html;
+        panel.classList.add("is-open");
+        input.setAttribute("aria-expanded", "true");
+        selectedIdx = -1;
+        items = Array.prototype.slice.call(panel.querySelectorAll('[role="option"]'));
+      }
+
+      function update() {
+        var raw = String(input.value || "").trim();
+        if (raw.length < 2) { close(); return; }
+        loadIndex(function () {
+          if (String(input.value || "").trim() !== raw) return;
+          var terms = raw.toLowerCase().split(/\s+/).filter(Boolean);
+          var scored = window.searchIndex
+            .map(function (e) { return { entry: e, s: score(e, terms) }; })
+            .filter(function (x) { return x.s > 0; })
+            .sort(function (a, b) { return b.s - a.s; })
+            .slice(0, 6)
+            .map(function (x) { return x.entry; });
+          render(scored, raw, terms);
+        });
+      }
+
+      function setSelected(idx) {
+        items.forEach(function (el, i) {
+          el.classList.toggle("is-selected", i === idx);
+        });
+        selectedIdx = idx;
+        if (idx >= 0 && items[idx]) items[idx].scrollIntoView({ block: "nearest" });
+      }
+
+      input.addEventListener("input", update);
+      input.addEventListener("focus", function () { loadIndex(function () {}); update(); });
+      input.addEventListener("keydown", function (event) {
+        if (!panel.classList.contains("is-open")) return;
+        if (event.key === "ArrowDown") {
+          event.preventDefault();
+          setSelected((selectedIdx + 1) % items.length);
+        } else if (event.key === "ArrowUp") {
+          event.preventDefault();
+          setSelected((selectedIdx - 1 + items.length) % items.length);
+        } else if (event.key === "Enter" && selectedIdx >= 0) {
+          event.preventDefault();
+          window.location.href = items[selectedIdx].getAttribute("href");
+        } else if (event.key === "Escape") {
+          close();
+        }
+      });
+      document.addEventListener("click", function (event) {
+        if (!form.contains(event.target)) close();
+      });
+    })();
+    </script>
+    <script>
+    (function () {
+      var form = document.getElementById("homepage-newsletter-form");
+      var input = document.getElementById("homepage-newsletter-email");
+      if (!form || !input) return;
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var raw = String(input.value || "").trim();
+        if (!raw || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(raw)) return;
+        try {
+          sessionStorage.setItem("pwi_newsletter_email", raw);
+          sessionStorage.setItem("pwi_newsletter_from", "homepage");
+        } catch (e) {}
+        window.location.href = "newsletter-signup.html";
+      });
+    })();
+    </script>
+<script src="tailwind_theme/shared-layout.min.js?v=20260707n" defer></script>
+    <script src="tailwind_theme/site-nav.min.js?v=20260707c" defer></script>
+    <script src="tailwind_theme/aria-current.js?v=20260626" defer></script>
+    <script src="tailwind_theme/privacy-config.js?v=20260627" defer></script>
+<script src="tailwind_theme/cookie-banner.js?v=20260709cb2" defer></script>
+<script src="tailwind_theme/newsletter-popup.js?v=20260709nl21" defer></script>
+    <script>
+(function () {
+  var DURATION = 3000;
+  var slider = document.getElementById('hp-slider');
+  var toggle = document.getElementById('hp-slideshow-toggle');
+  var hero = slider && slider.closest('.hero-home');
+  if (!slider || !toggle || !hero) return;
+
+  var slides = slider.querySelectorAll('.hp-slide');
+  var nav = document.getElementById('hp-slide-nav');
+  var caption = document.getElementById('hp-slide-caption');
+  var current = 0;
+  var timer = null;
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var label = toggle.querySelector('.hp-slideshow-toggle-text');
+
+  function syncCaption() {
+    if (!caption) return;
+    var slide = slides[current];
+    var tagEl = caption.querySelector('.hp-caption-tag');
+    var titleEl = caption.querySelector('.hp-caption-title');
+    caption.classList.remove('is-visible');
+    setTimeout(function () {
+      if (tagEl) tagEl.textContent = slide.getAttribute('data-tag') || '';
+      if (titleEl) titleEl.textContent = slide.getAttribute('data-title') || '';
+      caption.classList.add('is-visible');
+    }, 200);
+  }
+
+  if (!slides.length || reduced) {
+    toggle.hidden = true;
+    if (nav) nav.hidden = true;
+    syncCaption();
+    return;
+  }
+
+  var dots = [];
+  if (nav) {
+    slides.forEach(function (slide, i) {
+      var dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'hp-dot' + (i === 0 ? ' is-active' : '');
+      dot.setAttribute('aria-label', 'Show slide: ' + (slide.getAttribute('data-title') || 'Slide ' + (i + 1)));
+      dot.addEventListener('click', function () {
+        goTo(i);
+        if (!hero.classList.contains('hp-slideshow-paused')) setPlaying(true);
+      });
+      nav.appendChild(dot);
+      dots.push(dot);
+    });
+  }
+
+  function restartPan() {
+    var inImg = slides[current].querySelector('img');
+    if (!inImg || hero.classList.contains('hp-slideshow-paused')) return;
+    inImg.style.animation = 'none';
+    void inImg.offsetWidth;
+    inImg.style.animation = '';
+  }
+
+  function goTo(idx) {
+    if (idx === current) return;
+    slides[current].classList.remove('hp-active');
+    if (dots[current]) dots[current].classList.remove('is-active');
+    current = (idx + slides.length) % slides.length;
+    slides[current].classList.add('hp-active');
+    if (dots[current]) dots[current].classList.add('is-active');
+    restartPan();
+    syncCaption();
+  }
+
+  function next() { goTo(current + 1); }
+
+  function setPlaying(playing) {
+    if (playing) {
+      if (timer) clearInterval(timer);
+      timer = setInterval(next, DURATION);
+      hero.classList.remove('hp-slideshow-paused');
+      toggle.setAttribute('aria-pressed', 'false');
+      toggle.setAttribute('aria-label', 'Pause background slideshow');
+      if (label) label.textContent = 'Pause';
+      restartPan();
+    } else {
+      if (timer) { clearInterval(timer); timer = null; }
+      hero.classList.add('hp-slideshow-paused');
+      toggle.setAttribute('aria-pressed', 'true');
+      toggle.setAttribute('aria-label', 'Play background slideshow');
+      if (label) label.textContent = 'Play';
+    }
+  }
+
+  toggle.addEventListener('click', function () {
+    setPlaying(toggle.getAttribute('aria-pressed') === 'true');
+  });
+
+  hero.addEventListener('mouseenter', function () {
+    if (timer) { clearInterval(timer); timer = null; }
+  });
+  hero.addEventListener('mouseleave', function () {
+    if (!hero.classList.contains('hp-slideshow-paused')) setPlaying(true);
+  });
+
+  var touchX = null, touchY = null;
+  slider.addEventListener('touchstart', function (e) {
+    if (e.touches.length !== 1) return;
+    touchX = e.touches[0].clientX;
+    touchY = e.touches[0].clientY;
+  }, { passive: true });
+  slider.addEventListener('touchend', function (e) {
+    if (touchX === null) return;
+    var dx = e.changedTouches[0].clientX - touchX;
+    var dy = e.changedTouches[0].clientY - touchY;
+    touchX = touchY = null;
+    if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+    e.preventDefault();
+    goTo(dx < 0 ? current + 1 : current - 1);
+    if (!hero.classList.contains('hp-slideshow-paused')) setPlaying(true);
+  });
+
+  syncCaption();
+  setPlaying(true);
+})();
+</script>
+<script>
+(function () {
+  var els = document.querySelectorAll('.scroll-reveal');
+  if (!els.length) return;
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduced || !('IntersectionObserver' in window)) {
+    els.forEach(function (el) { el.classList.add('in-view'); });
+    return;
+  }
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function (el) { observer.observe(el); });
+})();
+</script>
+<script>
+(function () {
+  var nums = document.querySelectorAll('.pwi-stat-num');
+  if (!nums.length) return;
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function finalText(el) {
+    var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+    return target.toLocaleString('en-US');
+  }
+
+  if (reduced || !('IntersectionObserver' in window)) {
+    nums.forEach(function (el) { el.textContent = finalText(el); });
+    return;
+  }
+
+  function animate(el) {
+    var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+    var duration = 1400;
+    var start = null;
+    function step(ts) {
+      if (start === null) start = ts;
+      var p = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toLocaleString('en-US');
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        animate(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+  nums.forEach(function (el) { observer.observe(el); });
+})();
+</script>
+</body>
+  </html>

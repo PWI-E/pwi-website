@@ -1,0 +1,114 @@
+:root {
+    --font-sans: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --brand: #1e4ed8;
+    --brand-hover: #1b46c4;
+    --accent: #60a5fa;
+    --ink: #f1f5f9;
+    --body: #cbd5e1;
+    --muted: #94a3b8;
+    --line: rgba(148, 163, 184, 0.18);
+    --surface: rgba(255, 255, 255, 0.07);
+    --surface-soft: rgba(255, 255, 255, 0.04);
+    --canvas: #0a1930;
+}
+html {
+    background: var(--canvas);
+}
+/* Match product pages: header blends into hero, footer blends into canvas */
+.site-header {
+    background: #0a1930 !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+.pwi-footer {
+    background: linear-gradient(180deg, #0a1930 0%, #0f172a 42%, #0f172a 100%) !important;
+}
+body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    background: var(--canvas);
+    color: var(--body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+summary { list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::marker { content: ""; }
+.glass-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.soft-elev { box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25); }
+.bg-canvas { background: var(--canvas) !important; }
+.bg-surface { background: var(--surface) !important; }
+.bg-surface-soft { background: var(--surface-soft) !important; }
+.text-ink { color: var(--ink) !important; }
+.text-body { color: var(--body) !important; }
+.text-muted { color: var(--muted) !important; }
+.border-line { border-color: var(--line) !important; }
+.hero-dark {
+    background: radial-gradient(1100px 420px at 84% 10%, rgba(30, 78, 216, 0.22), transparent 56%), linear-gradient(180deg, #0d1e40 0%, #0f2244 52%, #0b1a38 100%);
+    color: #e2e8f0;
+}
+@media (max-width: 639px) {
+    .hero-pill {
+        font-size: 9.5px !important;
+        padding: 3px 16px !important;
+        letter-spacing: 0.1em !important;
+    }
+}
+/* LED / fluorescent product photo gallery header */
+.led-photo-header,
+.fluo-photo-header {
+    padding-top: 1.25rem;
+    padding-bottom: 0.5rem;
+    background: var(--canvas);
+}
+@media (min-width: 640px) {
+    .led-photo-header,
+    .fluo-photo-header {
+        padding-top: 2rem;
+    }
+}
+/* Mirrors .led-photo-header so the closing back-link bookends the gallery
+   with the same padding it opens with, instead of the large mt-10/pt-8 gap. */
+.photo-gallery-footer-link {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+@media (min-width: 640px) {
+    .photo-gallery-footer-link {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+/* The 2/3-col photo-grid rule in site.css targets every direct-child div of
+   the gallery section, including this one, squeezing the back-link into a
+   half-width column and forcing it to wrap. Opt this div back out of the grid. */
+section[aria-label="Product photo gallery"] > div.photo-gallery-footer-link {
+    display: block !important;
+    max-width: 960px !important;
+}
+/* Dark-theme overrides for gallery components defined in site.css */
+.photo-gallery-notice {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(148, 163, 184, 0.18);
+    color: var(--muted);
+}
+.photo-gallery-notice svg {
+    stroke: var(--muted);
+}
+.photo-gallery-notice a {
+    color: var(--accent);
+}
+.photo-gallery-notice strong {
+    color: var(--body);
+}
+section[aria-label="Product photo gallery"] .bg-slate-100 {
+    background: rgba(15, 23, 42, 0.6);
+}
+section[aria-label="Product photo gallery"] .bg-surface {
+    border: 1px solid rgba(148, 163, 184, 0.12);
+}

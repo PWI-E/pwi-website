@@ -1,0 +1,10 @@
+/* Beechjet / Hawker 400XP hero and related cards */
+.related-card img {
+  object-position: 50% 15%;
+}
+.pill-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
