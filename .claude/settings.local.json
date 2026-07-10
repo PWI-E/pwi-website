@@ -759,7 +759,10 @@
       "Bash(sips -g pixelWidth -g pixelHeight images/pwi-hero-mobile-underwing.jpg)",
       "Bash(sips -s format jpeg -Z 780 -s formatOptions 42 images/products/pwi-0011-led-entry-door-underwing-light.webp --out images/pwi-hero-mobile-underwing.jpg)",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m 'Initial commit: PWI website snapshot \\(2026-07-10\\) *)",
+      "Bash(git count-objects *)",
+      "Bash(git commit -m 'Enlarge mobile nav links to 16px with 44px tap targets *)"
     ]
   }
 }
