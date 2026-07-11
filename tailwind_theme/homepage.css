@@ -481,7 +481,7 @@ grid-template-columns: repeat(2, minmax(0, 1fr));
 gap: 1rem;
 min-height: 0;
 height: auto;
-padding: clamp(1.15rem, 2.5vw, 1.75rem) clamp(1rem, 2.5vw, 1.5rem) clamp(1.35rem, 3vw, 2rem) !important;
+padding: 1rem !important;
 background: transparent;
 border-top: 1px solid rgba(148,163,184,0.12);
 box-shadow: none;
@@ -603,6 +603,7 @@ margin: 0;
 .cap-strip {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.15rem;
+  padding: 1.15rem !important;
 }
 .cap-tile-photo { aspect-ratio: 4 / 5; }
 }
