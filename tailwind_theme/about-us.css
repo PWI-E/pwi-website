@@ -313,6 +313,19 @@ summary::marker { content: ""; }
         font-size: 1.05rem;
     }
 }
+@media (min-width: 1280px) {
+    .history-editorial {
+        max-width: 64rem;
+        grid-template-columns: minmax(14rem, 16rem) minmax(0, 1fr);
+        gap: 4rem;
+    }
+    .history-list {
+        max-width: none;
+    }
+    .hist-event {
+        max-width: 40rem;
+    }
+}
 .about-history {
     background:
         var(--pwi-dark-glow),
