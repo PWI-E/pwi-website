@@ -117,24 +117,6 @@ body {
     transition: transform 400ms ease;
 }
 .svc-tile:hover img { transform: scale(1.04); }
-.svc-tile-pill {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    z-index: 1;
-    padding: 0.45rem 0.95rem;
-    border-radius: 999px;
-    background: rgba(5, 15, 35, 0.72);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(148, 163, 184, 0.2);
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #dbeafe;
-    white-space: nowrap;
-}
 .svc-tile-body {
     display: block;
     padding: 1rem 0.25rem 0;
