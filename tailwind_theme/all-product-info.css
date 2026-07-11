@@ -226,30 +226,26 @@ summary::marker {
     }
 }
 .pdf-card {
-    background: #ffffff;
+    background: transparent;
     border: none;
-    border-radius: 0.875rem;
-    overflow: hidden;
+    border-radius: 0;
+    overflow: visible;
     display: block;
     text-decoration: none;
-    box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
-    transition: box-shadow 180ms ease, transform 180ms ease;
-    transform: translateZ(0);
-    will-change: transform;
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
-.pdf-card:hover {
-    background: #ffffff;
-    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
-    transform: translateY(-2px);
+.pdf-card:hover .pdf-card-img-wrap {
+    border-color: rgba(99,152,255,0.35);
 }
 .pdf-card-img-wrap {
     display: block;
     width: 100%;
     position: relative;
-    padding-top: 62.5%;
+    padding-top: 75%;
     overflow: hidden;
     background: #e2e8f0;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(148,163,184,0.14);
+    transition: border-color 200ms ease;
 }
 .pdf-card-img-wrap img {
     display: block;
@@ -323,12 +319,12 @@ summary::marker {
     transform: scale(1.02);
 }
 .pdf-card-body {
-    padding: 1rem 1.125rem 1.125rem;
+    padding: 0.75rem 0.25rem 0;
 }
 .pdf-card-title {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     font-weight: 500;
-    color: #0f172a;
+    color: #e2e8f0;
     margin: 0 0 0.5rem;
     line-height: 1.35;
     display: -webkit-box;
@@ -337,7 +333,7 @@ summary::marker {
     overflow: hidden;
 }
 .pdf-card:hover .pdf-card-title {
-    color: #1e4ed8;
+    color: #93c5fd;
 }
 .pdf-fade {
     opacity: 0;
@@ -363,7 +359,7 @@ summary::marker {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: #1e4ed8;
+    color: #60a5fa;
 }
 .pdf-category-heading {
     color: #cbd5e1;
