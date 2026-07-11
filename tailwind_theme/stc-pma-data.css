@@ -156,6 +156,14 @@ summary { list-style: none; }
             background: transparent;
             border: none;
         }
+        .model-panel > div {
+            max-height: 420px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(148,163,184,0.35) transparent;
+        }
+        .model-panel > div::-webkit-scrollbar { width: 6px; }
+        .model-panel > div::-webkit-scrollbar-thumb { background: rgba(148,163,184,0.35); border-radius: 3px; }
         details.model-card > div > div {
             padding-left: 0 !important;
             padding-right: 0 !important;
