@@ -172,10 +172,12 @@ summary { list-style: none; }
         .model-card:focus-within .card-headline,
         details[data-open="true"] .card-headline { color: #93c5fd !important; }
         .model-card > summary {
+            display: flex !important;
             flex-direction: column !important;
+            justify-content: center;
             padding-left: 0 !important;
             padding-right: 0 !important;
-            min-height: inherit;
+            min-height: 120px;
             background: transparent;
         }
         .model-card .model-header-bar {
@@ -201,6 +203,10 @@ summary { list-style: none; }
             position: absolute; inset: 0;
             width: 100%; height: 100%;
             object-fit: cover; display: block;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+            .model-card { padding-left: 170px; }
+            .model-card .model-card-thumb { width: 170px; }
         }
         @media (max-width: 639px) {
             .model-card { padding-left: 110px; }
