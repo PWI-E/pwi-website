@@ -15,3 +15,15 @@
 .ka-table-scroll { overflow-x: auto; border: 1px solid rgba(148,163,184,0.15); border-radius: 0.875rem; }
 @media (max-width: 767px) { .ka-table-scroll { border: none; border-radius: 0; padding: 0; } }
 @media (max-width: 767px) { .ka-data-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.06); } }
+/* ── Related products: tall portrait tiles (Variant B) ── */
+.related-tiles { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
+.related-tile { display: block; text-decoration: none; }
+.related-tile-frame { display: block; position: relative; overflow: hidden; border-radius: 1.25rem; aspect-ratio: 3/4; border: 1px solid rgba(148,163,184,0.14); }
+.related-tile-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 400ms ease; }
+.related-tile:hover .related-tile-frame img { transform: scale(1.04); }
+.related-tile-label { margin-top: 0.75rem; color: #e2e8f0; font-size: 0.875rem; font-weight: 500; }
+.related-tile-sub { color: rgba(148,163,184,0.7); font-size: 0.75rem; margin-top: 2px; }
+@media (max-width: 767px) {
+  .related-tiles { grid-template-columns: 1fr; gap: 1.5rem; }
+  .related-tile-frame { aspect-ratio: 4/3; }
+}
