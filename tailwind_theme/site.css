@@ -2444,8 +2444,8 @@ section[aria-label="Product photo gallery"] > div {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   max-width: 100% !important;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 section[aria-label="Product photo gallery"] > div > * {
   margin-top: 0 !important;

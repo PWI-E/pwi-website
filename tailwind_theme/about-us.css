@@ -398,8 +398,8 @@ summary::marker { content: ""; }
     background: #ffffff;
 }
 .about-tagline-frame {
-    padding-top: clamp(1.5rem, 3vw, 2.25rem);
-    padding-bottom: clamp(1.5rem, 3vw, 2.25rem);
+    padding-top: clamp(0.75rem, 1.5vw, 1.25rem);
+    padding-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
 }
 @media (max-width: 900px) {
     .quality-grid {
@@ -480,7 +480,7 @@ summary::marker { content: ""; }
     overflow: hidden;
 }
 .about-tagline-img {
-    max-width: 760px;
+    max-width: 1024px;
 }
 .about-cta {
     background: linear-gradient(180deg, #0d1e40 0%, #091830 100%);
