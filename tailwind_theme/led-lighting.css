@@ -590,28 +590,26 @@ summary {
         @media (max-width: 1023px) { .showcase-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 639px) { .showcase-grid { grid-template-columns: 1fr; } }
         .showcase-card {
-            background: rgba(255,255,255,0.07);
-            border: 1px solid rgba(148,163,184,0.18);
-            border-radius: 0.875rem;
-            overflow: hidden;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            overflow: visible;
             display: flex;
             flex-direction: column;
             height: 100%;
             text-decoration: none;
-            transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
-            transform: translateZ(0);
-            will-change: transform;
-            -webkit-mask-image: -webkit-radial-gradient(white, black);
         }
-        .showcase-card:hover {
-            background: rgba(30,78,216,0.18);
+        .showcase-card:hover .showcase-img {
             border-color: rgba(99,152,255,0.35);
         }
         .showcase-img {
-            aspect-ratio: 16/9;
+            aspect-ratio: 4/3;
             overflow: hidden;
             background: #0b1628;
             position: relative;
+            border-radius: 1.25rem;
+            border: 1px solid rgba(148,163,184,0.14);
+            transition: border-color 200ms ease;
         }
         .showcase-img--placeholder {
             background: linear-gradient(135deg, #0a1930 0%, #1a3468 100%);
@@ -635,6 +633,9 @@ summary {
             object-position: center center;
             display: block;
             transition: transform 400ms ease;
+        }
+        .showcase-card:hover .showcase-img img {
+            transform: scale(1.04);
         }
         .showcase-img--product-photo {
             background: #eef1f4;
@@ -689,7 +690,7 @@ summary {
         }
         .showcase-card:hover .showcase-img img { transform: scale(1.04); }
         .showcase-body {
-            padding: 0.9rem 1.05rem 1rem;
+            padding: 0.75rem 0.25rem 0;
             display: flex;
             flex-direction: column;
             flex: 1;
