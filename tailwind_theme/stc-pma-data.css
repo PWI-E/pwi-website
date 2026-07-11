@@ -147,10 +147,14 @@ summary { list-style: none; }
         }
         details.model-card > div {
             margin-top: 0.75rem;
-            padding-bottom: 1rem;
+            padding: 0 1rem 0.5rem !important;
             background: rgba(255,255,255,0.05);
             border: 1px solid rgba(148,163,184,0.14);
             border-radius: 1rem;
+        }
+        details.model-card > div > div {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
         }
         .card-headline {
             color: #f1f5f9 !important;
@@ -171,7 +175,7 @@ summary { list-style: none; }
             background: transparent;
         }
         .model-card .model-header-bar {
-            padding: 0.75rem 0.25rem 0 !important;
+            padding: 0.75rem 1rem 0 !important;
         }
 
         .model-card > summary > span:first-child {
