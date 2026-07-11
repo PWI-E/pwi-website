@@ -255,6 +255,11 @@ h2.eyebrow { margin-top: 0; }
     }
 }
 
+/* Continue the codes band color so there is no seam above the CTA */
+.pwi-site-bottom {
+    background: #0b1a38 !important;
+}
+
 /* CTA band flows into footer */
 .pwi-site-bottom > .site-cta.led-cta {
     background: transparent !important;
