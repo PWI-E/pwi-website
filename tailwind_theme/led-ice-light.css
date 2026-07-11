@@ -178,8 +178,8 @@
 .related-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,0,0,0.4); }
 .related-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 65%; transition: transform 400ms ease; }
 .related-card:hover img { transform: scale(1.04); }
-.related-card-logo img { transform: translateY(-24px); }
-.related-card-logo:hover img { transform: translateY(-24px) scale(1.04); }
+.related-tile-logo .related-tile-frame img { transform: translateY(-24px); }
+.related-tile-logo:hover .related-tile-frame img { transform: translateY(-24px) scale(1.04); }
 .related-card-label {
   position: absolute; bottom: 0; left: 0; right: 0;
   padding: 0.875rem 1.125rem;
