@@ -326,6 +326,27 @@ summary::marker { content: ""; }
         max-width: 40rem;
     }
 }
+@media (min-width: 1600px) {
+    .history-editorial {
+        max-width: 80rem;
+        grid-template-columns: minmax(16rem, 20rem) minmax(0, 1fr);
+        gap: 6rem;
+    }
+    .history-intro .about-section-title {
+        font-size: 2.4rem;
+    }
+    .hist-row {
+        padding: 1.6rem 0;
+    }
+    .hist-year {
+        font-size: 2.6rem;
+        width: 7rem;
+    }
+    .hist-event {
+        font-size: 1.2rem;
+        max-width: 48rem;
+    }
+}
 .about-history {
     background:
         var(--pwi-dark-glow),
