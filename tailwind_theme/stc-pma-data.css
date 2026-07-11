@@ -385,8 +385,12 @@ summary { list-style: none; }
             background: transparent;
             border: none;
             color: #93c5fd;
-            font-size: 0.7rem; font-weight: 700; line-height: 1;
+            font-size: 0.875rem; font-weight: 700; line-height: 1;
             letter-spacing: 0.12em; text-transform: uppercase;
+        }
+        .approval-badge svg {
+            width: 16px !important;
+            height: 16px !important;
         }
         .category-label {
             display: flex; align-items: center; gap: 0.4rem;
