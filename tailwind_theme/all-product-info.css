@@ -233,9 +233,6 @@ summary::marker {
     display: block;
     text-decoration: none;
 }
-.pdf-card:hover .pdf-card-img-wrap {
-    border-color: rgba(99,152,255,0.35);
-}
 .pdf-card-img-wrap {
     display: block;
     width: 100%;
@@ -244,8 +241,6 @@ summary::marker {
     overflow: hidden;
     background: #e2e8f0;
     border-radius: 1.25rem;
-    border: 1px solid rgba(148,163,184,0.14);
-    transition: border-color 200ms ease;
 }
 .pdf-card-img-wrap img {
     display: block;
