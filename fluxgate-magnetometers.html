@@ -444,19 +444,22 @@
                     <p>Our fluxgate magnetometers are hand-made in the USA to job specifications and shipped across the country.</p>
                     <p>All of our fluxgate magnetometers can be used where precision magnetic field measurements are required.</p>
                   </div>
-                  <div class="fg-spec-card p-5 sm:p-6 lg:w-80">
+                  <div class="fg-spec-card lg:w-80" style="padding:1.25rem 1.35rem 0;">
                     <h3 class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-4 font-semibold">Specifications</h3>
-                    <ul class="text-sm text-body fg-spec-list">
-                      <li class="py-2.5 first:pt-0 flex justify-between gap-3"><span class="text-muted">Sensitivity</span><span class="font-medium text-[#1E4ED8]">10 nT</span></li>
-                      <li class="py-2.5 flex justify-between gap-3"><span class="text-muted">Operating Temperature</span><span class="font-medium text-[#1E4ED8] whitespace-nowrap">-60°C to 225°C</span></li>
-                      <li class="py-2.5 last:pb-0 flex justify-between gap-3"><span class="text-muted">Bandwidth</span><span class="font-medium text-[#1E4ED8]">Design dependent</span></li>
+                    <ul class="fg-spec-list">
+                      <li class="fg-spec-row"><span class="text-muted">Sensitivity</span><span class="font-medium text-[#1E4ED8]">10 nT</span></li>
+                      <li class="fg-spec-row"><span class="text-muted">Operating Temperature</span><span class="font-medium text-[#1E4ED8] whitespace-nowrap">-60°C to 225°C</span></li>
+                      <li class="fg-spec-row"><span class="text-muted">Bandwidth</span><span class="font-medium text-[#1E4ED8]">Design dependent</span></li>
                     </ul>
                   </div>
                 </div>
                 <!-- How it works -->
                 <style>
-                  .fg-spec-card{background:rgba(147,197,253,0.1);border:1px solid rgba(147,197,253,0.26);border-radius:0.75rem;}
-                  .fg-spec-list>li+li{border-top:1px solid rgba(147,197,253,0.2);}
+                  .fg-spec-card{background:rgba(147,197,253,0.1);border:1px solid rgba(147,197,253,0.26);border-radius:0.75rem;overflow:hidden;}
+                  .fg-spec-list{margin:0;padding:0;list-style:none;}
+                  .fg-spec-row{display:flex;justify-content:space-between;align-items:baseline;gap:.75rem;padding:.7rem 1.35rem;margin:0 -1.35rem;font-size:.875rem;color:#334155;line-height:1.45;}
+                  .fg-spec-row:nth-child(even){background:rgba(30,58,138,0.05);}
+                  .fg-spec-row:last-child{padding-bottom:1.15rem;}
                   .fg-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2.5rem;align-items:stretch;}
                   @media (max-width:900px){.fg-steps{grid-template-columns:1fr;}}
                   .fg-step{background:rgba(147,197,253,0.15);border:1px solid rgba(147,197,253,0.26);border-radius:0.75rem;padding:1.25rem 1.35rem;position:relative;}
@@ -466,6 +469,11 @@
                   .fg-step-extra .fg-step-label{color:#1E4ED8!important;}
                   .fg-step-cta{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:42px;padding:.65rem 1.25rem;border-radius:999px;font-size:.6875rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:#1E4ED8;background:rgba(147,197,253,0.14);border:1px solid rgba(147,197,253,0.32);transition:background 180ms ease,border-color 180ms ease,color 180ms ease;}
                   .fg-step-cta:hover,.fg-step-cta:focus-visible{color:#fff;background:#1E4ED8;border-color:#1E4ED8;}
+                  .fg-uses-card{padding:1.25rem 1.35rem 0;margin-bottom:2.5rem;}
+                  .fg-uses-list{margin:0 -1.35rem;padding:0;list-style:none;}
+                  .fg-uses-row{padding:.7rem 1.35rem;font-size:.9375rem;color:#334155;line-height:1.45;}
+                  .fg-uses-row:nth-child(even){background:rgba(30,58,138,0.05);}
+                  .fg-uses-row:last-child{padding-bottom:1.15rem;}
                 </style>
                 <h3 class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-6">How it works</h3>
                 <div class="fg-steps">
@@ -501,59 +509,24 @@
                   </div>
                 </div>
 
-                <!-- ── Common Uses &mdash; Icon Cards ── -->
-                <h2 class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-6">Common Uses</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-10">
-                  <!-- 1 -->
-                  <div class="flex items-center gap-3 py-2">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="15 19 12 22 9 19"/><polyline points="19 9 22 12 19 15"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
-                    </div>
-                    <p class="text-sm font-medium text-[var(--ink)]">Linear Position Sensing</p>
-                  </div>
-                  <!-- 2 -->
-                  <div class="flex items-center gap-3 py-2">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36z"/></svg>
-                    </div>
-                    <p class="text-sm font-medium text-[var(--ink)]">Fluxgate Compass Systems</p>
-                  </div>
-                  <!-- 3 -->
-                  <div class="flex items-center gap-3 py-2">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-                    </div>
-                    <p class="text-sm font-medium text-[var(--ink)]">Magnetic Anomaly Detection</p>
-                  </div>
-                  <!-- 4 -->
-                  <div class="flex items-center gap-3 py-2">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-                    </div>
-                    <p class="text-sm font-medium text-[var(--ink)]">Measuring the Earth&apos;s Magnetic Fields</p>
-                  </div>
-                  <!-- 5 -->
-                  <div class="flex items-center gap-3 py-2">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                    </div>
-                    <p class="text-sm font-medium text-[var(--ink)]">Small Magnetic Signatures</p>
-                  </div>
-                  <!-- 6 -->
-                  <div class="flex items-center gap-3 py-2">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                    </div>
-                    <p class="text-sm font-medium text-[var(--ink)]">Able to Measure Magnetic Fields Generated by Power Lines</p>
-                  </div>
+                <!-- ── Common Uses ── -->
+                <div class="fg-spec-card fg-uses-card">
+                  <h2 class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-4">Common Uses</h2>
+                  <ul class="fg-uses-list">
+                    <li class="fg-uses-row">Linear Position Sensing</li>
+                    <li class="fg-uses-row">Fluxgate Compass Systems</li>
+                    <li class="fg-uses-row">Magnetic Anomaly Detection</li>
+                    <li class="fg-uses-row">Measuring the Earth&apos;s Magnetic Fields</li>
+                    <li class="fg-uses-row">Small Magnetic Signatures</li>
+                    <li class="fg-uses-row">Magnetic Fields from Power Lines</li>
+                  </ul>
                 </div>
 
-                <!-- ── Features &mdash; Icon Cards ── -->
+                <!-- ── Features ── -->
                 <h2 class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-6">Features</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
-                  <!-- 1 -->
-                  <div class="flex items-start gap-3 py-2" style="transition:transform 180ms ease,box-shadow 220ms ease,border-color 220ms ease">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                  <div class="flex items-start gap-3 py-2">
+                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
                     </div>
                     <div>
@@ -561,9 +534,8 @@
                       <p class="text-xs text-[var(--muted)] mt-0.5">Miniaturization to larger options</p>
                     </div>
                   </div>
-                  <!-- 2 -->
-                  <div class="flex items-start gap-3 py-2" style="transition:transform 180ms ease,box-shadow 220ms ease,border-color 220ms ease">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                  <div class="flex items-start gap-3 py-2">
+                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
                     </div>
                     <div>
@@ -571,36 +543,35 @@
                       <p class="text-xs text-[var(--muted)] mt-0.5">Clean signal output</p>
                     </div>
                   </div>
-                  <!-- 3 -->
-                  <div class="flex items-start gap-3 py-2" style="transition:transform 180ms ease,box-shadow 220ms ease,border-color 220ms ease">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                  <div class="flex items-start gap-3 py-2">
+                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polygon points="13 19 22 12 13 5 13 19"/><polygon points="2 19 11 12 2 5 2 19"/></svg>
                     </div>
                     <div>
                       <p class="text-sm font-medium text-[var(--ink)]">High-Speed Interface</p>
+                      <p class="text-xs text-[var(--muted)] mt-0.5">Fast data readout</p>
                     </div>
                   </div>
-                  <!-- 4 -->
-                  <div class="flex items-start gap-3 py-2" style="transition:transform 180ms ease,box-shadow 220ms ease,border-color 220ms ease">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                  <div class="flex items-start gap-3 py-2">
+                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/></svg>
                     </div>
                     <div>
                       <p class="text-sm font-medium text-[var(--ink)]">Low-Temperature Coefficient</p>
+                      <p class="text-xs text-[var(--muted)] mt-0.5">Stable across temperature</p>
                     </div>
                   </div>
-                  <!-- 5 -->
-                  <div class="flex items-start gap-3 py-2" style="transition:transform 180ms ease,box-shadow 220ms ease,border-color 220ms ease">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                  <div class="flex items-start gap-3 py-2">
+                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
                     </div>
                     <div>
                       <p class="text-sm font-medium text-[var(--ink)]">Multiple Communication Protocols</p>
+                      <p class="text-xs text-[var(--muted)] mt-0.5">Flexible system integration</p>
                     </div>
                   </div>
-                  <!-- 6 -->
-                  <div class="flex items-start gap-3 py-2" style="transition:transform 180ms ease,box-shadow 220ms ease,border-color 220ms ease">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                  <div class="flex items-start gap-3 py-2">
+                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg>
                     </div>
                     <div>
@@ -608,22 +579,22 @@
                       <p class="text-xs text-[var(--muted)] mt-0.5">Application dependent</p>
                     </div>
                   </div>
-                  <!-- 7 -->
-                  <div class="flex items-start gap-3 py-2" style="transition:transform 180ms ease,box-shadow 220ms ease,border-color 220ms ease">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                  <div class="flex items-start gap-3 py-2">
+                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
                     <div>
                       <p class="text-sm font-medium text-[var(--ink)]">Rugged Design</p>
+                      <p class="text-xs text-[var(--muted)] mt-0.5">Built for demanding environments</p>
                     </div>
                   </div>
-                  <!-- 8 -->
-                  <div class="flex items-start gap-3 py-2" style="transition:transform 180ms ease,box-shadow 220ms ease,border-color 220ms ease">
-                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                  <div class="flex items-start gap-3 py-2">
+                    <div style="width:2.25rem;height:2.25rem;background:rgba(147,197,253,0.22);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="#1E4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                     </div>
                     <div>
                       <p class="text-sm font-medium text-[var(--ink)]">High-Precision Integrated Sensor</p>
+                      <p class="text-xs text-[var(--muted)] mt-0.5">Job-built measurement accuracy</p>
                     </div>
                   </div>
                 </div>

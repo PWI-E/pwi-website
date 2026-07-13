@@ -459,8 +459,8 @@
                 </div>
                 <!-- How it works -->
                 <style>
-                  .tw-spec-card{background:rgba(147,197,253,0.15);border:1px solid rgba(147,197,253,0.26);border-radius:0.75rem;}
-                  .tw-spec-list>li+li{border-top:1px solid rgba(147,197,253,0.2);}
+                  .tw-spec-card{background:rgba(147,197,253,0.1);border:1px solid rgba(147,197,253,0.26);border-radius:0.75rem;overflow:hidden;}
+                  .tw-spec-list>li+li{border-top:0;}
                   .tw-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2.5rem;align-items:stretch;}
                   @media (max-width:900px){.tw-steps{grid-template-columns:1fr;}}
                   .tw-step{background:rgba(147,197,253,0.15);border:1px solid rgba(147,197,253,0.26);border-radius:0.75rem;padding:1.25rem 1.35rem;position:relative;}
@@ -470,9 +470,33 @@
                   .tw-step-extra .tw-step-label{color:#1E4ED8!important;}
                   .tw-step-cta{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:42px;padding:.65rem 1.25rem;border-radius:999px;font-size:.6875rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:#1E4ED8;background:rgba(147,197,253,0.14);border:1px solid rgba(147,197,253,0.32);transition:background 180ms ease,border-color 180ms ease,color 180ms ease;}
                   .tw-step-cta:hover,.tw-step-cta:focus-visible{color:#fff;background:#1E4ED8;border-color:#1E4ED8;}
-                  .tw-material-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:1.5rem;}
-                  .tw-spec-row{padding:.7rem 0;border-bottom:1px solid rgba(30,58,138,0.12);font-size:.9375rem;color:#334155;}
-                  @media(max-width:639px){.tw-material-list{grid-template-columns:1fr;}}
+                  .tw-material-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 -1.35rem;padding:0;list-style:none;}
+                  .tw-spec-list{margin:0;padding:0;list-style:none;}
+                  .tw-spec-row{padding:.7rem 1.35rem;margin:0 -1.35rem;border-bottom:0;font-size:.9375rem;color:#334155;line-height:1.45;}
+                  .tw-spec-list .tw-spec-row:nth-child(even){background:rgba(30,58,138,0.05);}
+                  .tw-material-list .tw-spec-row{margin:0;padding:.7rem 1.35rem;}
+                  .tw-material-list .tw-spec-row:nth-child(4n+3),.tw-material-list .tw-spec-row:nth-child(4n+4){background:rgba(30,58,138,0.05);}
+                  .tw-material-list .tw-spec-row:nth-last-child(-n+2){padding-bottom:1.15rem;}
+                  .tw-list-card{padding:1.25rem 1.35rem 0;}
+                  .tw-dims{margin:0 -1.35rem;}
+                  .tw-dims-head,.tw-dims-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;}
+                  .tw-dims-head{padding:0 1.35rem 1rem;margin-bottom:0;}
+                  .tw-dims-head h3{margin:0;}
+                  .tw-dims-row{padding:.7rem 1.35rem;font-size:.9375rem;color:#334155;line-height:1.45;}
+                  .tw-dims-row:nth-child(odd){background:rgba(30,58,138,0.05);}
+                  .tw-dims-row:last-child{padding-bottom:1.15rem;}
+                  @media(max-width:639px){
+                    .tw-material-list{grid-template-columns:1fr;}
+                    .tw-material-list .tw-spec-row:nth-child(n){background:transparent;padding-bottom:.7rem;}
+                    .tw-material-list .tw-spec-row:nth-child(even){background:rgba(30,58,138,0.05);}
+                    .tw-material-list .tw-spec-row:last-child{padding-bottom:1.15rem;}
+                    .tw-dims-head,.tw-dims-row{grid-template-columns:1fr;gap:.15rem;}
+                    .tw-dims-row{padding:.85rem 1.35rem;}
+                    .tw-dims-row:last-child{padding-bottom:1.15rem;}
+                    .tw-dims-cell--label{display:block;font-size:.6875rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1E4ED8;margin-bottom:.15rem;}
+                    .tw-dims-head{display:none;}
+                  }
+                  @media(min-width:640px){.tw-dims-cell--label{display:none;}}
                 </style>
                 <h3 class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-6">How it works</h3>
                 <div class="tw-steps">
@@ -573,28 +597,22 @@
                 </div>
 
                 <!-- ── Specifications &mdash; Material Alloys & Thickness ── -->
-                <div class="tw-spec-card mt-10 p-5 sm:p-6">
-                  <h3 class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-6">Material Alloys</h3>
-                  <div class="tw-material-list"><div class="tw-spec-row">HYMU</div><div class="tw-spec-row">Ortho</div><div class="tw-spec-row">HYMU 80</div><div class="tw-spec-row">HYDRA 80</div><div class="tw-spec-row">HYMU 800</div><div class="tw-spec-row">Permalloy</div><div class="tw-spec-row">79-4 Nickel</div><div class="tw-spec-row">Molypermalloy</div><div class="tw-spec-row">Super Permalloy</div><div class="tw-spec-row">Oriented 50-50 Nickel-Iron</div>
-                  </div>
+                <div class="tw-spec-card tw-list-card mt-10">
+                  <h3 class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-4">Material Alloys</h3>
+                  <ul class="tw-material-list"><li class="tw-spec-row">HYMU</li><li class="tw-spec-row">Ortho</li><li class="tw-spec-row">HYMU 80</li><li class="tw-spec-row">HYDRA 80</li><li class="tw-spec-row">HYMU 800</li><li class="tw-spec-row">Permalloy</li><li class="tw-spec-row">79-4 Nickel</li><li class="tw-spec-row">Molypermalloy</li><li class="tw-spec-row">Super Permalloy</li><li class="tw-spec-row">Oriented 50-50 Nickel-Iron</li>
+                  </ul>
                 </div>
-                <div class="tw-spec-card mt-8 p-5 sm:p-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
-                  <div>
-                    <h3 class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-6">Alloy Thickness</h3>
-                    <div><div class="tw-spec-row">0.125 mil</div><div class="tw-spec-row">0.250 mil</div><div class="tw-spec-row">0.500 mil</div><div class="tw-spec-row">1.000 mil</div>
+                <div class="tw-spec-card tw-list-card mt-8">
+                  <div class="tw-dims">
+                    <div class="tw-dims-head">
+                      <h3 class="text-xs uppercase tracking-widest text-[#1E4ED8]">Alloy Thickness</h3>
+                      <h3 class="text-xs uppercase tracking-widest text-[#1E4ED8]">Tape Thickness</h3>
+                      <h3 class="text-xs uppercase tracking-widest text-[#1E4ED8]">Tape Width</h3>
                     </div>
-                  </div>
-                  <div>
-                    <h3 class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-6">Tape Thickness</h3>
-                    <div><div class="tw-spec-row">1/8 mil</div><div class="tw-spec-row">1/4 mil</div><div class="tw-spec-row">1/2 mil</div>
-                      <div class="tw-spec-row">1 mil</div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-6">Tape Width</h3>
-                    <div><div class="tw-spec-row">1/32 inch</div><div class="tw-spec-row">1/16 inch</div><div class="tw-spec-row">1/8 inch</div>
-                      <div class="tw-spec-row">1/4 inch</div>
-                    </div>
+                    <div class="tw-dims-row"><span class="tw-dims-cell"><span class="tw-dims-cell--label">Alloy Thickness</span>0.125 mil</span><span class="tw-dims-cell"><span class="tw-dims-cell--label">Tape Thickness</span>1/8 mil</span><span class="tw-dims-cell"><span class="tw-dims-cell--label">Tape Width</span>1/32 inch</span></div>
+                    <div class="tw-dims-row"><span class="tw-dims-cell"><span class="tw-dims-cell--label">Alloy Thickness</span>0.250 mil</span><span class="tw-dims-cell"><span class="tw-dims-cell--label">Tape Thickness</span>1/4 mil</span><span class="tw-dims-cell"><span class="tw-dims-cell--label">Tape Width</span>1/16 inch</span></div>
+                    <div class="tw-dims-row"><span class="tw-dims-cell"><span class="tw-dims-cell--label">Alloy Thickness</span>0.500 mil</span><span class="tw-dims-cell"><span class="tw-dims-cell--label">Tape Thickness</span>1/2 mil</span><span class="tw-dims-cell"><span class="tw-dims-cell--label">Tape Width</span>1/8 inch</span></div>
+                    <div class="tw-dims-row"><span class="tw-dims-cell"><span class="tw-dims-cell--label">Alloy Thickness</span>1.000 mil</span><span class="tw-dims-cell"><span class="tw-dims-cell--label">Tape Thickness</span>1 mil</span><span class="tw-dims-cell"><span class="tw-dims-cell--label">Tape Width</span>1/4 inch</span></div>
                   </div>
                 </div>
               </div>

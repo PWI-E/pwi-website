@@ -435,12 +435,18 @@
               @media (max-width:900px){.cmB-steps{grid-template-columns:1fr;}}
               .cmB-step{background:rgba(147,197,253,0.1);border:1px solid rgba(147,197,253,0.26);border-radius:0.75rem;padding:1.25rem 1.35rem;position:relative;box-shadow:none;}
               .cmB-step-num{width:2.25rem;height:2.25rem;border-radius:10px;background:rgba(147,197,253,0.22);color:#1E4ED8;font-size:.875rem;font-weight:600;display:flex;align-items:center;justify-content:center;margin-bottom:.85rem;}
-              .cmB-tile{border-radius:0.75rem;padding:1.25rem 1.35rem;background:rgba(147,197,253,0.1);border:1px solid rgba(147,197,253,0.26);box-shadow:none;}
+              .cmB-tile{border-radius:0.75rem;padding:1.25rem 1.35rem;background:rgba(147,197,253,0.1);border:1px solid rgba(147,197,253,0.26);box-shadow:none;overflow:hidden;}
               .cmB-tile-head{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;}
               .cmB-tile-icon{width:2.25rem;height:2.25rem;border-radius:10px;background:rgba(147,197,253,0.22);color:#1E4ED8;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
               .cmB-tile-title{color:#1E4ED8;}
-              .cmB-spec-row{padding:.7rem 0;border-bottom:1px solid rgba(30,58,138,0.12);font-size:.9375rem;color:#334155;}
-              .cmB-spec-row:last-child{border-bottom:none;}
+              .cmB-spec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 -1.35rem;padding:0;list-style:none;}
+              .cmB-spec-row{padding:.7rem 1.35rem;font-size:.9375rem;line-height:1.45;color:#334155;}
+              .cmB-spec-row:nth-child(4n+3),.cmB-spec-row:nth-child(4n+4){background:rgba(30,58,138,0.05);}
+              @media (max-width:639px){
+                .cmB-spec-grid{grid-template-columns:1fr;}
+                .cmB-spec-row:nth-child(n){background:transparent;}
+                .cmB-spec-row:nth-child(even){background:rgba(30,58,138,0.05);}
+              }
               .cmB-intro-copy{margin-bottom:2.5rem;}
               .cmB-section-title{margin-bottom:1.5rem;}
             </style>
@@ -485,17 +491,17 @@
                     <div class="cmB-tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l6 4v-4l6 4V6l6 4v11H3z"/><path d="M7 21v-4M12 21v-4M17 21v-4"/></svg></div>
                     <h2 class="cmB-tile-title text-xs uppercase tracking-widest font-semibold">Manufacturing &amp; Design Capabilities</h2>
                   </div>
-                  <div>
-                    <div class="cmB-spec-row">Surface Mount Technology</div>
-                    <div class="cmB-spec-row">Through-Hole Technology</div>
-                    <div class="cmB-spec-row">Full Box Builds</div>
-                    <div class="cmB-spec-row">PC Board Prototyping</div>
-                    <div class="cmB-spec-row">Li-Ion Battery Systems</div>
-                    <div class="cmB-spec-row">Computer Automated Testing</div>
-                    <div class="cmB-spec-row">ESD &amp; RoHS Compliant</div>
-                    <div class="cmB-spec-row">Encapsulation &amp; Coating</div>
-                    <div class="cmB-spec-row">Hybrid Designs</div>
-                  </div>
+                  <ul class="cmB-spec-grid">
+                    <li class="cmB-spec-row">Surface Mount Technology</li>
+                    <li class="cmB-spec-row">Through-Hole Technology</li>
+                    <li class="cmB-spec-row">Full Box Builds</li>
+                    <li class="cmB-spec-row">PC Board Prototyping</li>
+                    <li class="cmB-spec-row">Li-Ion Battery Systems</li>
+                    <li class="cmB-spec-row">Computer Automated Testing</li>
+                    <li class="cmB-spec-row">ESD &amp; RoHS Compliant</li>
+                    <li class="cmB-spec-row">Encapsulation &amp; Coating</li>
+                    <li class="cmB-spec-row">Hybrid Designs</li>
+                  </ul>
                 </div>
 
               </div>
