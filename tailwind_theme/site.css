@@ -3671,8 +3671,8 @@ p { text-wrap: pretty; }
   }
   .pwi-approvals-groups{
     gap:.4rem;margin-bottom:0!important;
-    padding-left:.65rem;
-    border-left:1px solid rgba(147,197,253,.14);
+    padding-left:0;
+    border-left:none;
   }
   .pwi-approvals-list{font-size:.75rem;width:100%;gap:.08rem;color:rgba(148,163,184,.82)}
   .pwi-approvals-label{
@@ -3742,7 +3742,8 @@ p { text-wrap: pretty; }
 .pwi-home-site-bottom{background:var(--pwi-canvas-gradient-footer);width:100%;max-width:100%;--pwi-footer-pad-x:1.5rem}
 .pwi-home-site-bottom .pwi-nl-section{background:transparent;border-top:1px solid rgba(148,163,184,.14);border-bottom:none}
 .pwi-site-bottom>.site-cta:not(.led-cta){background:transparent!important;border-top:1px solid rgba(148,163,184,.14);border-bottom:none!important;padding-top:3rem!important;padding-bottom:2.5rem!important}
-.pwi-site-bottom>.site-cta.led-cta{background:#0a1930!important;border-top:1px solid rgba(148,163,184,.12);border-bottom:none!important;padding:clamp(1.75rem,4vw,3rem) 0 clamp(2.75rem,5vw,4.25rem)!important;text-align:center}
+/* Transparent so CTA shares the footer gradient band (same as about/contact/product page CSS) */
+.pwi-site-bottom>.site-cta.led-cta{background:transparent!important;border-top:none!important;border-bottom:none!important;box-shadow:none!important;padding:clamp(1.75rem,4vw,3rem) 0 clamp(2.75rem,5vw,4.25rem)!important;text-align:center}
 .pwi-site-bottom>.site-cta h2,.pwi-site-bottom>.site-cta .about-cta-title,.pwi-site-bottom>.site-cta .dealer-cta-title{color:#f1f5f9!important;font-weight:600!important}
 .pwi-site-bottom>.site-cta p:first-child,.pwi-site-bottom>.site-cta .about-cta-eyebrow,.pwi-site-bottom>.site-cta .dealer-cta-eyebrow,.pwi-site-bottom>.site-cta .text-xs{color:#93c5fd!important}
 .pwi-site-bottom>.site-cta p:not(:first-child):not(.led-cta-note),.pwi-site-bottom>.site-cta .site-cta-lede,.pwi-site-bottom>.site-cta .about-cta-lede,.pwi-site-bottom>.site-cta .dealer-cta-lede,.pwi-site-bottom>.site-cta .text-sm{color:#94a3b8!important}
