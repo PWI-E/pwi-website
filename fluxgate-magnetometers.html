@@ -458,8 +458,7 @@
                 <style>
                   .fg-spec-card{background:rgba(147,197,253,0.1);border:1px solid rgba(147,197,253,0.26);border-radius:0.75rem;overflow:hidden;}
                   .fg-spec-list{margin:0;padding:0;list-style:none;}
-                  .fg-spec-row{display:flex;justify-content:space-between;align-items:baseline;gap:.75rem;padding:.7rem 1.35rem;margin:0 -1.35rem;font-size:.875rem;color:#334155;line-height:1.45;}
-                  .fg-spec-row:nth-child(even){background:rgba(30,58,138,0.05);}
+                  .fg-spec-row{display:flex;justify-content:space-between;align-items:baseline;gap:.75rem;padding:.65rem 1.35rem;margin:0 -1.35rem;font-size:.875rem;color:#334155;line-height:1.45;}
                   .fg-spec-row:last-child{padding-bottom:1.15rem;}
                   .fg-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2.5rem;align-items:stretch;}
                   @media (max-width:900px){.fg-steps{grid-template-columns:1fr;}}
@@ -472,8 +471,8 @@
                   .fg-step-cta:hover,.fg-step-cta:focus-visible{color:#fff;background:#1E4ED8;border-color:#1E4ED8;}
                   .fg-uses-card{padding:1.25rem 1.35rem 0;margin-bottom:2.5rem;}
                   .fg-uses-list{margin:0 -1.35rem;padding:0;list-style:none;}
-                  .fg-uses-row{padding:.7rem 1.35rem;font-size:.9375rem;color:#334155;line-height:1.45;}
-                  .fg-uses-row:nth-child(even){background:rgba(30,58,138,0.05);}
+                  .fg-uses-row{display:flex;align-items:baseline;gap:.65rem;padding:.65rem 1.35rem;font-size:.9375rem;color:#334155;line-height:1.45;}
+                  .fg-uses-row::before{content:'';width:5px;height:5px;border-radius:50%;background:#1E4ED8;flex-shrink:0;align-self:center;}
                   .fg-uses-row:last-child{padding-bottom:1.15rem;}
                 </style>
                 <h3 class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-6">How it works</h3>
