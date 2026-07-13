@@ -37,6 +37,34 @@ body {
 }
 .gallery-link:hover { opacity: 0.75; }
 
+/* Approved aircraft — 2 OEM columns in hero */
+.approvals-block { margin-top: 0.35rem; }
+.approvals-heading,
+.approvals-oem-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(148, 163, 184, 0.4);
+  margin: 0;
+}
+.approvals-heading { margin-bottom: 0.55rem; }
+.approvals-oem-label { margin-bottom: 0.3rem; }
+.approvals-oem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem 1.25rem;
+  max-width: 28rem;
+}
+.approvals-oem-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+@media (max-width: 380px) {
+  .approvals-oem-grid { grid-template-columns: 1fr; }
+}
+
 /* Aircraft reference table */
 
 @media (max-width: 1023px) {

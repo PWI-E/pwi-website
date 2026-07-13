@@ -486,7 +486,7 @@ span.inline-flex.items-center.justify-center.rounded-md.border.border-line.bg-su
 .site-header .dd-panel {
   top: 5rem !important;
   border-top: none;
-  background: var(--pwi-canvas-gradient);
+  background: var(--pwi-canvas-bottom);
   box-shadow: 0 14px 30px rgba(2, 8, 23, 0.42), 0 24px 48px rgba(147, 197, 253, 0.07), inset 0 1px 0 rgba(148, 163, 184, 0.08);
 }
 
@@ -506,7 +506,7 @@ span.inline-flex.items-center.justify-center.rounded-md.border.border-line.bg-su
 
 /* Simple dropdown panel for STC/PMA */
 .simple-dd-bar {
-  background: var(--pwi-canvas-gradient);
+  background: var(--pwi-canvas-bottom);
   box-shadow: 0 14px 30px rgba(2, 8, 23, 0.42), 0 24px 48px rgba(147, 197, 253, 0.07), inset 0 1px 0 rgba(148, 163, 184, 0.08);
 }
 .simple-dd-item {
@@ -2049,9 +2049,7 @@ main a:focus-visible {
 /* Panel: deep glass surface with brand-blue top accent */
 .site-header .dd-panel {
   top: 5rem !important;
-  background: var(--pwi-canvas-gradient) !important;
-  backdrop-filter: blur(14px) saturate(1.2) !important;
-  -webkit-backdrop-filter: blur(14px) saturate(1.2) !important;
+  background: var(--pwi-canvas-bottom) !important;
   border-top: 1px solid rgba(30, 78, 216, 0.22) !important;
   box-shadow: none !important;
 }
@@ -2278,7 +2276,7 @@ main a:focus-visible {
 /* Preview option: dark technical-grid mega menu inspired by the reference. */
 @media (min-width: 1024px) {
   .site-header .dd-panel {
-    background: var(--pwi-canvas-gradient) !important;
+    background: var(--pwi-canvas-bottom) !important;
     box-shadow: none !important;
   }
   .site-header .dd-panel .mega-grid {
@@ -2469,7 +2467,7 @@ main a:focus-visible {
   }
 
   .site-header .dd-panel {
-    background: var(--pwi-canvas-gradient-header) !important;
+    background: var(--pwi-canvas-bottom) !important;
     border-top: 1px solid rgba(147, 197, 253, 0.14) !important;
     box-shadow: 0 18px 40px rgba(2, 8, 23, 0.35) !important;
     backdrop-filter: none !important;
