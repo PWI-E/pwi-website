@@ -19,11 +19,11 @@
     min-height: 38px;
     padding: 0.55rem 0.95rem;
     border-radius: 9999px;
-    border: 1px solid rgba(148, 163, 184, 0.18);
-    background: transparent;
-    color: rgba(226, 232, 240, 0.9);
+    border: 1px solid rgba(147, 197, 253, 0.32);
+    background: rgba(147, 197, 253, 0.14);
+    color: #93c5fd;
     font-size: 0.68rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.08em;
     line-height: 1.2;
     text-transform: uppercase;
@@ -32,13 +32,13 @@
 }
 .fluo-related-link svg {
     flex-shrink: 0;
-    opacity: 0.72;
+    opacity: 0.85;
 }
 .fluo-related-link:hover,
 .fluo-related-link:focus-visible {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(191, 219, 254, 0.34);
-    color: #f8fafc;
+    background: #1e4ed8;
+    border-color: #1e4ed8;
+    color: #fff;
 }
 .fluo-hero-ctas {
     align-items: center;
@@ -92,12 +92,13 @@
         padding-bottom: 0.625rem;
         padding-left: 0.625rem;
         padding-right: 0.625rem;
-        white-space: normal;
-        overflow-wrap: anywhere;
-        word-break: break-word;
+        white-space: nowrap;
+        overflow-wrap: normal;
+        word-break: normal;
     }
     #fluorescent-part-tbody td:first-child {
         padding-right: 1.5rem;
+        width: auto;
     }
     .table-scroll {
         max-height: 60vh;
@@ -106,8 +107,8 @@
         -webkit-overflow-scrolling: touch;
     }
     .table-scroll > table {
-        width: 100%;
-        min-width: 0;
+        width: max-content;
+        min-width: 100%;
     }
 }
 

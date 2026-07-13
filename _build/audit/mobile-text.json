@@ -1,10 +1,10 @@
 {
-  "auditedAt": "2026-07-10T19:16:05.255Z",
+  "auditedAt": "2026-07-13T15:35:25.768Z",
   "viewport": "390x844",
   "pagesChecked": 79,
-  "pagesWithIssues": 65,
+  "pagesWithIssues": 59,
   "failCount": 11,
-  "warnCount": 98,
+  "warnCount": 99,
   "thresholds": {
     "failBelowPx": 12,
     "warnBelowPx": 14,
@@ -110,6 +110,48 @@
     {
       "page": "all-product-info.html",
       "issues": [
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "button",
+          "selector": "button.pdf-filter-btn.active",
+          "text": "All Documents"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "button",
+          "selector": "button.pdf-filter-btn",
+          "text": "LED Cabin Lighting Systems"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "button",
+          "selector": "button.pdf-filter-btn",
+          "text": "Exterior LED Lighting"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "button",
+          "selector": "button.pdf-filter-btn",
+          "text": "Reading Lights & Signs"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "button",
+          "selector": "button.pdf-filter-btn",
+          "text": "Engineering & Manufacturing"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "button",
+          "selector": "button.pdf-filter-btn",
+          "text": "Reference"
+        },
         {
           "level": "warn",
           "px": 12.8,
@@ -296,18 +338,6 @@
       ]
     },
     {
-      "page": "coil-winding-transformers.html",
-      "issues": [
-        {
-          "level": "warn",
-          "px": 12.8,
-          "tag": "a",
-          "selector": "a.inline-flex.items-center",
-          "text": "Download Capabilities Sheet"
-        }
-      ]
-    },
-    {
       "page": "contact.html",
       "issues": [
         {
@@ -362,18 +392,6 @@
       ]
     },
     {
-      "page": "contract-manufacturing.html",
-      "issues": [
-        {
-          "level": "warn",
-          "px": 12.8,
-          "tag": "a",
-          "selector": "a.inline-flex.items-center",
-          "text": "Download Capabilities Sheet"
-        }
-      ]
-    },
-    {
       "page": "custom-led-reading-light-photos.html",
       "issues": [
         {
@@ -394,18 +412,6 @@
           "tag": "p",
           "selector": "p.product-pn.reveal",
           "text": "Part Numbers 7310056-001 through 7310056-011"
-        }
-      ]
-    },
-    {
-      "page": "engineering.html",
-      "issues": [
-        {
-          "level": "warn",
-          "px": 12.8,
-          "tag": "a",
-          "selector": "a.inline-flex.items-center",
-          "text": "Download Capabilities Sheet"
         }
       ]
     },
@@ -465,18 +471,6 @@
       ]
     },
     {
-      "page": "fluorescent-lighting.html",
-      "issues": [
-        {
-          "level": "warn",
-          "px": 12.8,
-          "tag": "a",
-          "selector": "a.inline-flex.items-center",
-          "text": "Photo Gallery"
-        }
-      ]
-    },
-    {
       "page": "fluorescent-lights-photos.html",
       "issues": [
         {
@@ -485,18 +479,6 @@
           "tag": "a",
           "selector": "a.inline-flex.items-center",
           "text": "← Fluorescent Lighting"
-        }
-      ]
-    },
-    {
-      "page": "fluxgate-magnetometers.html",
-      "issues": [
-        {
-          "level": "warn",
-          "px": 12.8,
-          "tag": "a",
-          "selector": "a.inline-flex.items-center",
-          "text": "Download Literature Sheet"
         }
       ]
     },
@@ -1045,18 +1027,6 @@
       ]
     },
     {
-      "page": "services.html",
-      "issues": [
-        {
-          "level": "warn",
-          "px": 12.8,
-          "tag": "span",
-          "selector": "span.svc-tile-cta",
-          "text": "Learn More"
-        }
-      ]
-    },
-    {
       "page": "smoking-seat-belt-sign-graphic.html",
       "issues": [
         {
@@ -1089,6 +1059,13 @@
           "tag": "p",
           "selector": "p#search-status.mt-2.text-xs",
           "text": "Showing all 18 entries"
+        },
+        {
+          "level": "warn",
+          "px": 12.8,
+          "tag": "span",
+          "selector": "span.card-sub",
+          "text": "FAA STC · AFAC · EASA · ANAC"
         },
         {
           "level": "warn",

@@ -4,9 +4,11 @@
 }
 .pr-card {
     padding: 1.5rem 1.5rem;
-    background: var(--surface);
-    border: 1px solid #e5eaf1;
+    background: #ffffff;
+    border: 1px solid rgba(147, 197, 253, 0.28);
+    border-radius: 1rem;
     gap: 0.95rem;
+    box-shadow: none;
 }
 .pr-title-row {
     display: flex;
@@ -70,13 +72,28 @@
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
+    transition: transform 200ms cubic-bezier(.22,1,.36,1);
 }
 .pr-read-more {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    color: #5a76b8;
+    color: #1E4ED8;
     font-weight: 500;
+    transition: color 180ms ease;
+}
+.pr-read-more:hover,
+.pr-read-more:focus-visible {
+    color: #1b46c4;
+}
+.pr-read-more:hover svg,
+.pr-read-more:focus-visible svg {
+    transform: translateX(2px);
+}
+@media (prefers-reduced-motion: reduce) {
+    .pr-read-more svg { transition: none; }
+    .pr-read-more:hover svg,
+    .pr-read-more:focus-visible svg { transform: none; }
 }
 .pr-card > div:last-child {
     padding-top: 0 !important;
@@ -91,12 +108,13 @@
     background: var(--surface);
 }
 .pr-expand-btn {
-    border: 1px solid var(--line);
-    background: var(--surface);
-    color: var(--brand);
-    transition: border-color 200ms ease, background 200ms ease;
+    border: 1px solid rgba(147, 197, 253, 0.32);
+    background: rgba(147, 197, 253, 0.14);
+    color: #1E4ED8;
+    transition: border-color 200ms ease, background 200ms ease, color 200ms ease;
 }
 .pr-expand-btn:hover {
-    border-color: var(--brand);
-    background: rgba(30, 78, 216, 0.04);
+    border-color: #1E4ED8;
+    background: #1E4ED8;
+    color: #fff;
 }

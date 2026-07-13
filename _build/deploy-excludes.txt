@@ -2,6 +2,10 @@
 # Used by _build/build-deploy.sh (rsync --exclude-from).
 
 # Dependencies and tooling
+.git/
+.gitignore
+.agents/
+.codex/
 node_modules/
 package.json
 package-lock.json
@@ -17,6 +21,11 @@ _build/
 .vscode/
 _pgbackup/
 _pginfo/
+tmp/
+google-apps-script/
+tailwind_theme/consent-logger.gs
+_privacy-review/
+_privacy-review.zip
 
 # Non-production content
 archive/
@@ -29,6 +38,10 @@ _pages.html
 all-pages.html
 style-guide.html
 pgisr.html
+pgisr-site BACKUP*/
+pgisr-site-backup-*/
+pgisr-site-v*-backup/
+pgisr-site-v[0-9]*/
 127.0.0.1_*.report.html
 mobile-nav-review.html
 mobile-nav-review-frame.html
@@ -50,6 +63,8 @@ tailwind_theme/pgisr.css
 
 # Internal docs
 *.docx
+*Form*Handler*Setup*.pdf
+*Form*Submission*Setup*.pdf
 WORKFLOW.md
 webedits.zip
 

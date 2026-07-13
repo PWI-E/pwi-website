@@ -29,13 +29,17 @@ var LOGO_URL = 'https://pwi-e.com/wp-content/uploads/2022/12/PWI-Color-Logo-2022
 
 function doPost(e) {
   try {
-    var p = e.parameter;
+    var p = (e && e.parameter) || {};
 
     if (p.website && p.website.length > 0) {
       return json({ result: 'success' });
     }
 
     var type = p.form_type || 'unknown';
+    var validationError = validateSubmission(type, p);
+    if (validationError) {
+      return json({ result: 'error', message: validationError });
+    }
     var subject, badge, details, row;
 
     if (type === 'contact') {
@@ -108,6 +112,34 @@ function doPost(e) {
   } catch (err) {
     return json({ result: 'error', message: err.toString() });
   }
+}
+
+function validateSubmission(type, p) {
+  var requiredByType = {
+    contact: ['name', 'email', 'phone', 'company', 'inquiry_type', 'message'],
+    quote: ['name', 'email', 'phone', 'company', 'product', 'message'],
+    newsletter: ['name', 'email']
+  };
+  var required = requiredByType[type];
+  if (!required) return 'Unknown form type';
+
+  for (var i = 0; i < required.length; i += 1) {
+    if (!String(p[required[i]] || '').trim()) {
+      return 'Please complete all required fields.';
+    }
+  }
+
+  var email = String(p.email || '').trim();
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return 'Please enter a valid email address.';
+  }
+
+  if ((type === 'contact' || type === 'quote') &&
+      !/^[0-9()+\-.\sx]{7,}$/i.test(String(p.phone || '').trim())) {
+    return 'Please enter a valid phone number.';
+  }
+
+  return '';
 }
 
 function suffix(name, company) {

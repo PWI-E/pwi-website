@@ -21,10 +21,11 @@ echo "  Output: ${DEST}"
 echo ""
 
 node "${ROOT}/_build/update-sitemap-lastmod.mjs"
+node "${ROOT}/_build/build-search-index.mjs"
 
 mkdir -p "${DEST}"
 
-rsync -a --delete \
+rsync -a --delete --delete-excluded \
   --exclude-from="${EXCLUDES}" \
   "${ROOT}/" "${DEST}/"
 

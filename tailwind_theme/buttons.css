@@ -1,10 +1,10 @@
 /* PWI button system — style guide §04 (v3.3) */
 
-:root {
-  --pwi-btn-ghost-bg: rgba(255, 255, 255, 0.1);
-  --pwi-btn-ghost-border: transparent;
-  --pwi-btn-ghost-hover-bg: rgba(255, 255, 255, 0.15);
-  --pwi-btn-ghost-hover-border: transparent;
+':root {
+  --pwi-btn-ghost-bg: rgba(147, 197, 253, 0.14);
+  --pwi-btn-ghost-border: rgba(147, 197, 253, 0.32);
+  --pwi-btn-ghost-hover-bg: #1e4ed8;
+  --pwi-btn-ghost-hover-border: #1e4ed8;
 }
 
 /* ── Primary ── */
@@ -24,8 +24,8 @@ button.btn-primary,
   padding: 0.7rem 1.5rem;
   border-radius: 9999px;
   font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
   box-sizing: border-box;
@@ -68,11 +68,11 @@ button.btn-primary:hover,
   border-radius: 9999px;
   font-size: 0.6875rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
   box-sizing: border-box;
-  color: #e2e8f0;
+  color: #93c5fd;
   background: var(--pwi-btn-ghost-bg);
   border: 1px solid var(--pwi-btn-ghost-border);
   transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
@@ -169,8 +169,8 @@ a.rounded-full.border-white\/15.hover\:border-white\/40:hover {
 /* Site-cta tel — beat inline styles on hub/engineering pages */
 .site-cta a[href^="tel:"] {
   background: var(--pwi-btn-ghost-bg) !important;
-  border: 1px solid transparent !important;
-  color: #e2e8f0 !important;
+  border: 1px solid var(--pwi-btn-ghost-border) !important;
+  color: #93c5fd !important;
 }
 .site-cta a[href^="tel:"]:hover {
   background: var(--pwi-btn-ghost-hover-bg) !important;

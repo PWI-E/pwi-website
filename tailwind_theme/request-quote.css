@@ -66,17 +66,18 @@ summary::marker {
     border-color: var(--brand-hover);
 }
 .btn-secondary {
-    background: #f1f5f9;
-    border: 1px solid #94a3b8;
-    color: #1e4ed8;
+    background: rgba(147, 197, 253, 0.14);
+    border: 1px solid rgba(147, 197, 253, 0.32);
+    color: #1E4ED8;
 }
 .btn-secondary:hover {
-    background: #e2e8f0;
-    border-color: #64748b;
+    background: #1E4ED8;
+    border-color: #1E4ED8;
+    color: #fff;
 }
 
 .soft-elev {
-    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+    box-shadow: none;
 }
 
 .form-section {
@@ -97,8 +98,8 @@ summary::marker {
     font-size: 0.6875rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--ink);
+    letter-spacing: 0.1em;
+    color: #1E4ED8;
     margin-bottom: 1.5rem;
     width: 100%;
 }
@@ -106,9 +107,12 @@ summary::marker {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1.125rem;
-    height: 1.125rem;
+    width: 2.25rem;
+    height: 2.25rem;
     flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(147, 197, 253, 0.18);
+    border: 1px solid rgba(147, 197, 253, 0.28);
 }
 .form-section-icon svg {
     stroke: var(--brand);
@@ -119,7 +123,7 @@ summary::marker {
     display: flex;
     flex-direction: column;
     gap: 0.65rem;
-    border-top: 1px solid var(--line);
+    border-top: 1px solid rgba(147, 197, 253, 0.22);
     padding-top: 1.1rem;
 }
 .form-button-row {
@@ -144,6 +148,14 @@ summary::marker {
 .form-direct-link {
     padding: 0.625rem 1.25rem;
 }
+.form-submit-button:focus-visible {
+    background: var(--brand-hover);
+    border-color: var(--brand-hover);
+}
+.form-direct-link:focus-visible {
+    background: #e2e8f0;
+    border-color: #64748b;
+}
 .form-consent a {
     color: #1e4ed8;
     text-decoration: underline;
@@ -151,6 +163,10 @@ summary::marker {
 .newsletter-contact-grid {
     display: grid;
     gap: 1.5rem;
+}
+.newsletter-interest-card:focus-within {
+    border-color: rgba(30, 78, 216, 0.5);
+    box-shadow: 0 0 0 2px rgba(30, 78, 216, 0.3);
 }
 .newsletter-interest-card {
     min-height: 4.4rem;

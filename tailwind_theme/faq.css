@@ -7,13 +7,14 @@
 .faq-answer ul { margin: 0.5rem 0 0.75rem; padding-left: 1.25rem; list-style: disc; }
 .faq-answer li { margin-bottom: 0.25rem; }
 .faq-answer a { color: var(--brand); text-decoration: underline; text-underline-offset: 2px; }
-.faq-answer a:hover { color: var(--brand-hover); }
+.faq-answer a:hover,
+.faq-answer a:focus-visible { color: var(--brand-hover); }
 .faq-category {
     font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 0.11em;
     text-transform: uppercase;
-    color: #64748b;
+    color: #1E4ED8;
     margin-top: 2.35rem;
     margin-bottom: 0.9rem;
 }

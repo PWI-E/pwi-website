@@ -1347,7 +1347,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     var titleOnlyFuse = new Fuse(Array.isArray(window.__searchIndexNormalized) ? window.__searchIndexNormalized : [], {
       includeScore: true,
-      threshold: looksLikePart ? 0.35 : 0.20,
+      threshold: looksLikePart ? 0.35 : 0.30,
       ignoreLocation: true,
       minMatchCharLength: 2,
       useExtendedSearch: true,
@@ -1514,6 +1514,30 @@ document.addEventListener("DOMContentLoaded", function () {
     lastResults = prioritizeKingAir300Results(lastResults, familyIntent);
     lastResults = prioritizeKingAir200Results(lastResults, query, familyIntent);
     lastResults = prioritizeExact1495Results(lastResults, query);
+
+    // Typo fallback: the filters above require literal token/title matches, which a
+    // misspelled query (e.g. "readng lite") will never pass even though Fuse's fuzzy
+    // pass against title+content already found the right page. Only kicks in when the
+    // strict pipeline above found nothing at all, so normal queries are unaffected.
+    if (!looksLikePart && lastResults.length === 0 && contentFallback.length) {
+      var seenTypoUrl = {};
+      var typoFallback = [];
+      var sortedFallback = contentFallback.slice().sort(function (a, b) {
+        return (a.score || 1) - (b.score || 1);
+      });
+      for (var tfi = 0; tfi < sortedFallback.length; tfi++) {
+        var tfItem = sortedFallback[tfi];
+        var tfUrl = String((tfItem.item && tfItem.item.url) || "");
+        var tfCategory = getPageCategory(tfItem.item);
+        if (!tfUrl || seenTypoUrl[tfUrl]) continue;
+        if (tfCategory === "photo" || tfCategory === "other") continue;
+        seenTypoUrl[tfUrl] = true;
+        typoFallback.push(tfItem);
+        if (typoFallback.length >= 8) break;
+      }
+      lastResults = typoFallback;
+    }
+
     lastResults = lastResults.slice(0, HARD_MAX_RESULTS);
 
     renderResults();

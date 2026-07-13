@@ -81,7 +81,7 @@ body {
 }
 /* header fallback */
 .data-heading {
-    color: #1B3A8A !important;
+    color: #94a3b8 !important;
     font-weight: 600 !important;
 }
 .trust-badge {
@@ -187,12 +187,96 @@ border: 1px solid rgba(148,163,184,0.15) !important;
 border-radius: 0.375rem !important;
 padding: 3px 10px !important;
 }
-@media (max-width: 639px) {
-#service-pricing .sm\:hidden.bg-white.overflow-hidden {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  border-radius: 0.75rem !important;
+/* Mobile power-supply pricing — soft wells matching chart language */
+.ps-price-mobile {
+  border: 1px solid rgba(147, 197, 253, 0.28);
+  border-radius: 0.75rem;
+  background: #fff;
+  overflow: hidden;
 }
+.ps-price-mobile-head {
+  padding: 0.7rem 1rem;
+  background: rgba(147, 197, 253, 0.12);
+  border-bottom: 1px solid rgba(147, 197, 253, 0.22);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1e4ed8;
+}
+.ps-price-mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0.75rem;
+  background: rgba(147, 197, 253, 0.04);
+}
+.ps-m-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.625rem;
+  background: #fff;
+  border: 1px solid rgba(147, 197, 253, 0.2);
+}
+.ps-m-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.ps-m-row + .ps-m-row {
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(147, 197, 253, 0.16);
+}
+.ps-m-kicker {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+.ps-m-pnline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.5rem;
+}
+.ps-m-pn {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #1e4ed8;
+  letter-spacing: -0.01em;
+}
+.ps-m-oem {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #475569;
+  background: rgba(147, 197, 253, 0.12);
+  border: 1px solid rgba(147, 197, 253, 0.28);
+}
+.ps-m-price {
+  margin-left: auto;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0f172a;
+  white-space: nowrap;
+}
+.ps-m-price-note {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #64748b;
+}
+@media (max-width: 639px) {
+  #service-pricing .ps-price-mobile {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /* Fluorescent hub hero */
@@ -240,11 +324,11 @@ padding: 3px 10px !important;
     min-height: 38px;
     padding: 0.55rem 0.95rem;
     border-radius: 9999px;
-    border: 1px solid rgba(148, 163, 184, 0.18);
-    background: transparent;
-    color: rgba(226, 232, 240, 0.9);
+    border: 1px solid rgba(147, 197, 253, 0.32);
+    background: rgba(147, 197, 253, 0.14);
+    color: #93c5fd;
     font-size: 0.68rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.08em;
     line-height: 1.2;
     text-transform: uppercase;
@@ -253,13 +337,13 @@ padding: 3px 10px !important;
 }
 .fluo-related-link svg {
     flex-shrink: 0;
-    opacity: 0.72;
+    opacity: 0.85;
 }
 .fluo-related-link:hover,
 .fluo-related-link:focus-visible {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(191, 219, 254, 0.34);
-    color: #f8fafc;
+    background: #1e4ed8;
+    border-color: #1e4ed8;
+    color: #fff;
 }
 .fluo-hero-ctas a {
     min-height: 44px;

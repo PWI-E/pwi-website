@@ -68,29 +68,30 @@ body {
     gap: 0.5rem;
     min-height: 44px;
     box-sizing: border-box;
-    background: var(--pwi-btn-ghost-bg, rgba(255, 255, 255, 0.1));
-    color: #e2e8f0;
-    border: 1px solid transparent;
+    background: rgba(147, 197, 253, 0.14);
+    color: #93c5fd;
+    border: 1px solid rgba(147, 197, 253, 0.32);
     border-radius: 9999px;
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.1em;
     padding: 0.625rem 1.5rem;
     text-decoration: none;
-    transition: background 180ms ease, border-color 180ms ease;
+    transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
 }
 @media (min-width: 640px) {
     .pdf-cta-btn-secondary {
         font-size: 0.875rem;
-        letter-spacing: 0.18em;
+        letter-spacing: 0.12em;
         padding: 0.625rem 2rem;
     }
 }
 .pdf-cta-btn-secondary:hover,
 .pdf-cta-btn-secondary:focus-visible {
-    background: var(--pwi-btn-ghost-hover-bg, rgba(255, 255, 255, 0.15));
-    border-color: transparent;
+    background: #1E4ED8;
+    border-color: #1E4ED8;
+    color: #fff;
 }
 .pdf-cta-icon {
     width: 1rem;
@@ -147,33 +148,34 @@ summary::marker {
 .pdf-filter-btn {
     display: inline-flex;
     align-items: center;
-    min-height: 40px;
-    padding: 4px 11px;
-    font-size: 11px;
-    font-weight: 500;
+    min-height: 36px;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.75rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     border-radius: 9999px;
-    border: 1px solid transparent;
-    background: rgba(255, 255, 255, 0.1);
-    color: #cbd5e1;
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    background: transparent;
+    color: #94a3b8;
     cursor: pointer;
     transition: border-color 0.15s, color 0.15s, background 0.15s;
     white-space: nowrap;
+    flex: 0 0 auto;
 }
 .pdf-filter-btn:not(.active) {
-    border-color: transparent;
-    background: rgba(255, 255, 255, 0.1);
-    color: #cbd5e1;
+    border-color: rgba(148, 163, 184, 0.28);
+    background: transparent;
+    color: #94a3b8;
 }
 .pdf-filter-btn:not(.active):hover {
-    border-color: transparent;
+    border-color: rgba(147, 197, 253, 0.4);
     color: #e2e8f0;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(147, 197, 253, 0.08);
 }
 .pdf-filter-btn.active {
-    background: #1e4ed8;
-    border-color: #1e4ed8;
+    background: #1E4ED8;
+    border-color: #1E4ED8;
     color: #fff;
 }
 .pdf-library-inner {
@@ -187,7 +189,7 @@ summary::marker {
     display: block;
     margin-bottom: 0.7rem;
     font-size: 0.68rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: #94a3b8;
@@ -199,15 +201,58 @@ summary::marker {
     color: #cbd5e1;
 }
 .pdf-library-filters {
-    gap: 0.65rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem !important;
     margin-top: 1rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.75rem;
+    overflow-x: visible;
+}
+.pdf-filter-break {
+    display: none;
+}
+@media (max-width: 639px) {
+    .pdf-library-filters {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        gap: 0.5rem !important;
+        margin-bottom: 1.5rem;
+    }
+    .pdf-filter-btn,
+    .pdf-filter-btn:not(.active) {
+        width: 100%;
+        justify-content: flex-start;
+        min-height: 44px;
+        padding: 0.75rem 1rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        border-color: rgba(147, 197, 253, 0.34);
+        background: rgba(10, 25, 52, 0.58);
+        color: #93c5fd;
+    }
+    .pdf-filter-btn:not(.active):hover,
+    .pdf-filter-btn:not(.active):focus-visible {
+        border-color: rgba(147, 197, 253, 0.5);
+        background: rgba(10, 25, 52, 0.72);
+        color: #e2e8f0;
+    }
+    .pdf-filter-btn.active {
+        background: #1E4ED8;
+        border-color: #1E4ED8;
+        color: #fff;
+    }
 }
 @media (min-width: 640px) {
     .pdf-library-note {
         font-size: 0.95rem;
     }
+    .pdf-library-filters {
+        gap: 0.55rem !important;
+        margin-bottom: 2.25rem;
+    }
     .pdf-filter-break {
+        display: block;
         flex-basis: 100%;
         width: 0;
         height: 0;
@@ -222,7 +267,7 @@ summary::marker {
     }
     .pdf-library-filters {
         margin-top: 1.15rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2.75rem;
     }
 }
 .pdf-card {
@@ -243,6 +288,12 @@ summary::marker {
     overflow: hidden;
     background: #e2e8f0;
     border-radius: 1.25rem;
+    transition: transform 240ms cubic-bezier(.22,1,.36,1), box-shadow 240ms ease;
+}
+.pdf-card:hover .pdf-card-img-wrap,
+.pdf-card:focus-visible .pdf-card-img-wrap {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(2,8,23,0.16);
 }
 .pdf-card-img-wrap img {
     display: block;
@@ -325,7 +376,7 @@ summary::marker {
     font-size: 0.875rem;
     font-weight: 500;
     color: #f1f5f9;
-    margin: 0 0 0.5rem;
+    margin: 0;
     line-height: 1.35;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -350,17 +401,43 @@ summary::marker {
         transform: none;
         transition: none;
     }
+    .pdf-card-img-wrap {
+        transition: none;
+    }
+    .pdf-card:hover .pdf-card-img-wrap,
+    .pdf-card:focus-visible .pdf-card-img-wrap {
+        transform: none;
+    }
 }
 .pdf-download-row {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
-    margin-top: auto;
+    gap: 0.32rem;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    min-height: 1.55rem;
+    padding: 0.28rem 0.58rem;
+    border: 1px solid rgba(147, 197, 253, 0.28);
+    border-radius: 9999px;
+    background: rgba(147, 197, 253, 0.14);
+    color: #93c5fd;
     font-size: 0.625rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: #60a5fa;
+    letter-spacing: 0.08em;
+    transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
+    pointer-events: none;
+}
+.pdf-card:hover .pdf-download-row,
+.pdf-card:focus-visible .pdf-download-row {
+    background: #1E4ED8;
+    border-color: #1E4ED8;
+    color: #fff;
+}
+.pdf-download-row svg {
+    width: 0.7rem;
+    height: 0.7rem;
+    flex-shrink: 0;
 }
 .pdf-category-heading {
     color: #cbd5e1;
@@ -431,7 +508,7 @@ summary::marker {
         line-height: 1.7 !important;
     }
     .pdf-filter-btn {
-        font-size: 0.875rem;
+        font-size: 0.75rem;
     }
 }
 

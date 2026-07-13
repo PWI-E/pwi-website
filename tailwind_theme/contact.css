@@ -40,7 +40,7 @@ body {
     border-color: var(--line) !important;
 }
 .soft-elev {
-    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+    box-shadow: none;
 }
 .hero-light {
     background: #ffffff;
@@ -59,13 +59,14 @@ body {
     border-color: var(--brand-hover);
 }
 .btn-secondary {
-    background: #eff6ff;
-    border-color: #1E4ED8;
+    background: rgba(147, 197, 253, 0.14);
+    border: 1px solid rgba(147, 197, 253, 0.32);
     color: #1E4ED8;
 }
 .btn-secondary:hover {
-    border-color: var(--brand);
-    color: var(--brand);
+    background: #1E4ED8;
+    border-color: #1E4ED8;
+    color: #fff;
 }
 summary {
     list-style: none;
@@ -130,7 +131,9 @@ summary::marker {
 
 .contact-card {
     min-height: 0 !important;
-    transition: box-shadow 180ms ease, transform 180ms ease, border-color 180ms ease;
+    border-color: rgba(147, 197, 253, 0.28) !important;
+    box-shadow: none !important;
+    transition: border-color 180ms ease;
 }
 .contact-card > p {
     margin-bottom: 0.85rem !important;
@@ -199,10 +202,10 @@ summary::marker {
 .contact-group-title {
     font-family: var(--font-sans);
     font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #1e4ed8;
+    color: #1E4ED8;
     margin: 0;
 }
 .contact-group-note {
@@ -214,9 +217,9 @@ summary::marker {
 }
 .contact-card:hover,
 .contact-card:focus-within {
-    border-color: rgba(30, 78, 216, 0.22) !important;
-    box-shadow: 0 12px 28px -24px rgba(30, 78, 216, 0.35);
-    transform: translateY(-1px);
+    border-color: rgba(147, 197, 253, 0.45) !important;
+    box-shadow: none;
+    transform: none;
 }
 .contact-card--compact {
     min-height: 0 !important;
@@ -312,6 +315,9 @@ summary::marker {
 .scroll-reveal:nth-child(8) { transition-delay: 350ms; }
 @media (prefers-reduced-motion: reduce) {
     .scroll-reveal { opacity: 1; transform: none; transition: none; }
+    .contact-card { transition: box-shadow 180ms ease, border-color 180ms ease; }
+    .contact-card:hover,
+    .contact-card:focus-within { transform: none; }
 }
 
 /* Contact hero */
@@ -344,7 +350,9 @@ summary::marker {
     box-sizing: border-box;
 }
 .contact-icon-wrap {
-    background: #eff6ff;
+    background: rgba(147, 197, 253, 0.18);
+    border: 1px solid rgba(147, 197, 253, 0.28);
+    border-radius: 10px;
 }
 @media (min-width: 640px) {
     .contact-hero-inner {
@@ -373,8 +381,8 @@ summary::marker {
     background: #f6f7f9;
 }
 .contact-cta-eyebrow {
-    color: #1e4ed8;
-    font-weight: 700;
+    color: #1E4ED8;
+    font-weight: 600;
 }
 .contact-cta-title {
     text-wrap: balance;
@@ -389,13 +397,13 @@ summary::marker {
     gap: 8px;
     min-height: 44px;
     box-sizing: border-box;
-    background: #1e4ed8;
+    background: #1E4ED8;
     color: #fff;
     border-radius: 9999px;
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.1em;
     padding: 0.625rem 1.25rem;
     text-decoration: none;
     transition: background 180ms ease;

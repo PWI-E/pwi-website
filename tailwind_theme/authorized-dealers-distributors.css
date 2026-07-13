@@ -49,9 +49,9 @@ summary::marker { content: ""; }
     color: #e2e8f0;
 }
 .card-headline {
-    color: #1B3A8A !important;
+    color: #1E4ED8 !important;
     font-weight: 600 !important;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
 }
 .partner-grid .card-headline {
     font-size: 16px !important;
@@ -77,30 +77,28 @@ summary::marker { content: ""; }
 .partner-grid > a .stat-card,
 .partner-grid > div .stat-card {
     min-height: 220px;
-    border-radius: 0.875rem !important;
-    border: 1px solid var(--line) !important;
-    background: #ffffff !important;
-    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06) !important;
+    border-radius: 1rem !important;
+    border: 1px solid rgba(147, 197, 253, 0.32) !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    box-shadow: none !important;
     padding: 1.5rem 1.125rem !important;
     justify-content: center;
     align-items: center;
     text-align: center;
     overflow: hidden;
+    transition: transform 240ms cubic-bezier(.22,1,.36,1), box-shadow 240ms ease, border-color 240ms ease, background 240ms ease;
+}
+.partner-grid > a:hover .stat-card,
+.partner-grid > a:focus-visible .stat-card {
+    transform: translateY(-2px);
+    border-color: rgba(30, 78, 216, 0.42) !important;
+    background: #fff !important;
+    box-shadow: 0 10px 22px rgba(30, 78, 216, 0.1) !important;
 }
 .partner-grid > a img,
 .partner-grid > div img {
     height: 6.5rem !important;
     width: min(300px, 88%);
-}
-@media (hover: hover) and (pointer: fine) {
-    .partner-grid > a:hover img {
-        filter: grayscale(0);
-        opacity: 1 !important;
-    }
-    .partner-grid > div:hover img {
-        filter: grayscale(0);
-        opacity: 1 !important;
-    }
 }
 .partner-grid > a h3,
 .partner-grid > div h3 {
@@ -117,11 +115,6 @@ summary::marker { content: ""; }
 .partner-grid > div p {
     display: block;
     margin-top: 0.25rem;
-}
-.partner-grid > a:focus-visible {
-    outline: 2px solid #1e4ed8;
-    outline-offset: 2px;
-    border-radius: 1rem;
 }
 .distributor-grid {
     display: flex !important;
@@ -193,6 +186,9 @@ summary::marker { content: ""; }
 .partner-grid > .scroll-reveal:nth-child(8) { transition-delay: 280ms; }
 @media (prefers-reduced-motion: reduce) {
     .scroll-reveal { opacity: 1; transform: none; transition: none; }
+    .partner-grid > a .stat-card { transition: none; }
+    .partner-grid > a:hover .stat-card,
+    .partner-grid > a:focus-visible .stat-card { transform: none; }
 }
 
 /* Hero (utility page) */
@@ -282,13 +278,13 @@ summary::marker { content: ""; }
     gap: 8px;
     min-height: 44px;
     box-sizing: border-box;
-    background: #1e4ed8;
+    background: #1E4ED8;
     color: #fff;
     border-radius: 9999px;
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.1em;
     padding: 0.8125rem 1.75rem;
     text-decoration: none;
     transition: background 180ms ease;

@@ -10,46 +10,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.625rem; margin-top: 1.25rem; align-items: stretch; }
-.trust-card {
-  display: flex; align-items: flex-start; gap: 10px;
-  padding: 0.75rem 0.875rem;
-  background: rgba(255,255,255,0.07);
-  border: 1px solid var(--line-strong);
-  border-radius: 0.75rem;
-}
-.trust-card-icon {
-  flex-shrink: 0; width: 30px; height: 30px;
-  background: rgba(96,165,250,0.12);
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-}
-.trust-card-icon svg { width: 15px; height: 15px; color: var(--accent); }
-.trust-card-label { font-size: 0.75rem; font-weight: 700; color: #e2e8f0; line-height: 1.2; }
-.trust-card-sub { font-size: 0.6875rem; color: var(--muted); margin-top: 3px; line-height: 1.4; }
-
-.approvals-block { margin-top: 1rem; font-size: 0.75rem; color: rgba(148,163,184,0.7); line-height: 1.6; }
-.approvals-block strong { color: var(--accent); font-weight: 600; }
-
-.product-desc {
-  margin-top: 1.25rem;
-  padding: 1.25rem 1.375rem;
-  background: linear-gradient(135deg, rgba(30,78,216,0.1) 0%, rgba(96,165,250,0.04) 100%);
-  border: 1px solid rgba(96,165,250,0.15);
-  border-left: 3px solid rgba(96,165,250,0.55);
-  border-radius: 0 0.875rem 0.875rem 0;
-  font-size: 0.875rem;
-  line-height: 1.75;
-  color: rgba(203,213,225,0.9);
-}
-.product-desc-label { margin-top: 0;
-  display: flex; align-items: center; gap: 6px;
-  font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em;
-  color: var(--accent);
-  margin-bottom: 0.6rem;
-}
-.product-desc-label svg { width: 11px; height: 11px; }
-
 .product-img-wrap {
   position: relative;
   border-radius: 1.125rem;
@@ -77,28 +37,6 @@ body {
 }
 .gallery-link:hover { opacity: 0.75; }
 
-.feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; align-items: stretch; }
-.feature-card {
-  display: flex; align-items: flex-start; gap: 1rem;
-  padding: 1.5rem 1.75rem;
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(148,163,184,0.18);
-  border-radius: 0.875rem;
-}
-.feature-icon {
-  flex-shrink: 0; width: 40px; height: 40px;
-  background: rgba(96,165,250,0.1);
-  border: 1px solid rgba(96,165,250,0.15);
-  border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
-}
-.feature-icon svg { width: 18px; height: 18px; color: var(--accent); }
-.feature-title { font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #e2e8f0; margin-bottom: 0.3rem; }
-.feature-desc { font-size: 0.8125rem; color: var(--muted); line-height: 1.6; }
-
-.section-label { margin-top: 0; font-size: 0.625rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); margin-bottom: 0.5rem; }
-.section-title { font-size: clamp(1.25rem, 2.5vw, 1.625rem); font-weight: 400; color: #fff; letter-spacing: -0.01em; margin: 0 0 1.5rem; }
-
 /* Aircraft reference table */
 
 @media (max-width: 1023px) {
@@ -111,13 +49,10 @@ body {
   .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
 }
 @media (max-width: 767px) {
-  .trust-grid { grid-template-columns: 1fr; }
-  .feature-grid { grid-template-columns: 1fr; }
   .specs-grid { grid-template-columns: 1fr !important; }
   .related-grid { grid-template-columns: 1fr !important; }
   .product-img-wrap-2 { display: none; }
 }
 @media (max-width: 639px) {
   .stats-strip { grid-template-columns: repeat(2, 1fr); }
-  .stat-cell { padding: 1.125rem 1rem; }
-  .product-title { font-size: 36px; }}
+  .stat-cell { padding: 1.125rem 1rem; }}

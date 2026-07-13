@@ -1,54 +1,5 @@
-/* ── Hero heading ───────────────────────── */
-.product-title {
-  font-size: clamp(1rem, 4vw, 3rem);
-  font-weight: 800;
-  line-height: 0.93;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #fff;
-  text-shadow: 0 2px 24px rgba(0,0,0,0.4);
-  margin: 0;
-}
-.product-title-accent {
-  display: block;
-  color: #60a5fa;
-  -webkit-text-fill-color: #60a5fa;
-}
-.product-subtitle {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  color: rgba(148,163,184,0.85);
-  margin: 0.5rem 0 0;
-  line-height: 1.4;
-}
 @media (max-width: 599px) { .product-subtitle { font-size: 19px !important; text-transform: none !important; letter-spacing: 0.02em !important; } .product-pn { font-size: 0.8rem !important; } }
-.product-pn {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--muted);
-  letter-spacing: 0.05em;
-  margin-top: 0.35rem;
-}
-
-/* ── Trust badges ───────────────────────── */
-.trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.625rem; margin-top: 1.25rem; align-items: stretch; }
-.trust-card {
-  display: flex; align-items: flex-start; gap: 10px;
-  padding: 0.75rem 0.875rem;
-  background: rgba(255,255,255,0.07);
-  border: 1px solid var(--line-strong);
-  border-radius: 0.75rem;
-}
-.trust-card-icon {
-  flex-shrink: 0; width: 30px; height: 30px;
-  background: rgba(96,165,250,0.12);
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-}
 .trust-card-icon svg { width: 15px; height: 15px; color: var(--accent); }
-.trust-card-label { font-size: 0.75rem; font-weight: 700; color: #e2e8f0; line-height: 1.2; }
-.trust-card-sub { font-size: 0.6875rem; color: var(--muted); margin-top: 3px; line-height: 1.4; font-family: var(--font-mono); }
-
 /* ── Meta row ───────────────────────────── */
 .meta-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.875rem; font-size: 0.75rem; color: rgba(148,163,184,0.75); }
 .meta-row span { display: flex; align-items: center; gap: 5px; }
@@ -82,40 +33,6 @@
   transition: opacity 150ms;
 }
 .gallery-link:hover { opacity: 0.75; }
-
-/* ── Feature cards ──────────────────────── */
-.feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; align-items: stretch; }
-.feature-card {
-  display: flex; align-items: flex-start; gap: 1rem;
-  padding: 1.5rem 1.75rem;
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(148,163,184,0.18);
-  border-radius: 0.875rem;
-}
-.feature-icon {
-  flex-shrink: 0; width: 40px; height: 40px;
-  background: rgba(96,165,250,0.1);
-  border: 1px solid rgba(96,165,250,0.15);
-  border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
-}
-.feature-icon svg { width: 18px; height: 18px; color: var(--accent); }
-.feature-title { font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #e2e8f0; margin-bottom: 0.3rem; }
-.feature-desc { font-size: 0.8125rem; color: var(--muted); line-height: 1.6; }
-
-/* ── Section labels ─────────────────────── */
-.section-label { margin-top: 0;
-  font-size: 0.625rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em;
-  color: var(--accent);
-  margin-bottom: 0.5rem;
-}
-.section-title {
-  font-size: clamp(1.25rem, 2.5vw, 1.625rem);
-  font-weight: 400;
-  color: #fff;
-  letter-spacing: -0.01em;
-  margin: 0 0 1.5rem;
-}
 
 /* ── Part number pills ──────────────────── */
 .pill-wrap { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
@@ -186,7 +103,4 @@
   .product-img-wrap-2 { display: none; }  .ka-data-table tbody td.model-cell::before { display: none; }
   .ka-data-table .series-cell { display: block; font-size: 0.75rem; font-weight: 600; color: var(--ink); padding: 0.25rem 0 0.5rem; }
   .ka-data-table .series-cell::before { display: none; }
-}
-@media (max-width: 639px) {
-  .product-title { font-size: 36px; }
 }

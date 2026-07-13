@@ -60,6 +60,8 @@ function isExcluded(path) {
     // Catch backup / worktree folders that are not public site content
     if (/backup/i.test(part)) return true;
     if (/^pgisr-site/i.test(part)) return true;
+    // Catch dotfiles/dirs (.git, .claude, .vscode, etc.) — never public site content
+    if (part.startsWith(".") && part !== "." && part !== "..") return true;
     return false;
   });
 }
