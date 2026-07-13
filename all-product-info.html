@@ -31,8 +31,8 @@
     <link rel="manifest" href="favicon_io/site.webmanifest"/>
  
         
-    <link href="tailwind_theme/site.css?v=20260712foot7" rel="stylesheet"/>
-    <link href="tailwind_theme/all-product-info.css?v=20260713text1" rel="stylesheet"/>
+    <link href="tailwind_theme/site.css?v=20260713pdffilt1" rel="stylesheet"/>
+    <link href="tailwind_theme/all-product-info.css?v=20260713grid2" rel="stylesheet"/>
     <link href="tailwind_theme/hero-nav-blend.css?v=20260708d" rel="stylesheet"/>
     <script src="tailwind_theme/gtag-consent.js?v=20260627"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFX0VN5076"></script>
@@ -391,7 +391,7 @@
                 <div class="pdf-library-header">
                     <span class="pdf-library-kicker">Browse by Category</span>
                 </div>
-                <div id="pdf-filters" class="pdf-library-filters flex flex-wrap gap-2" role="group" aria-label="Filter documents by category"></div>
+                <div id="pdf-filters" class="pdf-library-filters" role="group" aria-label="Filter documents by category"></div>
                 <div id="pdf-content-area"></div>
                 <noscript>
                     <p class="pdf-noscript text-sm mt-4">JavaScript is required to display the PDF library. Please enable JavaScript or contact <a href="mailto:sales@pwi-e.com">sales@pwi-e.com</a> for product literature.</p>
@@ -535,7 +535,7 @@
           if (!filterContainer) return;
           let activeCat ="all";
 
-          categories.forEach(function(cat, i) {
+          categories.forEach(function(cat) {
             const btn = document.createElement("button");
             btn.type ="button";
             btn.className ="pdf-filter-btn" + (cat.key ==="all" ?" active" :"");
@@ -552,12 +552,6 @@
               render(activeCat);
             });
             filterContainer.appendChild(btn);
-            if (i === 2) {
-              const brk = document.createElement("span");
-              brk.className ="pdf-filter-break";
-              brk.setAttribute("aria-hidden", "true");
-              filterContainer.appendChild(brk);
-            }
           });
 
           render("all");

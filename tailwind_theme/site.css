@@ -4180,7 +4180,6 @@ button.btn-primary:hover,
 .site-cta a:not([href*="request-quote"]):not([href*="contact.html"]):not([href^="tel:"]):not([href^="mailto:"]):not(.btn-primary),
 .led-cta-btn-secondary,
 .pdf-cta-btn-secondary,
-.pdf-filter-btn:not(.active),
 .error-hero-btn-secondary {
   display: inline-flex;
   align-items: center;
@@ -4210,7 +4209,6 @@ button.btn-primary:hover,
 .led-cta-btn-secondary:focus-visible,
 .pdf-cta-btn-secondary:hover,
 .pdf-cta-btn-secondary:focus-visible,
-.pdf-filter-btn:not(.active):hover,
 .error-hero-btn-secondary:hover {
   color: #fff;
   background: var(--pwi-btn-ghost-hover-bg);
@@ -4398,7 +4396,6 @@ a.rounded-full.border-white\/15.hover\:border-white\/40:hover {
   .site-cta a:not([href*="request-quote"]):not([href*="contact.html"]):not([href^="tel:"]):not([href^="mailto:"]):not(.btn-primary),
   .led-cta-btn-secondary,
   .pdf-cta-btn-secondary,
-  .pdf-filter-btn:not(.active),
   .error-hero-btn-primary,
   .error-hero-btn-secondary,
   .site-cta .btn-secondary,
