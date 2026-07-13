@@ -251,9 +251,14 @@ summary::marker { content: ""; }
     color: #94a3b8;
 }
 .dealer-cta-note a[href^="mailto:"] {
-    display: inline;
-    min-height: unset;
-    padding: 0;
+    /* Keep sentence-style link look; enlarge hit area for touch */
+    display: inline-block;
+    vertical-align: baseline;
+    line-height: 1.35;
+    padding: 0.65rem 0.2rem;
+    margin: -0.65rem -0.2rem;
+    min-height: 44px;
+    box-sizing: border-box;
     color: #93c5fd !important;
     background: none !important;
     border: none !important;

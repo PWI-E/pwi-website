@@ -1,4 +1,4 @@
-sure<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="bg-canvas">
   <head>
     <meta charset="utf-8"/>
@@ -40,7 +40,8 @@ sure<!DOCTYPE html>
     <!-- Tailwind -->
  
     
-    <link href="tailwind_theme/site.css?v=20260713mobi2" rel="stylesheet"/>
+    <link rel="preload" href="fonts/rubik-latin.woff2" as="font" type="font/woff2" crossorigin/>
+    <link href="tailwind_theme/site.css?v=20260713perf1" rel="stylesheet"/>
     <link href="tailwind_theme/engineering-hub.css?v=20260712soft3" rel="stylesheet"/>
     <style>
       /* Blend header into hero, matching engineering.html / contract-manufacturing.html treatment */
@@ -425,7 +426,7 @@ sure<!DOCTYPE html>
                   </div>
                   <div class="reveal reveal-2 w-full max-w-md lg:ml-auto hidden lg:block">
                     <div class="overflow-hidden rounded-xl">
-                      <img src="images/pwi-coil-winding-operator.webp" alt="PWI Coil Winding &amp; Transformers &mdash; technician operating a coil winding machine" title="PWI Coil Winding &amp; Transformers" class="w-full aspect-[4/3] object-cover" loading="eager" decoding="async">
+                      <img src="images/pwi-coil-winding-operator.webp" alt="PWI Coil Winding &amp; Transformers &mdash; technician operating a coil winding machine" title="PWI Coil Winding &amp; Transformers" class="w-full aspect-[4/3] object-cover" loading="eager" decoding="async" width="600" height="420">
                     </div>
                   </div>
                 </div>
@@ -441,7 +442,7 @@ sure<!DOCTYPE html>
                 loading="eager"
                 decoding="async"
                 style="width:100%;height:auto;"
-              >
+              width="600" height="420">
             </div>
             <!-- ================= ABOUT & SPECIFICATIONS ================= -->
             <section class="bg-surface pt-10 pb-10 sm:py-14">
@@ -452,7 +453,7 @@ sure<!DOCTYPE html>
                   <div class="space-y-4 text-sm sm:text-base text-body leading-relaxed">
                     <p>PWI has the ability to produce several different wire wound products and build them to your specific inductive component needs. We are able to use wire sizes ranging from 4 gauge to 51 gauge. PWI can create any product you need. Let our skilled production team build your next coil wound project.</p>
                   </div>
-                  <div class="cw-spec-card lg:w-72" style="padding:1.25rem 1.35rem 0;">
+                  <div class="cw-spec-card lg:w-72" style="padding:1.25rem 1.35rem;">
                     <p class="text-xs uppercase tracking-widest text-[#1E4ED8] mb-4 font-semibold">Specifications</p>
                     <ul class="cw-spec-list">
                       <li class="cw-spec-row"><span class="text-muted">Wire Range</span><span class="font-medium text-[#1E4ED8]">4 &ndash; 51 gauge</span></li>
@@ -464,9 +465,8 @@ sure<!DOCTYPE html>
                 <style>
                   .cw-spec-card{background:rgba(147,197,253,0.1);border:1px solid rgba(147,197,253,0.26);border-radius:0.75rem;overflow:hidden;}
                   .cw-spec-list,.cw-cap-list,.cw-equip-list{margin:0;padding:0;list-style:none;}
-                  .cw-spec-row{display:flex;justify-content:space-between;align-items:baseline;gap:.75rem;padding:.7rem 1.35rem;margin:0 -1.35rem;font-size:.875rem;color:#334155;line-height:1.45;}
-                  .cw-spec-row:nth-child(even){background:rgba(30,58,138,0.05);}
-                  .cw-spec-row:last-child{padding-bottom:1.15rem;}
+                  .cw-spec-row{display:flex;justify-content:space-between;align-items:baseline;gap:.75rem;padding:.55rem 0;font-size:.875rem;color:#334155;line-height:1.45;}
+                  .cw-spec-row:last-child{padding-bottom:0;}
                   .cw-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2.5rem;align-items:stretch;}
                   @media (max-width:900px){.cw-steps{grid-template-columns:1fr;}}
                   .cw-step{background:rgba(147,197,253,0.15);border:1px solid rgba(147,197,253,0.26);border-radius:0.75rem;padding:1.25rem 1.35rem;position:relative;}
