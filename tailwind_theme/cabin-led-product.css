@@ -98,6 +98,17 @@ main {
     overflow-wrap: anywhere;
     word-break: break-word;
   }
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+  }
+  .product-hero-wrap {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .meta-row {
+    gap: 0.65rem 1rem;
+  }
 }
 
 /* ── Trust badges (PMA, Replacement for) ── */

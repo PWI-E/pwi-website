@@ -3222,9 +3222,9 @@ footer li {
   }
 
   .sn-pill {
-    white-space: nowrap;
-    overflow-wrap: normal;
-    word-break: keep-all;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
     font-size: 0.6875rem;
     line-height: 1.35;
     padding: 3px 8px;
@@ -3251,8 +3251,9 @@ footer li {
 }
 
 /* Fits grid — aircraft compatibility pills */
-.fits-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); }
-@media (min-width: 640px) { .fits-grid { grid-template-columns: repeat(9, minmax(0, 1fr)); } }
+.fits-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
+@media (min-width: 480px) { .fits-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 640px) { .fits-grid { grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 0.5rem; } }
 
 /* Products flyout sidebar nav */
 .pwi-flyout {
@@ -3540,7 +3541,7 @@ p { text-wrap: pretty; }
   }
   .pwi-footer-nl-input{padding:.55rem 0;font-size:.8125rem;font-weight:500}
   .pwi-footer-nl-submit{
-    min-width:40px;min-height:40px;margin:0;
+    min-width:44px;min-height:44px;margin:0;
     border-radius:999px;
     background:rgba(30,78,216,.45);
     color:#fff;
@@ -3551,7 +3552,7 @@ p { text-wrap: pretty; }
   /* Social — icon wells like nav categories */
   .pwi-footer-social-icons{gap:.55rem}
   .pwi-footer-social-icon{
-    width:40px;height:40px;border-radius:10px;
+    width:44px;height:44px;border-radius:10px;
     background:rgba(147,197,253,.12);
     box-shadow:none;
     color:#93c5fd;
@@ -3725,7 +3726,8 @@ p { text-wrap: pretty; }
   .pwi-footer-legal-links a:nth-child(4),
   .pwi-footer-legal-links a:nth-child(5){order:0}
   .pwi-footer-legal-links a{
-    white-space:nowrap;padding:.15rem 0;font-size:.6875rem;line-height:1.4;min-height:0;
+    white-space:nowrap;padding:.45rem 0;font-size:.75rem;line-height:1.4;min-height:44px;
+    display:inline-flex;align-items:center;
     color:rgba(148,163,184,.9);
   }
   .pwi-footer-legal-links a:not(:last-child)::after{content:none;display:none;margin:0}
@@ -4407,8 +4409,28 @@ a.rounded-full.border-white\/15.hover\:border-white\/40:hover {
   .hero-ctas .btn-ghost,
   .error-hero-ctas a {
     font-size: 0.875rem;
-    white-space: nowrap;
+    white-space: normal;
     letter-spacing: 0.08em;
+  }
+}
+
+@media (max-width: 374px) {
+  .btn-primary,
+  a.btn-primary,
+  button.btn-primary,
+  .hero-cta-primary,
+  .site-cta .btn-primary,
+  .btn-ghost,
+  .hero-cta-secondary,
+  .site-cta a[href^="tel:"],
+  .site-cta a:not([href*="request-quote"]):not([href*="contact.html"]):not([href^="tel:"]):not([href^="mailto:"]):not(.btn-primary),
+  .led-cta-btn-secondary,
+  .pdf-cta-btn-secondary {
+    white-space: normal;
+    text-align: center;
+    line-height: 1.25;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -4448,5 +4470,189 @@ header.site-header .pwi-header-logo-link {
 @media (min-width: 1024px) {
   .site-header .dd-panel .mega-grid > .mega-card:not(.mega-card--featured) {
     border-right: 0 !important;
+  }
+}
+
+/* ============================================================
+   MOBILE-FIRST UX PASS (320–430px focus)
+   Layout/spacing/tap-targets only — no content changes.
+   ============================================================ */
+html {
+  scroll-padding-top: calc(var(--header-h) + 0.75rem);
+}
+
+@media (max-width: 767px) {
+  /* Anchor jumps clear the fixed header */
+  html {
+    scroll-padding-top: calc(var(--header-h) + 0.85rem);
+  }
+
+  /* Predictable gutters across page types */
+  .max-w-7xl.mx-auto.px-6,
+  .max-w-3xl.mx-auto.px-6,
+  .max-w-5xl.mx-auto.px-6 {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  /* Surface sections: more vertical breathing room between stacked blocks */
+  section.bg-surface {
+    padding-top: 2rem;
+    padding-bottom: 2.25rem;
+  }
+
+  /* Images never force horizontal scroll */
+  main img,
+  .showcase-img img,
+  .related-tile-frame img,
+  .pdf-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Long technical headings wrap cleanly */
+  main h1,
+  main h2,
+  main h3,
+  .product-title,
+  .showcase-title,
+  .pdf-hero-title {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  /* Form controls: usable touch targets */
+  main input[type="text"],
+  main input[type="email"],
+  main input[type="tel"],
+  main input[type="search"],
+  main input[type="url"],
+  main input[type="number"],
+  main select,
+  main textarea,
+  .form-page-form input,
+  .form-page-form select,
+  .form-page-form textarea {
+    min-height: 44px;
+    font-size: 16px; /* prevents iOS zoom-on-focus */
+  }
+  main textarea,
+  .form-page-form textarea {
+    min-height: 7.5rem;
+  }
+
+  /* Soft cards: slightly more padding on phones */
+  .dark-card {
+    padding: 1.1rem 1rem !important;
+  }
+
+  /* Spec / zebra list cards already edge-flush — keep readable type */
+  .tw-spec-row,
+  .cw-cap-row,
+  .cw-equip-row,
+  .fg-uses-row,
+  .cmB-spec-row,
+  .mkB-spec-row {
+    font-size: 0.9375rem;
+    line-height: 1.45;
+  }
+
+  /* CTA band: stack with comfortable gap */
+  .led-cta-actions,
+  .site-cta .flex,
+  .hero-ctas {
+    gap: 0.75rem;
+  }
+
+  /* Payment chips: taller tap area without looking like buttons */
+  .pwi-footer-payment-list span {
+    min-height: 36px;
+    padding: 0.4rem 0.65rem;
+  }
+}
+
+@media (max-width: 639px) {
+  /* Phone hero titles: scale down from oversized desktop clamps */
+  .hero-dark h1,
+  .eng-hero-title,
+  .pdf-hero-title,
+  h1.hero-title-tight {
+    font-size: clamp(1.85rem, 8.2vw, 2.55rem) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.02em;
+  }
+
+  /* Body copy readability */
+  .hero-dark .hero-desc,
+  .hero-dark p.text-slate-300,
+  section.bg-surface .text-body,
+  section.bg-surface p.text-sm,
+  section.bg-surface p.text-base {
+    line-height: 1.6;
+  }
+
+  /* Full-width primary actions in hero/CTA groups */
+  .hero-ctas > a,
+  .hero-ctas > button,
+  .eng-hero-ctas > a,
+  .led-cta-actions > a,
+  .product-site-cta-actions > a {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Showcase / product grids: single column with clearer gaps */
+  .showcase-grid {
+    gap: 1.25rem !important;
+  }
+
+  /* Quick-jump / filter pills already stacked — ensure 44px height */
+  .led-quick-jump,
+  .pdf-filter-btn {
+    min-height: 44px !important;
+  }
+}
+
+/* Ultra-narrow phones (iPhone SE / 320px) */
+@media (max-width: 374px) {
+  :root {
+    --header-h: 60px;
+  }
+
+  .max-w-7xl.mx-auto.px-6,
+  .max-w-3xl.mx-auto.px-6,
+  .max-w-5xl.mx-auto.px-6,
+  .pwi-footer-shell {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .hero-dark h1,
+  .eng-hero-title,
+  .pdf-hero-title,
+  h1.hero-title-tight {
+    font-size: clamp(1.65rem, 9vw, 2.1rem) !important;
+  }
+
+  .site-cta {
+    padding-top: 1.75rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  .pwi-footer-shell {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.25rem !important;
+  }
+}
+
+/* Prefer reduced motion: keep layout, drop nonessential transitions */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .showcase-card,
+  .related-tile-frame img {
+    transition: none !important;
+    animation: none !important;
   }
 }

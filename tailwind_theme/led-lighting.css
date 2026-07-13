@@ -189,8 +189,8 @@ summary {
         }
         @media (max-width: 639px) {
             .led-product-shell {
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
                 padding-top: 0.75rem;
             }
             .showcase-section-head {
@@ -511,11 +511,12 @@ summary {
             .led-hero-content {
                 padding-bottom: 0 !important;
                 padding-top: 3.5rem !important;
-                padding-right: 1.5rem !important;
+                padding-right: 1.25rem !important;
+                padding-left: 1.25rem !important;
             }
             .led-hero-content h1 {
-                font-size: 2.35rem !important;
-                line-height: 1.02 !important;
+                font-size: clamp(1.85rem, 8.5vw, 2.35rem) !important;
+                line-height: 1.05 !important;
                 padding-right: 0 !important;
             }
             .led-hero-content .grid {

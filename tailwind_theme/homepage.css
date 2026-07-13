@@ -389,8 +389,8 @@ background: var(--surface) !important;
 /* ---- Mobile breathing room ---- */
 @media (max-width: 639px) {
   .hero-heading {
-    font-size: 3.2rem !important;
-    line-height: 1.0 !important;
+    font-size: clamp(2.15rem, 11vw, 3rem) !important;
+    line-height: 1.05 !important;
   }
   .hero-search-form {
     max-width: 100% !important;
@@ -403,6 +403,9 @@ background: var(--surface) !important;
   }
 }
 @media (max-width: 374px) {
+  .hero-heading {
+    font-size: 1.95rem !important;
+  }
   .hero-lede {
     font-size: 0.875rem !important;
   }
