@@ -225,6 +225,9 @@ footer { border-top: none !important; box-shadow: none !important; }
 }
 .ka-body { display: none; }
 .ka-body.ka-open { display: block; }
+.ka-toggle { transition: background-color 0.2s ease; }
+.ka-toggle:hover, .ka-toggle:focus-visible { background: rgba(147, 197, 253, 0.1); outline: none; }
+.dark-section .ka-toggle:hover, .dark-section .ka-toggle:focus-visible { background: rgba(147, 197, 253, 0.08); }
 .ka-chevron { transition: transform 0.2s ease; }
 .ka-open-state .ka-chevron { transform: rotate(180deg); }
 .dark-section .ka-toggle { min-height: 5.25rem; padding: 1rem 1.25rem !important; border-bottom-color: rgba(147, 197, 253, 0.18) !important; }

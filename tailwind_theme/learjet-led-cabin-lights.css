@@ -3,6 +3,9 @@
 .hero-media .product-img-wrap img {
   object-position: center 42%;
 }
+@media (max-width: 1023px) {
+  .hero-media--single .product-img-wrap { height: 380px !important; min-height: 380px; max-height: 380px; }
+}
 
 /* Tighten hero spacing so CTA buttons stay above the fold */
 .hero-grid .product-title { margin-top: 0.5rem !important; }
