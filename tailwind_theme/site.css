@@ -3654,6 +3654,10 @@ p { text-wrap: pretty; }
     font-size:.875rem;font-weight:400;line-height:1.25;
     color:rgba(203,213,225,.88);
   }
+  .pwi-footer-nav-list--compact a,
+  .pwi-footer-accordion .pwi-footer-nav-list--compact a{
+    padding-left:0;
+  }
   .pwi-footer-nav-list a:active{
     background:rgba(147,197,253,.1);color:#fff;text-decoration:none;
   }
