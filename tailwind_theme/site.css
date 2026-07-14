@@ -3654,10 +3654,6 @@ p { text-wrap: pretty; }
     font-size:.875rem;font-weight:400;line-height:1.25;
     color:rgba(203,213,225,.88);
   }
-  .pwi-footer-nav-list--compact a,
-  .pwi-footer-accordion .pwi-footer-nav-list--compact a{
-    padding-left:0;
-  }
   .pwi-footer-nav-list a:active{
     background:rgba(147,197,253,.1);color:#fff;text-decoration:none;
   }
@@ -3673,7 +3669,7 @@ p { text-wrap: pretty; }
   }
   .pwi-approvals-groups{
     gap:.4rem;margin-bottom:0!important;
-    padding-left:0;
+    padding-left:.65rem;
     border-left:none;
   }
   .pwi-approvals-list{font-size:.75rem;width:100%;gap:.08rem;color:rgba(148,163,184,.82)}
