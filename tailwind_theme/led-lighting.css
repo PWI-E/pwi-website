@@ -593,7 +593,6 @@ summary {
             margin-top: 0;
             margin-bottom: 1.25rem;
             display: block;
-            scroll-margin-top: calc(var(--header-h, 5rem) + 1rem);
         }
         .showcase-grid {
             display: grid;
