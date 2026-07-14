@@ -225,6 +225,11 @@ footer { border-top: none !important; box-shadow: none !important; }
 }
 .ka-body { display: none; }
 .ka-body.ka-open { display: block; }
+@media (scripting: none) {
+  .ka-body { display: block; }
+  .ka-chevron { display: none; }
+  .scroll-reveal { opacity: 1; transform: none; transition: none; }
+}
 .ka-toggle { transition: background-color 0.2s ease; }
 .ka-toggle:hover, .ka-toggle:focus-visible { background: rgba(147, 197, 253, 0.1); outline: none; }
 .dark-section .ka-toggle:hover, .dark-section .ka-toggle:focus-visible { background: rgba(147, 197, 253, 0.08); }

@@ -34,22 +34,12 @@ deploy/
 # Dev-only HTML (robots.txt also blocks several of these)
 nav.html
 footer.html
-_pages.html
-all-pages.html
-style-guide.html
 pgisr.html
 pgisr-site BACKUP*/
 pgisr-site-backup-*/
 pgisr-site-v*-backup/
 pgisr-site-v[0-9]*/
 127.0.0.1_*.report.html
-mobile-nav-review.html
-mobile-nav-review-frame.html
-mobile-pages-review.html
-mobile-pages-review-navopen-frame.html
-newsletter-popup-mockups.html
-newsletter-popup-size-mockups.html
-form-email-mockups.html
 
 # Build scripts (not needed on host)
 build_nav.py

@@ -36,7 +36,7 @@
     <link href="tailwind_theme/site.css?v=20260713megabg1" rel="stylesheet"/>
     <link href="tailwind_theme/engineering-hub.css?v=20260712soft3" rel="stylesheet"/>
     <style>
-      /* MOCKUP: blend header into hero, same treatment as CTA/footer blend */
+      /* Blend header into hero, same treatment as CTA/footer blend */
       .site-header{background:#0d1e40!important;border-bottom:none!important;box-shadow:none!important;}
       .hero-dark{background:linear-gradient(180deg, #0d1e40 0%, #0f2244 52%, #0b1a38 100%)!important;}
     </style>
@@ -440,9 +440,9 @@
               .cmB-tile-head{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;}
               .cmB-tile-icon{width:2.25rem;height:2.25rem;border-radius:10px;background:rgba(147,197,253,0.22);color:#1E4ED8;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
               .cmB-tile-title{color:#1E4ED8;}
-              .cmB-spec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:0 -1.35rem;padding:0;list-style:none;}
-              .cmB-spec-row{display:flex;align-items:baseline;gap:.65rem;padding:.75rem 1.35rem;font-size:.9375rem;line-height:1.45;color:#334155;}
-              .cmB-spec-row::before{content:'';width:5px;height:5px;border-radius:50%;background:#1E4ED8;flex-shrink:0;align-self:center;}
+              .cmB-spec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;margin:0 -1.35rem;padding:0;list-style:none;}
+              .cmB-spec-row{display:flex;align-items:flex-start;gap:.65rem;padding:.75rem 1.35rem;font-size:.9375rem;line-height:1.45;color:#334155;}
+              .cmB-spec-row::before{content:'';width:5px;height:5px;border-radius:50%;background:#1E4ED8;flex-shrink:0;margin-top:calc(0.725em - 2.5px);}
               .cmB-spec-row:nth-last-child(-n+3){padding-bottom:1.15rem;}
               @media (max-width:900px){
                 .cmB-spec-grid{grid-template-columns:repeat(2,minmax(0,1fr));}

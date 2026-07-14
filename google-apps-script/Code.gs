@@ -25,20 +25,20 @@ var INTEREST_LABELS = {
   'magnetometers': 'Magnetometers'
 };
 
-var LOGO_URL = 'https://pwi-e.com/wp-content/uploads/2022/12/PWI-Color-Logo-2022-Dec-01-e1671049599525.png';
+var LOGO_URL = 'https://pwi-e.com/images/PWI-Color-Logo-2022-Dec-01-e1671049599525.png';
 
 function doPost(e) {
   try {
     var p = (e && e.parameter) || {};
 
     if (p.website && p.website.length > 0) {
-      return json({ result: 'success' });
+      return respond({ result: 'success' }, p);
     }
 
     var type = p.form_type || 'unknown';
     var validationError = validateSubmission(type, p);
     if (validationError) {
-      return json({ result: 'error', message: validationError });
+      return respond({ result: 'error', message: validationError }, p);
     }
     var subject, badge, details, row;
 
@@ -104,13 +104,13 @@ function doPost(e) {
       }
 
     } else {
-      return json({ result: 'error', message: 'Unknown form type' });
+      return respond({ result: 'error', message: 'Unknown form type' }, p);
     }
 
-    return json({ result: 'success' });
+    return respond({ result: 'success' }, p);
 
   } catch (err) {
-    return json({ result: 'error', message: err.toString() });
+    return respond({ result: 'error', message: err.toString() }, (e && e.parameter) || {});
   }
 }
 
@@ -217,7 +217,8 @@ function welcomePlainBody(p, interestLabels) {
     'Thanks for signing up. You will hear from PWI when we release new products, publish STC updates, or run a promotion.\n\n' +
     'Interests: ' + interests + '\n\n' +
     'Need something sooner? Reach our team at sales@pwi-e.com or request a quote at pwi-e.com.\n\n' +
-    '---\nYou are receiving this because you signed up at pwi-e.com.';
+    '---\nYou are receiving this because you signed up at pwi-e.com.\n' +
+    'To unsubscribe, visit https://pwi-e.com/privacy-statement.html#privacy-request';
 }
 
 function welcomeHtmlBody(p, interestLabels) {
@@ -270,7 +271,7 @@ function welcomeHtmlBody(p, interestLabels) {
       '</div>' +
 
       '<div style="padding:10px 20px;background:#f8fafc;border-top:1px solid #e2e8f0;">' +
-        '<p style="margin:0;font-size:12px;color:#94a3b8;">You\u2019re receiving this because you signed up at pwi-e.com. <a href="https://pwi-e.com/newsletter-signup.html" style="color:#94a3b8;text-decoration:underline;">Unsubscribe</a> &middot; <a href="https://pwi-e.com/privacy-statement.html" style="color:#94a3b8;text-decoration:underline;">Privacy Statement</a></p>' +
+        '<p style="margin:0;font-size:12px;color:#94a3b8;">You\u2019re receiving this because you signed up at pwi-e.com. <a href="https://pwi-e.com/privacy-statement.html#privacy-request" style="color:#94a3b8;text-decoration:underline;">Unsubscribe</a> &middot; <a href="https://pwi-e.com/privacy-statement.html" style="color:#94a3b8;text-decoration:underline;">Privacy Statement</a></p>' +
       '</div>' +
     '</div>' +
   '</div>';
@@ -309,4 +310,31 @@ function now() {
 function json(obj) {
   return ContentService.createTextOutput(JSON.stringify(obj))
     .setMimeType(ContentService.MimeType.JSON);
+}
+
+/** AJAX (fetch) clients get JSON; native form POSTs get a thank-you HTML page. */
+function respond(obj, p) {
+  if (p && String(p.ajax || '') === '1') return json(obj);
+  return thankYouPage(obj);
+}
+
+function thankYouPage(obj) {
+  var ok = obj && obj.result === 'success';
+  var title = ok ? 'Thank you' : 'Something went wrong';
+  var message = ok
+    ? 'Your submission was received. We\u2019ll be in touch shortly.'
+    : (obj && obj.message) || 'Please try again or email sales@pwi-e.com.';
+  var html =
+    '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">' +
+    '<meta name="viewport" content="width=device-width, initial-scale=1">' +
+    '<title>' + esc(title) + ' — PWI, Inc.</title>' +
+    '<style>body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#0b1b3a;color:#e2e8f0;}' +
+    '.wrap{max-width:480px;margin:12vh auto;padding:2rem;background:#fff;color:#0f172a;border-radius:12px;}' +
+    'h1{margin:0 0 .5rem;font-size:1.5rem;font-weight:600;}p{margin:0 0 1.25rem;line-height:1.5;color:#475569;}' +
+    'a{display:inline-block;background:#1e4ed8;color:#fff;text-decoration:none;padding:.75rem 1.25rem;border-radius:9999px;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;}</style></head><body>' +
+    '<div class="wrap"><h1>' + esc(title) + '</h1><p>' + esc(message) + '</p>' +
+    '<a href="https://pwi-e.com/">Back to pwi-e.com</a></div></body></html>';
+  return HtmlService.createHtmlOutput(html)
+    .setTitle(title + ' — PWI, Inc.')
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }

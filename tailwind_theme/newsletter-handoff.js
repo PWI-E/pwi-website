@@ -7,7 +7,17 @@
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       var raw = String(input.value || "").trim();
-      if (!raw || !EMAIL_RE.test(raw)) return;
+      if (!raw || !EMAIL_RE.test(raw)) {
+        if (typeof form.reportValidity === "function") {
+          form.reportValidity();
+        } else {
+          input.setCustomValidity("Please enter a valid email address.");
+          input.reportValidity();
+          input.setCustomValidity("");
+        }
+        input.focus();
+        return;
+      }
       try {
         sessionStorage.setItem("pwi_newsletter_email", raw);
         sessionStorage.setItem("pwi_newsletter_from", source);

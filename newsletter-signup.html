@@ -388,7 +388,8 @@
                   <p id="newsletter-hero-lede" class="form-hero-lede max-w-2xl text-sm sm:text-base">Receive the latest news, product developments, and promotions.</p>
                 </div>
                 <!-- ===== FORM ===== -->
-                <form class="form-page-form px-6 sm:px-8 lg:px-10 bg-white" method="post" action="/signup-request">
+                <form class="form-page-form px-6 sm:px-8 lg:px-10 bg-white" method="post" action="https://script.google.com/macros/s/AKfycbyDgGsqTou83qPZmhruj6V2yS6qQXgaa6Cm5RRdYxCDt4SVlCkZhKrjEtlyLlPs-fKm/exec">
+                  <input type="hidden" name="form_type" value="newsletter"/>
                   <!-- Honeypot &mdash; hidden from humans, catches bots -->
                   <div class="form-honeypot absolute -left-[9999px]" aria-hidden="true">
                     <label for="website">If you are human, leave this field blank.</label>
@@ -497,7 +498,7 @@
 	                      b.textContent = "You're signed up! We'll be in touch with the latest PWI news.";
 	                    } else {
 	                      b.className = 'form-preview-note rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800';
-	                      b.textContent = 'Something went wrong. Please re-type your message and send it directly to sales@pwi-e.com instead.';
+	                      b.textContent = 'Something went wrong. Please email sales@pwi-e.com to sign up instead.';
 	                    }
 	                    form.parentNode.insertBefore(b, form);
 	                    form.style.display = 'none';
@@ -505,11 +506,7 @@
 
 	                  if (window.location.protocol === 'file:') return;
 
-	                  /* With no optional Apps Script configured, preserve the form's
-	                     native POST to the production server endpoint. */
-	                  if (!APPS_SCRIPT_URL) return;
-
-	                  var form = document.querySelector('form[action="/signup-request"]');
+	                  var form = document.querySelector('.form-page-form');
 	                  if (!form) return;
 
 	                  form.addEventListener('submit', function (e) {
@@ -526,6 +523,7 @@
 
 	                    var params = new URLSearchParams();
 	                    params.append('form_type', 'newsletter');
+	                    params.append('ajax', '1');
 	                    Array.prototype.forEach.call(form.elements, function (el) {
 	                      if (!el.name || el.disabled || el.type === 'submit' || el.type === 'button') return;
 	                      if ((el.type === 'checkbox' || el.type === 'radio') && !el.checked) return;
@@ -590,7 +588,7 @@
 	                <script>
 	                  (function () {
 	                    if (window.location.protocol !== "file:") return;
-	                    var form = document.querySelector('form[action="/signup-request"]');
+	                    var form = document.querySelector('.form-page-form');
 	                    if (!form) return;
 	                    var note = document.createElement("p");
 	                    note.className = "form-preview-note rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm";
