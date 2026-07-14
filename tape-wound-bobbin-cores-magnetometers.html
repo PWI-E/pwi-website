@@ -484,21 +484,25 @@
                   }
                   .tw-spec-list{margin:0;padding:0;list-style:none;}
                   .tw-spec-row{padding:.65rem 1.35rem;margin:0 -1.35rem;border-bottom:0;font-size:.9375rem;color:#334155;line-height:1.45;}
-                  .tw-material-list .tw-spec-row{display:flex;align-items:flex-start;gap:.65rem;margin:0;padding:.45rem 0;}
+                  .tw-material-list .tw-spec-row{display:flex;align-items:flex-start;gap:.65rem;margin:0;padding:.35rem 0;}
                   .tw-material-list .tw-spec-row::before{content:'';width:5px;height:5px;border-radius:50%;background:#1E4ED8;flex-shrink:0;margin-top:calc(0.725em - 2.5px);}
-                  .tw-list-card{padding:1.15rem 1.25rem 1.05rem;}
+                  .tw-list-card{padding:.9rem 1.25rem .8rem;}
                   .tw-dims{margin:0;}
                   .tw-dims-head,.tw-dims-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;align-items:baseline;}
-                  .tw-dims-head{padding:0 0 .85rem;margin:0;}
+                  .tw-dims-head{padding:0 0 .65rem;margin:0;}
                   .tw-dims-head h3{margin:0;}
-                  .tw-dims-row{margin:0 -.25rem;padding:.55rem .25rem;font-size:.875rem;color:#334155;line-height:1.4;}
+                  .tw-dims-row{margin:0 -.25rem;padding:.35rem .25rem;font-size:.875rem;color:#334155;line-height:1.4;}
+                  @media(min-width:901px){
+                    .tw-dims{height:100%;display:grid;grid-template-rows:auto repeat(4,minmax(0,1fr));}
+                    .tw-dims-row{align-items:center;}
+                  }
                   @media(max-width:900px){
                     .tw-specs-pair{grid-template-columns:1fr;}
                   }
                   @media(max-width:639px){
                     .tw-material-list{grid-template-columns:1fr;}
                     .tw-dims-head,.tw-dims-row{grid-template-columns:1fr;gap:.1rem;}
-                    .tw-dims-row{padding:.7rem .85rem;margin:0 -1.25rem;border-radius:0;}
+                    .tw-dims-row{padding:.55rem .85rem;margin:0 -1.25rem;border-radius:0;}
                     .tw-dims-cell--label{display:block;font-size:.6875rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1E4ED8;margin-bottom:.1rem;}
                     .tw-dims-head{display:none;}
                   }
