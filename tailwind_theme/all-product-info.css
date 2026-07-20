@@ -302,6 +302,14 @@ summary::marker {
         margin-bottom: 2.75rem;
     }
 }
+.pdf-card-grid {
+    row-gap: 1.75rem;
+}
+@media (min-width: 640px) {
+    .pdf-card-grid {
+        row-gap: 2rem;
+    }
+}
 .pdf-card {
     background: transparent;
     border: none;
@@ -403,6 +411,7 @@ summary::marker {
     display: flex;
     flex-direction: column;
     flex: 1;
+    gap: 0.5rem;
 }
 .pdf-card-title {
     font-size: 0.875rem;
@@ -446,7 +455,7 @@ summary::marker {
     align-items: center;
     gap: 0.32rem;
     align-self: flex-start;
-    margin-top: 0.5rem;
+    margin-top: auto;
     min-height: 1.55rem;
     padding: 0.28rem 0.58rem;
     border: 1px solid rgba(147, 197, 253, 0.28);
@@ -478,6 +487,11 @@ summary::marker {
 .pdf-library-section {
     padding: 0;
     background: var(--canvas);
+}
+@media (max-width: 639px) {
+    #pdf-content-area .grid {
+        row-gap: 2.25rem;
+    }
 }
 @media (min-width: 1024px) {
     .lg\:grid-cols-4 {

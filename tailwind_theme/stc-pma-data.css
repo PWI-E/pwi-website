@@ -158,7 +158,7 @@ summary { list-style: none; }
             .rowlink:hover {
                 color: #f8fbff;
                 border-color: rgba(147,197,253,0.16);
-                background-color: rgba(147,197,253,0.12);
+                background-color: transparent;
                 transform: none;
                 box-shadow: none;
             }
@@ -201,9 +201,21 @@ summary { list-style: none; }
             line-height: 1.35;
             transition: color 180ms ease;
         }
+        /* Accordion affordance: title + chevron only — no bg, underline, or subtext hover */
         .model-card:hover .card-headline,
         .model-card:focus-within .card-headline,
         details[data-open="true"] .card-headline { color: #93c5fd !important; }
+        .model-card:hover .card-sub,
+        .model-card:focus-within .card-sub,
+        details[data-open="true"] .card-sub {
+            color: #94a3b8;
+        }
+        .model-card:hover .approval-badge,
+        .model-card:focus-within .approval-badge,
+        details[data-open="true"] .approval-badge {
+            color: #93c5fd;
+            background: transparent;
+        }
         .model-card > summary {
             display: flex !important;
             flex-direction: row !important;
@@ -213,6 +225,11 @@ summary { list-style: none; }
             padding-right: 0 !important;
             min-height: 112px;
             background: transparent;
+            text-decoration: none;
+        }
+        .model-card > summary:hover {
+            background: transparent;
+            text-decoration: none;
         }
         .model-card .model-header-bar {
             flex: 1 1 auto;

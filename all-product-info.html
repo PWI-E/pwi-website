@@ -506,14 +506,14 @@
                   '<h2 class="pdf-category-heading text-xs font-semibold uppercase tracking-[0.14em]">' + cat.label + '</h2>';
                 area.appendChild(header);
                 const grid = document.createElement("div");
-                grid.className ="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5";
+                grid.className ="pdf-card-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5";
                 docs.forEach(function(doc) { grid.appendChild(makeCard(doc)); });
                 area.appendChild(grid);
               });
             } else {
               const docs = pdfData.filter(function(d) { return d.cat === activeCat; });
               const grid = document.createElement("div");
-              grid.className ="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5";
+              grid.className ="pdf-card-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5";
               docs.forEach(function(doc) { grid.appendChild(makeCard(doc)); });
               area.appendChild(grid);
             }

@@ -2601,21 +2601,24 @@ main a:focus-visible {
     color: rgba(203, 213, 225, 0.75) !important;
   }
   .site-header .dd-panel .mega-menu-assist a {
-    display: inline-flex !important;
-    align-items: center !important;
-    min-height: 36px !important;
-    padding: 0.4rem 0.85rem !important;
-    border-radius: 999px !important;
-    border: 1px solid rgba(147, 197, 253, 0.28) !important;
-    background: rgba(30, 78, 216, 0.22) !important;
-    color: #bfdbfe !important;
+    display: inline !important;
+    min-height: auto !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: #93c5fd !important;
     font-size: 0.8125rem !important;
     font-weight: 500 !important;
+    text-decoration: underline !important;
+    text-decoration-color: rgba(147, 197, 253, 0.56) !important;
+    text-underline-offset: 0.22em;
   }
   .site-header .dd-panel .mega-menu-assist a:hover {
-    color: #fff !important;
-    background: rgba(30, 78, 216, 0.38) !important;
-    border-color: rgba(147, 197, 253, 0.5) !important;
+    color: #bfdbfe !important;
+    background: transparent !important;
+    border-color: transparent !important;
+    text-decoration-color: #bfdbfe !important;
   }
   .site-header .dd-panel .mega-menu-assist-path {
     display: flex !important;
@@ -2781,6 +2784,89 @@ body:has(.pwi-home-site-bottom) .pwi-home-site-bottom {
 }
 
 /* Desktop mega-link text color consolidated into single rule above */
+
+/* ---- 17a. PRODUCT MEGA MENU: restrained visual detail ---- */
+@media (min-width: 1024px) {
+  .site-header .dd-panel {
+    background: var(--pwi-canvas-gradient-footer) !important;
+    border-top-color: rgba(147, 197, 253, 0.12) !important;
+  }
+  .site-header .dd-panel .mega-accent-bar {
+    background: var(--pwi-canvas-gradient-footer);
+  }
+  .site-header .dd-panel .mega-grid {
+    gap: 0.65rem !important;
+  }
+  .site-header .dd-panel .mega-card--compact {
+    position: relative;
+    padding: 1.15rem 1rem 1.05rem !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    transition: none !important;
+  }
+  .site-header .dd-panel .mega-card--compact:hover,
+  .site-header .dd-panel .mega-card--compact:has(.mega-link:focus-visible) {
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+  .site-header .dd-panel .mega-col-head {
+    width: auto;
+    min-height: 0;
+    margin-bottom: 0.65rem !important;
+    padding: 0.15rem 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent;
+    transition: none;
+  }
+  .site-header .dd-panel .mega-col-head::after {
+    content: none;
+  }
+  .site-header .dd-panel .mega-col-icon {
+    background: rgba(147, 197, 253, 0.1);
+    border: 0;
+    box-shadow: none;
+  }
+  .site-header .dd-panel .mega-col-head p.font-medium {
+    color: #93c5fd !important;
+    font-size: 0.7rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase;
+  }
+  .site-header .dd-panel .mega-link {
+    width: auto;
+    padding: 0.3rem 0.5rem !important;
+    margin: 0 -0.5rem !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: rgba(203, 213, 225, 0.92) !important;
+    font-weight: 400 !important;
+    transition: color 160ms ease !important;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .site-header .dd-panel .mega-link:hover {
+      background: transparent !important;
+      border-color: transparent !important;
+      color: #bfdbfe !important;
+    }
+  }
+  .site-header .dd-panel .mega-card > .space-y-0,
+  .site-header .dd-panel .mega-card > .space-y-0.text-\[13px\],
+  .site-header .dd-panel .mega-card > .space-y-0.text-sm {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .site-header .dd-panel .mega-menu-assist {
+    margin-top: 0.15rem;
+    border-radius: 0;
+    background: transparent;
+  }
+  .site-header .dd-panel .mega-menu-assist::before {
+    background: rgba(147, 197, 253, 0.12) !important;
+  }
+}
 
 /* Mobile nav sub-items — smaller than 22px parent labels for hierarchy */
 #mobile-nav:not(.mnvc) .mega-link {
