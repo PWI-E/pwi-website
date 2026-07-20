@@ -1170,13 +1170,31 @@ details.group[open] > summary .mega-chevron {
     #mobile-nav.mnvc > a.mnvc-row--link:hover,
     #mobile-nav.mnvc > .mnvc-details > summary.mnvc-row:hover {
       color: #bfdbfe;
+      background: transparent;
     }
     .mnvc-cat[data-cat="cabin"] > summary.mnvc-row--cat:hover,
     .mnvc-cat[data-cat="exterior"] > summary.mnvc-row--cat:hover,
     .mnvc-cat[data-cat="reading"] > summary.mnvc-row--cat:hover,
     .mnvc-cat[data-cat="fluorescent"] > summary.mnvc-row--cat:hover,
     .mnvc-cat[data-cat="coils"] > summary.mnvc-row--cat:hover {
-      background: rgba(147, 197, 253, 0.07);
+      background: transparent;
+      color: #bfdbfe;
+    }
+    a.mnvc-row--cat.mnvc-row--link:hover,
+    a.mnvc-row--cat.mnvc-row--link:focus-visible {
+      background: transparent;
+      border-color: transparent;
+      color: #bfdbfe;
+    }
+    a.mnvc-row--cat.mnvc-row--link:hover .mnvc-row-icon,
+    a.mnvc-row--cat.mnvc-row--link:focus-visible .mnvc-row-icon {
+      background: rgba(147, 197, 253, 0.12);
+      color: #93c5fd;
+    }
+    .mnvc-link:hover,
+    .mnvc-link:focus-visible {
+      color: #bfdbfe;
+      background: transparent;
     }
   }
 
@@ -1285,17 +1303,17 @@ details.group[open] > summary .mega-chevron {
   }
   a.mnvc-row--cat.mnvc-row--link:hover,
   a.mnvc-row--cat.mnvc-row--link:focus-visible {
-    background: rgba(147, 197, 253, 0.08);
-    border-color: rgba(147, 197, 253, 0.16);
-    color: #fff;
+    background: transparent;
+    border-color: transparent;
+    color: #bfdbfe;
   }
   a.mnvc-row--cat.mnvc-row--link:hover .mnvc-row-icon,
   a.mnvc-row--cat.mnvc-row--link:focus-visible .mnvc-row-icon {
-    background: rgba(30, 78, 216, 0.55);
-    color: #fff;
+    background: rgba(147, 197, 253, 0.12);
+    color: #93c5fd;
   }
   a.mnvc-row--cat.mnvc-row--link:active {
-    background: rgba(147, 197, 253, 0.12);
+    background: rgba(147, 197, 253, 0.08);
   }
   .mnvc-details[open] > .mnvc-panel > a.mnvc-row--cat.mnvc-row--link {
     animation: mnvc-link-in 0.38s cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -1340,7 +1358,7 @@ details.group[open] > summary .mega-chevron {
     padding: 0.55rem 0.65rem;
     margin: 0;
     border-radius: 12px;
-    transition: background 160ms ease;
+    transition: color 160ms ease;
   }
   .mnvc-cat[data-cat="cabin"] > summary.mnvc-row--cat:active,
   .mnvc-cat[data-cat="exterior"] > summary.mnvc-row--cat:active,
@@ -1400,7 +1418,14 @@ details.group[open] > summary .mega-chevron {
     font-weight: 500;
     letter-spacing: -0.015em;
     text-transform: none;
-    color: rgba(248, 250, 252, 0.92);
+    color: inherit;
+  }
+  .mnvc-cat[data-cat="cabin"] > summary.mnvc-row--cat:hover .mnvc-chevron,
+  .mnvc-cat[data-cat="exterior"] > summary.mnvc-row--cat:hover .mnvc-chevron,
+  .mnvc-cat[data-cat="reading"] > summary.mnvc-row--cat:hover .mnvc-chevron,
+  .mnvc-cat[data-cat="fluorescent"] > summary.mnvc-row--cat:hover .mnvc-chevron,
+  .mnvc-cat[data-cat="coils"] > summary.mnvc-row--cat:hover .mnvc-chevron {
+    color: #93c5fd;
   }
   .mnvc-cat[data-cat="cabin"][open] > summary.mnvc-row--cat .mnvc-row-label,
   .mnvc-cat[data-cat="exterior"][open] > summary.mnvc-row--cat .mnvc-row-label,
@@ -1441,8 +1466,8 @@ details.group[open] > summary .mega-chevron {
   }
   .mnvc-link:hover,
   .mnvc-link:focus-visible {
-    color: #fff;
-    background: rgba(147, 197, 253, 0.1);
+    color: #bfdbfe;
+    background: transparent;
   }
   .mnvc-link:hover .mnvc-link-icon,
   .mnvc-link:focus-visible .mnvc-link-icon {
