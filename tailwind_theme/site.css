@@ -3477,17 +3477,13 @@ p { text-wrap: pretty; }
   .pwi-footer a.pwi-cert-badge:hover{background:rgba(30,78,216,.38);border-color:rgba(147,197,253,.5);color:#fff;text-decoration:none}
 }
 .pwi-footer-copy{font-size:.7rem;color:#a8b4c4;letter-spacing:.02em;white-space:nowrap;line-height:1.35}
-.pwi-footer-payment-list{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:.6875rem;letter-spacing:.02em;color:#64748b;line-height:1.35}
+.pwi-footer-payment-list{display:flex;flex-wrap:wrap;align-items:center;gap:0;font-size:.6875rem;letter-spacing:.02em;color:#64748b;line-height:1.35}
 .pwi-footer-payment-list span{
   display:inline-flex;align-items:center;
-  padding:.35rem .65rem;min-height:30px;
-  border-radius:999px;
-  border:1px solid rgba(147,197,253,.22);
-  background:rgba(255,255,255,.05);
   color:rgba(226,232,240,.85);
   font-size:.6875rem;font-weight:500;
 }
-.pwi-footer-payment-list span:not(:last-child)::after{content:none;display:none}
+.pwi-footer-payment-list span:not(:last-child)::after{content:"\2022";display:inline-block;margin:0 .5em;color:#475569}
 .pwi-footer-social-icons{display:inline-flex;align-items:center;gap:.55rem;width:fit-content}
 .pwi-footer-social-icon{
   display:inline-flex;align-items:center;justify-content:center;
@@ -3727,18 +3723,13 @@ p { text-wrap: pretty; }
     font-size:.6875rem;line-height:1.45;color:#a8b4c4;
   }
   .pwi-footer-payment-list{
-    justify-content:flex-start;flex-wrap:wrap;gap:5px;
+    justify-content:flex-start;flex-wrap:wrap;gap:0;
   }
   .pwi-footer-payment-list span{
     display:inline-flex;align-items:center;
-    padding:.28rem .55rem;min-height:28px;
-    border-radius:999px;
-    border:1px solid rgba(147,197,253,.2);
-    background:rgba(255,255,255,.04);
     color:rgba(226,232,240,.8);
     font-size:.625rem;font-weight:500;letter-spacing:.02em;
   }
-  .pwi-footer-payment-list span:not(:last-child)::after{display:none}
   .pwi-footer-legal-links{
     display:grid;
     grid-template-columns:repeat(2,minmax(0,1fr));
@@ -4602,12 +4593,6 @@ html {
   .site-cta .flex,
   .hero-ctas {
     gap: 0.75rem;
-  }
-
-  /* Payment chips: taller tap area without looking like buttons */
-  .pwi-footer-payment-list span {
-    min-height: 36px;
-    padding: 0.4rem 0.65rem;
   }
 }
 
