@@ -3581,6 +3581,21 @@ p { text-wrap: pretty; }
   .pwi-footer-newsletter .pwi-footer-accordion[open]{
     background:transparent;border-color:transparent;
   }
+  /* Approvals/Resources/Company — flat divided rows, no pill background */
+  .pwi-footer-links-grid>.pwi-footer-col .pwi-footer-accordion{
+    border:none;
+    border-radius:0;
+    background:transparent;
+    margin:0;
+    border-bottom:1px solid rgba(147,197,253,.14);
+  }
+  .pwi-footer-links-grid>.pwi-footer-col:last-child .pwi-footer-accordion{
+    border-bottom:none;
+  }
+  .pwi-footer-links-grid>.pwi-footer-col .pwi-footer-accordion[open]{
+    background:transparent;
+    border-color:rgba(147,197,253,.14);
+  }
   .pwi-footer-accordion-summary{
     cursor:pointer;border-top:none;
     padding:.65rem .85rem;margin:0;
@@ -3593,6 +3608,10 @@ p { text-wrap: pretty; }
   }
   .pwi-footer-accordion-summary:active{
     background:rgba(147,197,253,.07);
+  }
+  .pwi-footer-links-grid>.pwi-footer-col .pwi-footer-accordion-summary{
+    border-radius:0;
+    padding:.85rem .1rem;
   }
   .pwi-footer-newsletter .pwi-footer-accordion-summary{
     padding:0 0 .55rem;min-height:0;
@@ -3608,10 +3627,17 @@ p { text-wrap: pretty; }
     padding-bottom:.4rem;color:#fff;
     border-radius:13px 13px 0 0;
   }
+  .pwi-footer-links-grid>.pwi-footer-col .pwi-footer-accordion[open] .pwi-footer-accordion-summary{
+    border-radius:0;
+    padding-bottom:.4rem;
+  }
   .pwi-footer-newsletter .pwi-footer-accordion[open] .pwi-footer-accordion-summary{
     color:#93c5fd;padding-bottom:.55rem;border-radius:0;
   }
   .pwi-footer-accordion[open] .pwi-footer-accordion-body{padding:0 .55rem .5rem .7rem}
+  .pwi-footer-links-grid>.pwi-footer-col .pwi-footer-accordion[open] .pwi-footer-accordion-body{
+    padding:0 .1rem .85rem;
+  }
   .pwi-footer-accordion-chevron{display:block;width:16px;height:16px;color:rgba(148,163,184,.55)}
   .pwi-footer-accordion[open] .pwi-footer-accordion-chevron{transform:rotate(180deg);color:rgba(147,197,253,.7)}
   .pwi-footer-newsletter .pwi-footer-accordion-chevron{display:none}
